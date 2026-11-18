@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prismserve"
+version = "1.0.0"
+description = "A hardware-profile-driven precision and attention placement research prototype"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "psutil>=5.9"]
+
+[project.optional-dependencies]
+runtime = ["torch>=2.4,<3", "fastapi>=0.115,<1", "pydantic>=2,<3", "uvicorn>=0.30,<1"]
+pretrained = ["torch>=2.4,<3", "transformers>=4.57,<4.58", "safetensors>=0.4", "tokenizers>=0.22,<0.23"]
+plots = ["matplotlib>=3.7,<4"]
+pdf = ["pymupdf>=1.24"]
+all = ["torch>=2.4,<3", "fastapi>=0.115,<1", "pydantic>=2,<3", "uvicorn>=0.30,<1", "matplotlib>=3.7,<4", "transformers>=4.57,<4.58", "safetensors>=0.4", "tokenizers>=0.22,<0.23"]
+submission = ["python-pptx>=1,<2", "pymupdf>=1.24", "matplotlib>=3.7,<4", "Markdown>=3.5,<4"]
+
+[project.scripts]
+prismserve = "prismserve.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["prismserve*"]
+
+[tool.setuptools.package-data]
+prismserve = ["*.txt"]

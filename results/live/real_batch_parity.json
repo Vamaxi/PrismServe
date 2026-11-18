@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "measurement_kind": "actual_pretrained_multi_request_batch_correctness",
+  "device": "cuda:0",
+  "prefill_max_abs_logit_errors": [
+    0.00023651123046875,
+    0.0002899169921875
+  ],
+  "mixed_placement_decode_max_abs_logit_errors": [
+    0.00011444091796875,
+    0.00030517578125
+  ],
+  "absolute_tolerance": 0.002,
+  "linear_tokens": 192,
+  "projection_calls": 48,
+  "expected_projection_calls": 48,
+  "second_request_decode_cache_device": "cpu"
+}

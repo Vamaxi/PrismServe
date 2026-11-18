@@ -1,0 +1,122 @@
+{
+  "successful": true,
+  "health": {
+    "status": "ok",
+    "pretrained": true,
+    "backend": "local_pretrained_gpt2",
+    "model": "prismserve-gpt2",
+    "model_kind": "pretrained_base_completion",
+    "checkpoint_source": {
+      "kind": "local",
+      "path": "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\models\\gpt2"
+    },
+    "device": "cuda:0",
+    "model_dtype": "float32",
+    "context_capacity_tokens": 1024,
+    "cpu_offload_supported": true,
+    "cpu_attention_enabled": false,
+    "cpu_offload_effective": false,
+    "quantized_layers": [],
+    "execution": "serialized synchronous reference",
+    "memory": {
+      "resident_model_bytes": 510342192,
+      "resident_parameter_bytes": 497759232,
+      "resident_buffer_bytes": 12582960,
+      "host_master_bytes": 0,
+      "max_dequantization_scratch_bytes": 0,
+      "original_parameter_bytes": 497759232,
+      "original_parameter_count": 124439808
+    }
+  },
+  "completion": {
+    "id": "cmpl-d58a5918681b4fcb9e5725a7471bc4ec",
+    "object": "text_completion",
+    "created": 1794982737,
+    "model": "prismserve-gpt2",
+    "choices": [
+      {
+        "text": " to better understand the human brain, and",
+        "index": 0,
+        "finish_reason": "length",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 6,
+      "completion_tokens": 8,
+      "total_tokens": 14
+    },
+    "prismserve": {
+      "pretrained": true,
+      "checkpoint_source": "local",
+      "model_dtype": "float32",
+      "quantized_layers": [
+        0
+      ],
+      "precision": "mixed_packed_int4_reference",
+      "cpu_attention_requested": true,
+      "cpu_offload_effective": true,
+      "queue_wait_ms": 0.004800036549568176,
+      "setup_ms": 71.92999997641891,
+      "ttft_ms": 1017.9053000174463,
+      "model_ttft_ms": 945.9705000044778,
+      "decode_token_ms": [
+        72.95169995632023,
+        21.489999955520034,
+        22.030699998140335,
+        21.82389993686229,
+        24.90999992005527,
+        20.245100022293627,
+        24.537999997846782
+      ],
+      "model_inference_ms": 1154.274099972099,
+      "inference_elapsed_ms": 1226.596700027585,
+      "service_elapsed_ms": 1226.6015000641346,
+      "cache_device": "cpu",
+      "memory": {
+        "resident_model_bytes": 486011952,
+        "resident_parameter_bytes": 469447680,
+        "resident_buffer_bytes": 16564272,
+        "host_master_bytes": 28311552,
+        "max_dequantization_scratch_bytes": 9437184,
+        "original_parameter_bytes": 497759232,
+        "original_parameter_count": 124439808
+      }
+    }
+  },
+  "metrics": {
+    "completed_requests": 1,
+    "generated_tokens": 8,
+    "total_queue_wait_ms": 0.004800036549568176,
+    "total_setup_ms": 71.92999997641891,
+    "total_inference_ms": 1226.596700027585,
+    "total_model_inference_ms": 1154.274099972099,
+    "total_service_ms": 1226.6015000641346,
+    "pretrained": true,
+    "backend": "local_pretrained_gpt2",
+    "model": "prismserve-gpt2",
+    "model_kind": "pretrained_base_completion",
+    "checkpoint_source": {
+      "kind": "local",
+      "path": "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\models\\gpt2"
+    },
+    "device": "cuda:0",
+    "model_dtype": "float32",
+    "context_capacity_tokens": 1024,
+    "cpu_offload_supported": true,
+    "cpu_attention_enabled": true,
+    "cpu_offload_effective": true,
+    "quantized_layers": [
+      0
+    ],
+    "execution": "serialized synchronous reference",
+    "resident_model_bytes": 486011952,
+    "resident_parameter_bytes": 469447680,
+    "resident_buffer_bytes": 16564272,
+    "host_master_bytes": 28311552,
+    "max_dequantization_scratch_bytes": 9437184,
+    "original_parameter_bytes": 497759232,
+    "original_parameter_count": 124439808,
+    "timing_note": "total_inference_ms includes setup and measured generation wall time; total_model_inference_ms is backend-reported generation time; total_service_ms also includes serialization queue wait"
+  }
+}

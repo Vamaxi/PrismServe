@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "description": "Actual pretrained tensor execution under explicit enforced device budgets; greedy serving and separate teacher-forced quality audits.",
+  "model_path": "models/gpt2",
+  "calibration_repeats": 3,
+  "policies": [
+    "full",
+    "morph_only",
+    "joint"
+  ],
+  "seeds": [
+    7
+  ],
+  "serving": {
+    "max_batch_size": 8,
+    "prefill_chunk_size": 64,
+    "prefill_token_budget": 128,
+    "ttft_slo_ms": 2000,
+    "tbt_slo_ms": 100,
+    "quality_budget": 0.03,
+    "cooldown_s": 0.25
+  },
+  "workload": {
+    "requests": 12,
+    "prompt_tokens": 384,
+    "output_tokens": 24,
+    "duration_s": 2.0
+  },
+  "scenarios": [
+    {
+      "name": "bursty_constrained",
+      "traffic": "bursty",
+      "device_budget_mib": 700
+    }
+  ],
+  "quality_audit": {
+    "enabled": false
+  }
+}

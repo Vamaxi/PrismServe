@@ -1,0 +1,107 @@
+{
+  "version": "0.5.0",
+  "milestone": "M10",
+  "created_utc": "2026-11-18T12:34:06.420406+00:00",
+  "config_sha256": "568bb24243e34b3488555b8cff22fa8f869ad22ecd5c3fe8755cb9bdb77f169b",
+  "source_sha256": {
+    "__init__.py": "ba2640f883af85cb05b7e22375a4a0837b8c3e7530118aca0a1cb417b290f24a",
+    "__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "batch_service.py": "fcf23c7bf022ee2f27837d5a9f51c7e518a3b2676e71996b441e5cc560e41648",
+    "batching.py": "f89cd856abac94daa4ce6f0f63e010c4f2a303988c3bcf3e9f673cef2f1ed6e1",
+    "cli.py": "32c00dd0b742640fa333da21d1b9a75dd50e35c26a562ebbb98d874cee344c48",
+    "efficient_policy.py": "6eac29ee687934bfbd7cac86da018d76b8dfabd474baacc7e5068b525c37f179",
+    "estimator.py": "c4009b5e44b965bde01f883cc904a688d30449b9736af0e113e6312e22cec1cd",
+    "experiments.py": "08b5a076e85a745f53c3c80815c7f515dddce58f1bc509f15fb330cf65d96989",
+    "live_engine.py": "41eccd45ac5fe0eef4f88a8ac29e90e686e27c0a7e597679f210bed3b00156b8",
+    "live_experiments.py": "5cedf972d5aa601f0530aae089fdc18bc477e0ec30fcf4bbefc392528f2f5762",
+    "measured_policy.py": "9bd44114a57d9e7e90659d6888e4929b054083da82cac1cd4c3171f3275f6282",
+    "policy.py": "a0d96cf1ba78179663334ec8f046e6644e144749ebf3dd6b5e5de3128eea8d0e",
+    "pretrained.py": "ef83c639f610a0803e0e62c81c9f82b4f74e499addc5d71e63e2f76ae6a1b2d0",
+    "pretrained_assets.py": "691e383c121c27e1ab65ad6cd44f2384cfd968fc8700b165066d246d4d04ffa3",
+    "pretrained_experiments.py": "64feb06cf84ea155fe027ab7aa6d1af16aa16e2c892682a15d2141a7d9a9e893",
+    "pretrained_service.py": "a0d8dfbf1d9c2453a75c537595f48105fb558b786d4b5504057a26687d9ee01e",
+    "quantization.py": "81b8e1aca5778bd91fa7c4d251ddbb37444121795a1f776fa0dd5fd2459a7648",
+    "reporting.py": "d398dbfa470c713e30850a5ce59a070d868745f7fd63809964f0f68e10a08f4f",
+    "runtime.py": "48aa7792fc7d0753da4b66e62d2572d6776e1b78800bdbd610f2fa3e318def8d",
+    "service.py": "6c55e46c7a758cf8ac8b399b85d0e4d1bdce02e62fe69801bc25597669af3cd7",
+    "simulator.py": "85e455e0c6ba02c477d41d2cea9519d65d9bf21dc93a40fcc3ec77f85d93ca76",
+    "study_monitor.py": "d1d68578de361fde07b4ecf56be2e324df909d6a234bb285ed23cb551f5d30de",
+    "telemetry.py": "fd26b97273aa7f3b78405aa859c87c8d0a4dcf9dc9e55d9c4bf8a1fda637a237",
+    "torch_backend.py": "0823f1ab50b1a280b0edaaf8ab763a15db6747324e57f37622d53a32d72b1e14",
+    "types.py": "0fa7b7dec908788166b41475d4b8524419c4534a8b458b1fa406bd640eace0ca",
+    "validation_study.py": "7057d6ac2e0e54dbfffd3fd0702ecaab2d59df141721fffa9f623dc4fdd7c1be",
+    "workload.py": "d99d8d64b93b138972995868cba5e6ff80ca472ded98279710f6679d8e4a7c26"
+  },
+  "source_snapshot_sha256": "49dd77c6759d14f91c065b9478c5a85dcf35825e9c486219791b775376ec91bc",
+  "machine": {
+    "unix_s": 1795005246.465368,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 3788771328,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 21,
+    "power_plugged": false
+  },
+  "status": "complete",
+  "completed_stages": [
+    "gpu",
+    "prediction",
+    "cuda_portability",
+    "quality",
+    "cpu_portability"
+  ],
+  "model_source": {
+    "model_id": "gpt2",
+    "canonical_model_id": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "source": "existing Hugging Face cache or verified local files",
+    "model_card": "https://huggingface.co/openai-community/gpt2",
+    "license": "MIT (model card)",
+    "files": {
+      "config.json": {
+        "bytes": 665,
+        "sha256": "0daed7749b4f02b8f76240d5444551d7b08712dab4d0adb8239c56ba823bb7b4"
+      },
+      "generation_config.json": {
+        "bytes": 124,
+        "sha256": "ed0b32ac72c0f5f44a719abb2d7786ea5146c871f83717b7f2018065954de02b"
+      },
+      "merges.txt": {
+        "bytes": 456318,
+        "sha256": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5"
+      },
+      "model.safetensors": {
+        "bytes": 548105171,
+        "sha256": "248dfc3911869ec493c76e65bf2fcf7f615828b0254c12b473182f0f81d3a707"
+      },
+      "tokenizer.json": {
+        "bytes": 1355256,
+        "sha256": "8414cab924d8b9b33013f0d221c5862f365ee9be39c5c2bfae8a5a9e970478a6"
+      },
+      "tokenizer_config.json": {
+        "bytes": 26,
+        "sha256": "5e04eb606e3a1583530a42e36c2a6b6615c86f34fe77e44d9ddeb43ff940931f"
+      },
+      "vocab.json": {
+        "bytes": 1042301,
+        "sha256": "196139668be63f3b5d6574427317ae82f612a97c5d1cdaf36ed2256dbf636783"
+      }
+    }
+  },
+  "data_sha256": {
+    "validation": "f2fba6d2f2c0f252aee38e1d69205c37750dc8823b7e5a18efba895b6b4c0ae0",
+    "test": "62281ace1175323ebccb12728a5ce29e5382c6f99224c09057216842124ef466"
+  },
+  "notes": [
+    "One physical laptop; CPU and CUDA are separate execution backends, not separate machines.",
+    "Read-only instrumentation; GPU clocks, temperature and AC power are observed, not fixed.",
+    "No GPU tests or other project model workloads run concurrently with this harness.",
+    "Quality audits use disjoint token windows but remain one small WikiText-2 test prefix."
+  ],
+  "updated_utc": "2026-11-18T12:35:16.878039+00:00",
+  "calibration_sha256": {
+    "calibration_cpu.json": "63f1eabd869f0ad8e3d97905f22878436790776ec2f256ba4b02ac94528f187c",
+    "calibration_cuda.json": "0d300cdd8cc476a1773a16c7f882e5240c1e43514bb37dedf46507738db52338"
+  }
+}

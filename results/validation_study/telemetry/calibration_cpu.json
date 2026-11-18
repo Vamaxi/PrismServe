@@ -1,0 +1,333 @@
+{
+  "before": {
+    "unix_s": 1795005757.5478578,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 2778112000,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 13,
+    "power_plugged": true
+  },
+  "after": {
+    "unix_s": 1795005781.6750486,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 1853321216,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 13,
+    "power_plugged": true
+  },
+  "gpu_fields": [
+    "timestamp",
+    "index",
+    "uuid",
+    "temperature.gpu",
+    "clocks.current.sm",
+    "clocks.current.memory",
+    "power.draw",
+    "utilization.gpu",
+    "memory.used",
+    "pstate",
+    "clocks_event_reasons.sw_power_cap",
+    "clocks_event_reasons.hw_thermal_slowdown",
+    "clocks_event_reasons.sw_thermal_slowdown"
+  ],
+  "gpu_samples": [],
+  "host_samples": [
+    {
+      "unix_s": 1795005757.5478578,
+      "process_rss_bytes": 1459195904,
+      "host_available_bytes": 2778046464,
+      "cpu_utilization_pct": 0.0
+    },
+    {
+      "unix_s": 1795005758.0572925,
+      "process_rss_bytes": 1958264832,
+      "host_available_bytes": 2278383616,
+      "cpu_utilization_pct": 25.4
+    },
+    {
+      "unix_s": 1795005758.5657392,
+      "process_rss_bytes": 1957834752,
+      "host_available_bytes": 2265477120,
+      "cpu_utilization_pct": 28.1
+    },
+    {
+      "unix_s": 1795005759.0690439,
+      "process_rss_bytes": 1962205184,
+      "host_available_bytes": 2258726912,
+      "cpu_utilization_pct": 26.5
+    },
+    {
+      "unix_s": 1795005759.5778153,
+      "process_rss_bytes": 1966493696,
+      "host_available_bytes": 2267197440,
+      "cpu_utilization_pct": 28.3
+    },
+    {
+      "unix_s": 1795005760.0907829,
+      "process_rss_bytes": 1966477312,
+      "host_available_bytes": 2272108544,
+      "cpu_utilization_pct": 22.1
+    },
+    {
+      "unix_s": 1795005760.592695,
+      "process_rss_bytes": 1968492544,
+      "host_available_bytes": 2245197824,
+      "cpu_utilization_pct": 23.1
+    },
+    {
+      "unix_s": 1795005761.0993342,
+      "process_rss_bytes": 2062118912,
+      "host_available_bytes": 2185469952,
+      "cpu_utilization_pct": 28.8
+    },
+    {
+      "unix_s": 1795005761.6028109,
+      "process_rss_bytes": 2129227776,
+      "host_available_bytes": 2106519552,
+      "cpu_utilization_pct": 30.1
+    },
+    {
+      "unix_s": 1795005762.1053846,
+      "process_rss_bytes": 2200535040,
+      "host_available_bytes": 2042564608,
+      "cpu_utilization_pct": 38.9
+    },
+    {
+      "unix_s": 1795005762.6074426,
+      "process_rss_bytes": 2238136320,
+      "host_available_bytes": 2027429888,
+      "cpu_utilization_pct": 29.8
+    },
+    {
+      "unix_s": 1795005763.1109412,
+      "process_rss_bytes": 2244415488,
+      "host_available_bytes": 2016317440,
+      "cpu_utilization_pct": 33.9
+    },
+    {
+      "unix_s": 1795005763.6235304,
+      "process_rss_bytes": 2244399104,
+      "host_available_bytes": 2021335040,
+      "cpu_utilization_pct": 35.1
+    },
+    {
+      "unix_s": 1795005764.1289053,
+      "process_rss_bytes": 2244763648,
+      "host_available_bytes": 2013298688,
+      "cpu_utilization_pct": 26.6
+    },
+    {
+      "unix_s": 1795005764.6314747,
+      "process_rss_bytes": 2244763648,
+      "host_available_bytes": 2019979264,
+      "cpu_utilization_pct": 27.6
+    },
+    {
+      "unix_s": 1795005765.134298,
+      "process_rss_bytes": 2244411392,
+      "host_available_bytes": 2029666304,
+      "cpu_utilization_pct": 25.0
+    },
+    {
+      "unix_s": 1795005765.6373727,
+      "process_rss_bytes": 2244538368,
+      "host_available_bytes": 2007425024,
+      "cpu_utilization_pct": 28.9
+    },
+    {
+      "unix_s": 1795005766.1401842,
+      "process_rss_bytes": 2244472832,
+      "host_available_bytes": 2006519808,
+      "cpu_utilization_pct": 26.3
+    },
+    {
+      "unix_s": 1795005766.6432965,
+      "process_rss_bytes": 2244468736,
+      "host_available_bytes": 2006712320,
+      "cpu_utilization_pct": 22.7
+    },
+    {
+      "unix_s": 1795005767.144413,
+      "process_rss_bytes": 2244423680,
+      "host_available_bytes": 1990373376,
+      "cpu_utilization_pct": 29.1
+    },
+    {
+      "unix_s": 1795005767.657823,
+      "process_rss_bytes": 2244898816,
+      "host_available_bytes": 1978916864,
+      "cpu_utilization_pct": 36.3
+    },
+    {
+      "unix_s": 1795005768.1641772,
+      "process_rss_bytes": 2241761280,
+      "host_available_bytes": 1953124352,
+      "cpu_utilization_pct": 31.1
+    },
+    {
+      "unix_s": 1795005768.667125,
+      "process_rss_bytes": 2242011136,
+      "host_available_bytes": 1954037760,
+      "cpu_utilization_pct": 23.3
+    },
+    {
+      "unix_s": 1795005769.1705284,
+      "process_rss_bytes": 2241921024,
+      "host_available_bytes": 1956311040,
+      "cpu_utilization_pct": 34.0
+    },
+    {
+      "unix_s": 1795005769.6731544,
+      "process_rss_bytes": 2241921024,
+      "host_available_bytes": 1967288320,
+      "cpu_utilization_pct": 28.6
+    },
+    {
+      "unix_s": 1795005770.176576,
+      "process_rss_bytes": 2276143104,
+      "host_available_bytes": 1936056320,
+      "cpu_utilization_pct": 23.9
+    },
+    {
+      "unix_s": 1795005770.6882136,
+      "process_rss_bytes": 2274144256,
+      "host_available_bytes": 1930330112,
+      "cpu_utilization_pct": 26.2
+    },
+    {
+      "unix_s": 1795005771.1901045,
+      "process_rss_bytes": 2275414016,
+      "host_available_bytes": 1928314880,
+      "cpu_utilization_pct": 27.7
+    },
+    {
+      "unix_s": 1795005771.6971712,
+      "process_rss_bytes": 2275442688,
+      "host_available_bytes": 1930493952,
+      "cpu_utilization_pct": 23.6
+    },
+    {
+      "unix_s": 1795005772.2004292,
+      "process_rss_bytes": 2275381248,
+      "host_available_bytes": 1925570560,
+      "cpu_utilization_pct": 28.2
+    },
+    {
+      "unix_s": 1795005772.7092793,
+      "process_rss_bytes": 2275385344,
+      "host_available_bytes": 1936220160,
+      "cpu_utilization_pct": 34.6
+    },
+    {
+      "unix_s": 1795005773.211826,
+      "process_rss_bytes": 2275459072,
+      "host_available_bytes": 1933205504,
+      "cpu_utilization_pct": 20.0
+    },
+    {
+      "unix_s": 1795005773.7126377,
+      "process_rss_bytes": 2275508224,
+      "host_available_bytes": 1912217600,
+      "cpu_utilization_pct": 21.8
+    },
+    {
+      "unix_s": 1795005774.2272823,
+      "process_rss_bytes": 2275434496,
+      "host_available_bytes": 1941561344,
+      "cpu_utilization_pct": 28.4
+    },
+    {
+      "unix_s": 1795005774.7328439,
+      "process_rss_bytes": 2275483648,
+      "host_available_bytes": 1933406208,
+      "cpu_utilization_pct": 26.3
+    },
+    {
+      "unix_s": 1795005775.2357893,
+      "process_rss_bytes": 2275459072,
+      "host_available_bytes": 1918730240,
+      "cpu_utilization_pct": 24.1
+    },
+    {
+      "unix_s": 1795005775.7393868,
+      "process_rss_bytes": 2277777408,
+      "host_available_bytes": 1931796480,
+      "cpu_utilization_pct": 32.5
+    },
+    {
+      "unix_s": 1795005776.2416449,
+      "process_rss_bytes": 2275418112,
+      "host_available_bytes": 1926316032,
+      "cpu_utilization_pct": 21.6
+    },
+    {
+      "unix_s": 1795005776.7453823,
+      "process_rss_bytes": 2275663872,
+      "host_available_bytes": 1932447744,
+      "cpu_utilization_pct": 19.6
+    },
+    {
+      "unix_s": 1795005777.24759,
+      "process_rss_bytes": 2275577856,
+      "host_available_bytes": 1939472384,
+      "cpu_utilization_pct": 33.5
+    },
+    {
+      "unix_s": 1795005777.7596948,
+      "process_rss_bytes": 2275577856,
+      "host_available_bytes": 1929101312,
+      "cpu_utilization_pct": 27.5
+    },
+    {
+      "unix_s": 1795005778.2615278,
+      "process_rss_bytes": 2346885120,
+      "host_available_bytes": 1854087168,
+      "cpu_utilization_pct": 25.0
+    },
+    {
+      "unix_s": 1795005778.762879,
+      "process_rss_bytes": 2355671040,
+      "host_available_bytes": 1831182336,
+      "cpu_utilization_pct": 21.8
+    },
+    {
+      "unix_s": 1795005779.2677937,
+      "process_rss_bytes": 2355220480,
+      "host_available_bytes": 1861050368,
+      "cpu_utilization_pct": 31.9
+    },
+    {
+      "unix_s": 1795005779.7682495,
+      "process_rss_bytes": 2355277824,
+      "host_available_bytes": 1855950848,
+      "cpu_utilization_pct": 19.5
+    },
+    {
+      "unix_s": 1795005780.281054,
+      "process_rss_bytes": 2355240960,
+      "host_available_bytes": 1838387200,
+      "cpu_utilization_pct": 25.3
+    },
+    {
+      "unix_s": 1795005780.7903173,
+      "process_rss_bytes": 2355240960,
+      "host_available_bytes": 1841311744,
+      "cpu_utilization_pct": 26.0
+    },
+    {
+      "unix_s": 1795005781.2926486,
+      "process_rss_bytes": 2355367936,
+      "host_available_bytes": 1856835584,
+      "cpu_utilization_pct": 32.4
+    }
+  ],
+  "error": null,
+  "notes": [
+    "Driver event flags describe reported clock-limit reasons; correlation does not establish causality.",
+    "Read-only sampling at 500 ms. Clock settings and laptop power source are not controlled."
+  ]
+}

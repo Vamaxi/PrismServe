@@ -1,0 +1,173 @@
+{
+  "groups": [
+    {
+      "profile": "synthetic-small",
+      "policy": "full",
+      "ttft_p95_ms": {
+        "mean": 5.470909507114479,
+        "ci95_low": 5.470909507114479,
+        "ci95_high": 5.470909507114479,
+        "n": 1
+      },
+      "tbt_p95_ms": {
+        "mean": 1.456249600000001,
+        "ci95_low": 1.456249600000001,
+        "ci95_high": 1.456249600000001,
+        "n": 1
+      },
+      "slo_violation_rate": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      },
+      "output_tokens_per_s": {
+        "mean": 677.0358776051766,
+        "ci95_low": 677.0358776051766,
+        "ci95_high": 677.0358776051766,
+        "n": 1
+      },
+      "goodput_requests_per_s": {
+        "mean": 111.29356892139889,
+        "ci95_low": 111.29356892139889,
+        "ci95_high": 111.29356892139889,
+        "n": 1
+      }
+    },
+    {
+      "profile": "synthetic-small",
+      "policy": "morph_only",
+      "ttft_p95_ms": {
+        "mean": 5.470909507114479,
+        "ci95_low": 5.470909507114479,
+        "ci95_high": 5.470909507114479,
+        "n": 1
+      },
+      "tbt_p95_ms": {
+        "mean": 1.456249600000001,
+        "ci95_low": 1.456249600000001,
+        "ci95_high": 1.456249600000001,
+        "n": 1
+      },
+      "slo_violation_rate": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      },
+      "output_tokens_per_s": {
+        "mean": 677.0358776051766,
+        "ci95_low": 677.0358776051766,
+        "ci95_high": 677.0358776051766,
+        "n": 1
+      },
+      "goodput_requests_per_s": {
+        "mean": 111.29356892139889,
+        "ci95_low": 111.29356892139889,
+        "ci95_high": 111.29356892139889,
+        "n": 1
+      }
+    },
+    {
+      "profile": "synthetic-small",
+      "policy": "offload_only",
+      "ttft_p95_ms": {
+        "mean": 5.470909507114479,
+        "ci95_low": 5.470909507114479,
+        "ci95_high": 5.470909507114479,
+        "n": 1
+      },
+      "tbt_p95_ms": {
+        "mean": 1.456249600000001,
+        "ci95_low": 1.456249600000001,
+        "ci95_high": 1.456249600000001,
+        "n": 1
+      },
+      "slo_violation_rate": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      },
+      "output_tokens_per_s": {
+        "mean": 676.5629716102967,
+        "ci95_low": 676.5629716102967,
+        "ci95_high": 676.5629716102967,
+        "n": 1
+      },
+      "goodput_requests_per_s": {
+        "mean": 111.21583094963782,
+        "ci95_low": 111.21583094963782,
+        "ci95_high": 111.21583094963782,
+        "n": 1
+      }
+    },
+    {
+      "profile": "synthetic-small",
+      "policy": "joint",
+      "ttft_p95_ms": {
+        "mean": 5.470909507114479,
+        "ci95_low": 5.470909507114479,
+        "ci95_high": 5.470909507114479,
+        "n": 1
+      },
+      "tbt_p95_ms": {
+        "mean": 1.456249600000001,
+        "ci95_low": 1.456249600000001,
+        "ci95_high": 1.456249600000001,
+        "n": 1
+      },
+      "slo_violation_rate": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      },
+      "output_tokens_per_s": {
+        "mean": 676.5629716102967,
+        "ci95_low": 676.5629716102967,
+        "ci95_high": 676.5629716102967,
+        "n": 1
+      },
+      "goodput_requests_per_s": {
+        "mean": 111.21583094963782,
+        "ci95_low": 111.21583094963782,
+        "ci95_high": 111.21583094963782,
+        "n": 1
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "profile": "synthetic-small",
+      "baseline": "full",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      }
+    },
+    {
+      "profile": "synthetic-small",
+      "baseline": "morph_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      }
+    },
+    {
+      "profile": "synthetic-small",
+      "baseline": "offload_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 1
+      }
+    }
+  ],
+  "ci_note": "Seed-level nonparametric bootstrap; n=3 is exploratory, not strong evidence. Positive paired TTFT means joint improves."
+}

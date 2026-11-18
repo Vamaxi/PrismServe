@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "description": "M11 warm-start frontier; final grid refined using pilot reservation thresholds before the full serving sweep. Actual tensor execution, no physical OOM pressure.",
+  "model_path": "models/gpt2",
+  "required_ac_power": true,
+  "calibration_repeats": 1,
+  "warmup_passes": 1,
+  "policies": [
+    "full",
+    "morph_only",
+    "offload_only",
+    "joint"
+  ],
+  "seeds": [
+    7
+  ],
+  "device_quotas_mib": [
+    675
+  ],
+  "prompt_lengths": [
+    768
+  ],
+  "host_quota_mib": 2048,
+  "serving": {
+    "scheduler_strategy": "efficient",
+    "decision_interval": 4,
+    "max_batch_size": 4,
+    "prefill_chunk_size": 64,
+    "prefill_token_budget": 128,
+    "ttft_slo_ms": 2000,
+    "tbt_slo_ms": 100,
+    "quality_budget": 0.03,
+    "cooldown_s": 0.25
+  },
+  "workload": {
+    "requests": 4,
+    "output_tokens": 16,
+    "duration_s": 0.5,
+    "traffic": "bursty"
+  },
+  "quality": {
+    "max_requests": 4,
+    "duration_s": 0.5,
+    "reference_quota_mib": 1400,
+    "selection": "lowest fully completed quota with quantization exposure for each prompt length and morph/joint policy"
+  }
+}

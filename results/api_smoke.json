@@ -1,0 +1,57 @@
+{
+  "successful": true,
+  "health": {
+    "status": "ok",
+    "backend": "tiny_reference",
+    "device": "cuda:0",
+    "trained_checkpoint": true,
+    "context_capacity_tokens": 256,
+    "cpu_offload_effective": true,
+    "execution": "serialized synchronous reference"
+  },
+  "completion": {
+    "id": "cmpl-27b3bb45533b4c40b2f777b63a19713e",
+    "object": "text_completion",
+    "created": 1794979383,
+    "model": "prismserve-tiny",
+    "choices": [
+      {
+        "text": "e an an ",
+        "index": 0,
+        "finish_reason": "length",
+        "logprobs": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 18,
+      "completion_tokens": 8,
+      "total_tokens": 26
+    },
+    "prismserve": {
+      "queue_wait_ms": 0.001600012183189392,
+      "setup_ms": 9.848100016824901,
+      "ttft_ms": 339.70250003039837,
+      "decode_token_ms": [
+        20.171599928289652,
+        9.831300005316734,
+        7.582199992612004,
+        8.449199958704412,
+        7.5662999879568815,
+        8.308500051498413,
+        9.745700052008033
+      ],
+      "cache_device": "cpu",
+      "precision": "packed_int4_reference",
+      "trained_checkpoint": true
+    }
+  },
+  "metrics": {
+    "completed_requests": 1,
+    "generated_tokens": 8,
+    "total_inference_ms": 401.8057999201119,
+    "device": "cuda:0",
+    "resident_model_bytes": 428032,
+    "host_master_bytes": 196608,
+    "max_dequantization_scratch_bytes": 65536
+  }
+}

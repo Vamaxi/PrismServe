@@ -1,0 +1,482 @@
+{
+  "passed": true,
+  "real_concurrent_http_clients": 4,
+  "health": {
+    "status": "ok",
+    "pretrained": true,
+    "backend": "continuous_batching_gpt2",
+    "model": "prismserve-gpt2-batched",
+    "model_kind": "pretrained_base_completion",
+    "policy": "joint",
+    "device": "cuda:0",
+    "model_dtype": "float32",
+    "context_capacity_tokens": 1024,
+    "checkpoint_source": {
+      "kind": "local",
+      "path": "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\models\\gpt2"
+    },
+    "calibration_path": "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\results\\validation_study_final\\calibration_cuda.json",
+    "execution": "single_worker_continuous_batching",
+    "async_http": true,
+    "precision_control": "global_controller",
+    "streaming": false,
+    "worker": {
+      "policy": "joint",
+      "worker_running": true,
+      "worker_status": "running",
+      "worker_error": null,
+      "pending": 0,
+      "active": 0,
+      "completed_requests": 0,
+      "rejected_requests": 0,
+      "submitted_requests": 0,
+      "generated_tokens": 0,
+      "max_active": 0,
+      "max_execution_batch_size": 0,
+      "peak_live_device_cache_bytes": 0,
+      "peak_live_host_cache_bytes": 0,
+      "iterations": 0,
+      "fatal_error": null
+    }
+  },
+  "metrics": {
+    "policy": "joint",
+    "worker_running": true,
+    "worker_status": "running",
+    "worker_error": null,
+    "pending": 0,
+    "active": 0,
+    "completed_requests": 4,
+    "rejected_requests": 0,
+    "submitted_requests": 4,
+    "generated_tokens": 48,
+    "max_active": 4,
+    "max_execution_batch_size": 4,
+    "peak_live_device_cache_bytes": 4644864,
+    "peak_live_host_cache_bytes": 0,
+    "iterations": 12,
+    "fatal_error": null,
+    "pretrained": true,
+    "backend": "continuous_batching_gpt2",
+    "model": "prismserve-gpt2-batched",
+    "model_kind": "pretrained_base_completion",
+    "device": "cuda:0",
+    "model_dtype": "float32",
+    "context_capacity_tokens": 1024,
+    "checkpoint_source": {
+      "kind": "local",
+      "path": "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\models\\gpt2"
+    },
+    "calibration_path": "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\results\\validation_study_final\\calibration_cuda.json",
+    "execution": "single_worker_continuous_batching",
+    "async_http": true,
+    "precision_control": "global_controller",
+    "streaming": false
+  },
+  "responses": [
+    {
+      "id": "cmpl-0004e48f5ef640d283c7cc196ba1516c",
+      "object": "text_completion",
+      "created": 1795008058,
+      "model": "prismserve-gpt2-batched",
+      "choices": [
+        {
+          "text": " understand the world around us, and it's not just about",
+          "index": 0,
+          "finish_reason": "length",
+          "logprobs": null
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5,
+        "completion_tokens": 12,
+        "total_tokens": 17
+      },
+      "prismserve": {
+        "request_id": "cmpl-0004e48f5ef640d283c7cc196ba1516c",
+        "token_ids": [
+          1833,
+          262,
+          995,
+          1088,
+          514,
+          11,
+          290,
+          340,
+          338,
+          407,
+          655,
+          546
+        ],
+        "ttft_ms": 205.68070001900196,
+        "decode_token_ms": [
+          26.342600001953542,
+          22.71289995405823,
+          26.71660005580634,
+          40.57840001769364,
+          35.951899946667254,
+          34.283900051377714,
+          21.575499908067286,
+          37.50160010531545,
+          38.31089998129755,
+          40.28209997341037,
+          31.65030002128333
+        ],
+        "elapsed_ms": 561.5874000359327,
+        "queue_wait_ms": 2.6277999859303236,
+        "admitted_s": 0.12183339998591691,
+        "arrival_s": 0.11920559999998659,
+        "output_token_times_s": [
+          0.32488630001898855,
+          0.3512289000209421,
+          0.3739417999750003,
+          0.40065840003080666,
+          0.4412368000485003,
+          0.47718869999516755,
+          0.5114726000465453,
+          0.5330480999546126,
+          0.570549700059928,
+          0.6088606000412256,
+          0.6491427000146359,
+          0.6807930000359192
+        ],
+        "precision_history": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "cacheplacement_history": [
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0"
+        ],
+        "pretrained": true,
+        "continuous_batching": true,
+        "policy": "joint",
+        "precision_control": "global_controller",
+        "http_elapsed_ms_measured": 565.9525999799371
+      }
+    },
+    {
+      "id": "cmpl-2e8059d73baa47a3be4d6cf4be9e9209",
+      "object": "text_completion",
+      "created": 1795008058,
+      "model": "prismserve-gpt2-batched",
+      "choices": [
+        {
+          "text": " sending it to the server.\n\nThe server then sends",
+          "index": 0,
+          "finish_reason": "length",
+          "logprobs": null
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5,
+        "completion_tokens": 12,
+        "total_tokens": 17
+      },
+      "prismserve": {
+        "request_id": "cmpl-2e8059d73baa47a3be4d6cf4be9e9209",
+        "token_ids": [
+          7216,
+          340,
+          284,
+          262,
+          4382,
+          13,
+          198,
+          198,
+          464,
+          4382,
+          788,
+          12800
+        ],
+        "ttft_ms": 206.0658000409603,
+        "decode_token_ms": [
+          26.342600001953542,
+          22.71289995405823,
+          26.71660005580634,
+          40.57840001769364,
+          35.951899946667254,
+          34.283900051377714,
+          21.575499908067286,
+          37.50160010531545,
+          38.31089998129755,
+          40.28209997341037,
+          31.65030002128333
+        ],
+        "elapsed_ms": 561.972500057891,
+        "queue_wait_ms": 3.0128000071272254,
+        "admitted_s": 0.12183329998515546,
+        "arrival_s": 0.11882049997802824,
+        "output_token_times_s": [
+          0.32488630001898855,
+          0.3512289000209421,
+          0.3739417999750003,
+          0.40065840003080666,
+          0.4412368000485003,
+          0.47718869999516755,
+          0.5114726000465453,
+          0.5330480999546126,
+          0.570549700059928,
+          0.6088606000412256,
+          0.6491427000146359,
+          0.6807930000359192
+        ],
+        "precision_history": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "cacheplacement_history": [
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0"
+        ],
+        "pretrained": true,
+        "continuous_batching": true,
+        "policy": "joint",
+        "precision_control": "global_controller",
+        "http_elapsed_ms_measured": 565.7620000420138
+      }
+    },
+    {
+      "id": "cmpl-797c62497b5d437297a060310aee9ba2",
+      "object": "text_completion",
+      "created": 1795008058,
+      "model": "prismserve-gpt2-batched",
+      "choices": [
+        {
+          "text": " the morning, when the sun rose and the wind blew.",
+          "index": 0,
+          "finish_reason": "length",
+          "logprobs": null
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 5,
+        "completion_tokens": 12,
+        "total_tokens": 17
+      },
+      "prismserve": {
+        "request_id": "cmpl-797c62497b5d437297a060310aee9ba2",
+        "token_ids": [
+          262,
+          3329,
+          11,
+          618,
+          262,
+          4252,
+          8278,
+          290,
+          262,
+          2344,
+          17948,
+          13
+        ],
+        "ttft_ms": 210.87940002325922,
+        "decode_token_ms": [
+          26.342600001953542,
+          22.71289995405823,
+          26.71660005580634,
+          40.57840001769364,
+          35.951899946667254,
+          34.283900051377714,
+          21.575499908067286,
+          37.50160010531545,
+          38.31089998129755,
+          40.28209997341037,
+          31.65030002128333
+        ],
+        "elapsed_ms": 566.7861000401899,
+        "queue_wait_ms": 7.826099987141788,
+        "admitted_s": 0.12183299998287112,
+        "arrival_s": 0.11400689999572933,
+        "output_token_times_s": [
+          0.32488630001898855,
+          0.3512289000209421,
+          0.3739417999750003,
+          0.40065840003080666,
+          0.4412368000485003,
+          0.47718869999516755,
+          0.5114726000465453,
+          0.5330480999546126,
+          0.570549700059928,
+          0.6088606000412256,
+          0.6491427000146359,
+          0.6807930000359192
+        ],
+        "precision_history": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "cacheplacement_history": [
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0"
+        ],
+        "pretrained": true,
+        "continuous_batching": true,
+        "policy": "joint",
+        "precision_control": "global_controller",
+        "http_elapsed_ms_measured": 567.733500036411
+      }
+    },
+    {
+      "id": "cmpl-6afa5374af5f445880217560c12524ab",
+      "object": "text_completion",
+      "created": 1795008058,
+      "model": "prismserve-gpt2-batched",
+      "choices": [
+        {
+          "text": " a way to run a large number of applications on a single",
+          "index": 0,
+          "finish_reason": "length",
+          "logprobs": null
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 4,
+        "completion_tokens": 12,
+        "total_tokens": 16
+      },
+      "prismserve": {
+        "request_id": "cmpl-6afa5374af5f445880217560c12524ab",
+        "token_ids": [
+          257,
+          835,
+          284,
+          1057,
+          257,
+          1588,
+          1271,
+          286,
+          5479,
+          319,
+          257,
+          2060
+        ],
+        "ttft_ms": 207.39230001345277,
+        "decode_token_ms": [
+          26.342600001953542,
+          22.71289995405823,
+          26.71660005580634,
+          40.57840001769364,
+          35.951899946667254,
+          34.283900051377714,
+          21.575499908067286,
+          37.50160010531545,
+          38.31089998129755,
+          40.28209997341037,
+          31.65030002128333
+        ],
+        "elapsed_ms": 563.2990000303835,
+        "queue_wait_ms": 4.339299979619682,
+        "admitted_s": 0.12183329998515546,
+        "arrival_s": 0.11749400000553578,
+        "output_token_times_s": [
+          0.32488630001898855,
+          0.3512289000209421,
+          0.3739417999750003,
+          0.40065840003080666,
+          0.4412368000485003,
+          0.47718869999516755,
+          0.5114726000465453,
+          0.5330480999546126,
+          0.570549700059928,
+          0.6088606000412256,
+          0.6491427000146359,
+          0.6807930000359192
+        ],
+        "precision_history": [
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          [],
+          []
+        ],
+        "cacheplacement_history": [
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0",
+          "cuda:0"
+        ],
+        "pretrained": true,
+        "continuous_batching": true,
+        "policy": "joint",
+        "precision_control": "global_controller",
+        "http_elapsed_ms_measured": 566.5795999811962
+      }
+    }
+  ]
+}

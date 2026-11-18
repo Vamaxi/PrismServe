@@ -1,0 +1,9 @@
+# Preserve archived source hashes on checkout, including Windows.
+* -text
+*.png binary
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.zip binary
+*.whl binary
+*.pt binary

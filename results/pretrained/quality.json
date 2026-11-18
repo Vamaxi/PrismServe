@@ -1,0 +1,162 @@
+{
+  "measurement_kind": "real_pretrained_wikitext2_subset",
+  "model": "GPT-2",
+  "tokenizer": "original GPT-2 BPE",
+  "data": {
+    "dataset": "WikiText-2 raw v1",
+    "split": "test",
+    "selection": "First 100 dataset rows, joined with two newlines; then fixed token prefix",
+    "file": "data\\wikitext2\\wiki.test.prefix.txt",
+    "sha256": "62281ace1175323ebccb12728a5ce29e5382c6f99224c09057216842124ef466",
+    "input_tokens": 4096
+  },
+  "calibration_data": {
+    "dataset": "WikiText-2 raw v1",
+    "split": "validation",
+    "selection": "First 100 dataset rows, joined with two newlines; then fixed token prefix",
+    "file": "data\\wikitext2\\wiki.validation.prefix.txt",
+    "sha256": "f2fba6d2f2c0f252aee38e1d69205c37750dc8823b7e5a18efba895b6b4c0ae0",
+    "input_tokens": 128
+  },
+  "variants": [
+    {
+      "variant": "fp32",
+      "quantized_layers": [],
+      "nll": 3.598686738066621,
+      "perplexity": 36.550202921442256,
+      "scored_tokens": 4095,
+      "context": 256,
+      "stride": 128,
+      "target_accounting": "Each next-token target scored exactly once; first token unscored",
+      "elapsed_s_measured": 0.6671943999826908,
+      "diagnostic_kl_first_128_test_tokens": 0,
+      "memory": {
+        "resident_model_bytes": 510342192,
+        "resident_parameter_bytes": 497759232,
+        "resident_buffer_bytes": 12582960,
+        "host_master_bytes": 339738624,
+        "max_dequantization_scratch_bytes": 0,
+        "original_parameter_bytes": 497759232,
+        "original_parameter_count": 124439808
+      },
+      "relative_perplexity_change_pct": 0.0
+    },
+    {
+      "variant": "int4_3_layers",
+      "quantized_layers": [
+        1,
+        7,
+        9
+      ],
+      "nll": 3.6328911451775223,
+      "perplexity": 37.82200761252704,
+      "scored_tokens": 4095,
+      "context": 256,
+      "stride": 128,
+      "target_accounting": "Each next-token target scored exactly once; first token unscored",
+      "elapsed_s_measured": 0.9058181999716908,
+      "diagnostic_kl_first_128_test_tokens": 0.02896382287144661,
+      "memory": {
+        "resident_model_bytes": 437351472,
+        "resident_parameter_bytes": 412824576,
+        "resident_buffer_bytes": 24526896,
+        "host_master_bytes": 339738624,
+        "max_dequantization_scratch_bytes": 9437184,
+        "original_parameter_bytes": 497759232,
+        "original_parameter_count": 124439808
+      },
+      "relative_perplexity_change_pct": 3.4796104793680005
+    },
+    {
+      "variant": "cpu_attention",
+      "quantized_layers": [],
+      "nll": 3.598686738066621,
+      "perplexity": 36.550202921442256,
+      "scored_tokens": 4095,
+      "context": 256,
+      "stride": 128,
+      "target_accounting": "Each next-token target scored exactly once; first token unscored",
+      "elapsed_s_measured": 1.2951010999968275,
+      "diagnostic_kl_first_128_test_tokens": 0,
+      "memory": {
+        "resident_model_bytes": 510342192,
+        "resident_parameter_bytes": 497759232,
+        "resident_buffer_bytes": 12582960,
+        "host_master_bytes": 339738624,
+        "max_dequantization_scratch_bytes": 0,
+        "original_parameter_bytes": 497759232,
+        "original_parameter_count": 124439808
+      },
+      "relative_perplexity_change_pct": 0.0
+    },
+    {
+      "variant": "hybrid_3_layers",
+      "quantized_layers": [
+        1,
+        7,
+        9
+      ],
+      "nll": 3.6328911451775223,
+      "perplexity": 37.82200761252704,
+      "scored_tokens": 4095,
+      "context": 256,
+      "stride": 128,
+      "target_accounting": "Each next-token target scored exactly once; first token unscored",
+      "elapsed_s_measured": 1.5893561000702903,
+      "diagnostic_kl_first_128_test_tokens": 0.02896382287144661,
+      "memory": {
+        "resident_model_bytes": 437351472,
+        "resident_parameter_bytes": 412824576,
+        "resident_buffer_bytes": 24526896,
+        "host_master_bytes": 339738624,
+        "max_dequantization_scratch_bytes": 9437184,
+        "original_parameter_bytes": 497759232,
+        "original_parameter_count": 124439808
+      },
+      "relative_perplexity_change_pct": 3.4796104793680005
+    },
+    {
+      "variant": "static_int4_all",
+      "quantized_layers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "nll": 3.8285714211190287,
+      "perplexity": 45.99678124559503,
+      "scored_tokens": 4095,
+      "context": 256,
+      "stride": 128,
+      "target_accounting": "Each next-token target scored exactly once; first token unscored",
+      "elapsed_s_measured": 1.292849799967371,
+      "diagnostic_kl_first_128_test_tokens": 0.20183368027210236,
+      "memory": {
+        "resident_model_bytes": 218379312,
+        "resident_parameter_bytes": 158020608,
+        "resident_buffer_bytes": 60358704,
+        "host_master_bytes": 339738624,
+        "max_dequantization_scratch_bytes": 9437184,
+        "original_parameter_bytes": 497759232,
+        "original_parameter_count": 124439808
+      },
+      "relative_perplexity_change_pct": 25.84548803862019
+    }
+  ],
+  "restored_vs_hf_max_abs_logit_error": 0.0,
+  "notes": [
+    "Subset diagnostic; not the full canonical WikiText-2 benchmark.",
+    "Single-layer calibration uses validation; held-out test is never used for layer selection.",
+    "Sliding windows preserve context up to256 tokens and count every target once.",
+    "CPU-placement variants evaluate fresh prefill; decode equivalence is tested separately.",
+    "Static all-layer INT4 has no guaranteed accuracy budget."
+  ]
+}

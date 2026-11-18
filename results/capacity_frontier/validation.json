@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "version": "1.0.0",
+  "serving_runs": 216,
+  "requested_requests": 864,
+  "completed_requests": 552,
+  "rejected_requests": 312,
+  "complete_runs": 138,
+  "all_rejected_runs": 78,
+  "partial_runs": 0,
+  "rescue_policy_seed_cells": 6,
+  "selected_adaptive_quality_audits": 6,
+  "audits_with_actual_quantization": 5,
+  "fp32_quality_references": 3,
+  "quality_target_evaluations": 1440,
+  "actual_cuda_peak_over_quota_runs": 0,
+  "tests_passed": 116,
+  "paired_traces_verified": true,
+  "reserved_quota_checks_passed": true,
+  "rejections_count_as_slo_failures": true,
+  "source_snapshot_verified": true,
+  "ac_samples_verified": true,
+  "notes": [
+    "No rejection is a zero-latency observation. Quotas apply to timed warm-start serving.",
+    "Sampled capacity belongs to this conservative transition/admission contract, not an optimal physical frontier."
+  ]
+}

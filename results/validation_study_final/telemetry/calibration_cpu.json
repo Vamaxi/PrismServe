@@ -1,0 +1,429 @@
+{
+  "before": {
+    "unix_s": 1795006656.307229,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 2102038528,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 26,
+    "power_plugged": true
+  },
+  "after": {
+    "unix_s": 1795006680.4216106,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 1240489984,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 26,
+    "power_plugged": true
+  },
+  "gpu_fields": [
+    "timestamp",
+    "index",
+    "uuid",
+    "temperature.gpu",
+    "clocks.current.sm",
+    "clocks.current.memory",
+    "power.draw",
+    "utilization.gpu",
+    "memory.used",
+    "pstate",
+    "clocks_event_reasons.sw_power_cap",
+    "clocks_event_reasons.hw_thermal_slowdown",
+    "clocks_event_reasons.sw_thermal_slowdown"
+  ],
+  "gpu_samples": [],
+  "host_samples": [
+    {
+      "unix_s": 1795006656.3082292,
+      "process_rss_bytes": 1448423424,
+      "host_available_bytes": 2103656448,
+      "cpu_utilization_pct": 0.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006656.8184023,
+      "process_rss_bytes": 1947471872,
+      "host_available_bytes": 1594658816,
+      "cpu_utilization_pct": 22.9,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006657.3265085,
+      "process_rss_bytes": 1947041792,
+      "host_available_bytes": 1594040320,
+      "cpu_utilization_pct": 27.8,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006657.8325179,
+      "process_rss_bytes": 1951408128,
+      "host_available_bytes": 1591185408,
+      "cpu_utilization_pct": 29.3,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006658.341492,
+      "process_rss_bytes": 1955500032,
+      "host_available_bytes": 1607217152,
+      "cpu_utilization_pct": 24.5,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006658.84447,
+      "process_rss_bytes": 1956556800,
+      "host_available_bytes": 1607921664,
+      "cpu_utilization_pct": 24.1,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006659.3474655,
+      "process_rss_bytes": 1956581376,
+      "host_available_bytes": 1602355200,
+      "cpu_utilization_pct": 31.1,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006659.8504293,
+      "process_rss_bytes": 2062594048,
+      "host_available_bytes": 1495908352,
+      "cpu_utilization_pct": 21.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006660.356706,
+      "process_rss_bytes": 2163257344,
+      "host_available_bytes": 1394069504,
+      "cpu_utilization_pct": 26.4,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006660.8597248,
+      "process_rss_bytes": 2242949120,
+      "host_available_bytes": 1327915008,
+      "cpu_utilization_pct": 37.2,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006661.3652995,
+      "process_rss_bytes": 2239463424,
+      "host_available_bytes": 1324310528,
+      "cpu_utilization_pct": 18.8,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006661.8685458,
+      "process_rss_bytes": 2244841472,
+      "host_available_bytes": 1310294016,
+      "cpu_utilization_pct": 26.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006662.3716602,
+      "process_rss_bytes": 2245423104,
+      "host_available_bytes": 1316114432,
+      "cpu_utilization_pct": 25.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006662.8740592,
+      "process_rss_bytes": 2245308416,
+      "host_available_bytes": 1320501248,
+      "cpu_utilization_pct": 36.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006663.378051,
+      "process_rss_bytes": 2245468160,
+      "host_available_bytes": 1297211392,
+      "cpu_utilization_pct": 30.7,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006663.8814695,
+      "process_rss_bytes": 2245029888,
+      "host_available_bytes": 1304702976,
+      "cpu_utilization_pct": 30.2,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006664.3921857,
+      "process_rss_bytes": 2245148672,
+      "host_available_bytes": 1290092544,
+      "cpu_utilization_pct": 23.4,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006664.8984308,
+      "process_rss_bytes": 2245083136,
+      "host_available_bytes": 1297367040,
+      "cpu_utilization_pct": 24.9,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006665.4009802,
+      "process_rss_bytes": 2245079040,
+      "host_available_bytes": 1304145920,
+      "cpu_utilization_pct": 30.1,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006665.9042087,
+      "process_rss_bytes": 2245038080,
+      "host_available_bytes": 1286524928,
+      "cpu_utilization_pct": 26.1,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006666.406958,
+      "process_rss_bytes": 2245509120,
+      "host_available_bytes": 1289703424,
+      "cpu_utilization_pct": 27.8,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006666.9096763,
+      "process_rss_bytes": 2243166208,
+      "host_available_bytes": 1288912896,
+      "cpu_utilization_pct": 34.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006667.4132113,
+      "process_rss_bytes": 2242637824,
+      "host_available_bytes": 1303179264,
+      "cpu_utilization_pct": 22.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006667.9157207,
+      "process_rss_bytes": 2242547712,
+      "host_available_bytes": 1303756800,
+      "cpu_utilization_pct": 25.4,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006668.421857,
+      "process_rss_bytes": 2242551808,
+      "host_available_bytes": 1294200832,
+      "cpu_utilization_pct": 27.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006668.9247994,
+      "process_rss_bytes": 2276769792,
+      "host_available_bytes": 1267777536,
+      "cpu_utilization_pct": 33.3,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006669.4306178,
+      "process_rss_bytes": 2274750464,
+      "host_available_bytes": 1268781056,
+      "cpu_utilization_pct": 18.4,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006669.9396062,
+      "process_rss_bytes": 2275983360,
+      "host_available_bytes": 1257299968,
+      "cpu_utilization_pct": 28.3,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006670.4424467,
+      "process_rss_bytes": 2275999744,
+      "host_available_bytes": 1269186560,
+      "cpu_utilization_pct": 32.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006670.9544728,
+      "process_rss_bytes": 2275942400,
+      "host_available_bytes": 1270837248,
+      "cpu_utilization_pct": 27.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006671.454983,
+      "process_rss_bytes": 2276016128,
+      "host_available_bytes": 1275080704,
+      "cpu_utilization_pct": 25.9,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006671.95739,
+      "process_rss_bytes": 2276102144,
+      "host_available_bytes": 1263443968,
+      "cpu_utilization_pct": 28.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006672.4580245,
+      "process_rss_bytes": 2276167680,
+      "host_available_bytes": 1272549376,
+      "cpu_utilization_pct": 33.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006672.9603684,
+      "process_rss_bytes": 2276093952,
+      "host_available_bytes": 1277943808,
+      "cpu_utilization_pct": 24.1,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006673.4662874,
+      "process_rss_bytes": 2276143104,
+      "host_available_bytes": 1274826752,
+      "cpu_utilization_pct": 27.5,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006673.9695733,
+      "process_rss_bytes": 2276118528,
+      "host_available_bytes": 1280741376,
+      "cpu_utilization_pct": 26.5,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006674.472173,
+      "process_rss_bytes": 2278297600,
+      "host_available_bytes": 1277591552,
+      "cpu_utilization_pct": 30.5,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006674.9749823,
+      "process_rss_bytes": 2276077568,
+      "host_available_bytes": 1278750720,
+      "cpu_utilization_pct": 24.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006675.4781723,
+      "process_rss_bytes": 2276323328,
+      "host_available_bytes": 1278832640,
+      "cpu_utilization_pct": 28.2,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006675.9843655,
+      "process_rss_bytes": 2276237312,
+      "host_available_bytes": 1277116416,
+      "cpu_utilization_pct": 25.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006676.4931831,
+      "process_rss_bytes": 2276237312,
+      "host_available_bytes": 1272107008,
+      "cpu_utilization_pct": 33.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006676.994188,
+      "process_rss_bytes": 2354225152,
+      "host_available_bytes": 1220345856,
+      "cpu_utilization_pct": 29.1,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006677.4959397,
+      "process_rss_bytes": 2356330496,
+      "host_available_bytes": 1204568064,
+      "cpu_utilization_pct": 22.8,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006677.9992628,
+      "process_rss_bytes": 2355879936,
+      "host_available_bytes": 1241772032,
+      "cpu_utilization_pct": 28.7,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006678.5016727,
+      "process_rss_bytes": 2355908608,
+      "host_available_bytes": 1247657984,
+      "cpu_utilization_pct": 30.4,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006679.0047395,
+      "process_rss_bytes": 2355900416,
+      "host_available_bytes": 1246081024,
+      "cpu_utilization_pct": 23.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006679.5076191,
+      "process_rss_bytes": 2355900416,
+      "host_available_bytes": 1236971520,
+      "cpu_utilization_pct": 29.7,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006680.0102346,
+      "process_rss_bytes": 2355974144,
+      "host_available_bytes": 1241677824,
+      "cpu_utilization_pct": 27.6,
+      "power_plugged": true,
+      "battery_percent": 26
+    }
+  ],
+  "error": null,
+  "notes": [
+    "Driver event flags describe reported clock-limit reasons; correlation does not establish causality.",
+    "Read-only sampling at 500 ms. Clock settings and laptop power source are not controlled."
+  ]
+}

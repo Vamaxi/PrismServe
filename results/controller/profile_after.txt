@@ -1,0 +1,22 @@
+         390793 function calls in 0.183 seconds
+
+   Ordered by: cumulative time
+   List reduced from 67 to 14 due to restriction <14>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      200    0.002    0.000    0.190    0.001 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\efficient_policy.py:204(choose)
+      200    0.003    0.000    0.186    0.001 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\measured_policy.py:235(choose)
+      200    0.002    0.000    0.166    0.001 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\measured_policy.py:257(<listcomp>)
+     3000    0.019    0.000    0.164    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\efficient_policy.py:159(_estimate)
+     3000    0.042    0.000    0.088    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\efficient_policy.py:96(_resource)
+     3000    0.004    0.000    0.040    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\efficient_policy.py:57(_features)
+    15207    0.019    0.000    0.035    0.000 {built-in method builtins.sum}
+     3000    0.013    0.000    0.028    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\measured_policy.py:120(_features)
+    32500    0.009    0.000    0.015    0.000 {built-in method builtins.max}
+      200    0.003    0.000    0.010    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\measured_policy.py:249(<setcomp>)
+    27215    0.005    0.000    0.009    0.000 {built-in method builtins.min}
+     3000    0.005    0.000    0.008    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\efficient_policy.py:64(_lookup)
+     6800    0.005    0.000    0.007    0.000 {built-in method builtins.sorted}
+     6801    0.003    0.000    0.007    0.000 C:\Users\Vamaxi Maheshwari\Desktop\hardware_dl_project\prismserve\efficient_policy.py:134(<genexpr>)
+
+

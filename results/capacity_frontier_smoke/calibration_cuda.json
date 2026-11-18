@@ -1,0 +1,872 @@
+{
+  "measurement_kind": "actual_selectively_batched_gpt2_calibration",
+  "hardware": {
+    "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+    "device_memory_bytes": 4758437888,
+    "host_memory_bytes": 2099113984,
+    "device_bandwidth_gbps": 182.95923891462962,
+    "host_bandwidth_gbps": 33.614938890002,
+    "link_bandwidth_gbps": 12.176970405966708,
+    "device_tflops": 6.773746641866237,
+    "host_tflops": 0.05982248529149581,
+    "device_kind": "cuda",
+    "source": "measured_local_microbenchmarks",
+    "fixed_overhead_ms": 0.1
+  },
+  "device": "cuda:0",
+  "timing": {
+    "samples": [
+      {
+        "quantized_layers": [],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 9.266900015063584,
+        "workspace_bytes": 5881344
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 1,
+        "elapsed_ms": 10.644600028172135,
+        "workspace_bytes": 1080320
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 8.934399927966297,
+        "workspace_bytes": 30412800
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 1,
+        "elapsed_ms": 11.634399998001754,
+        "workspace_bytes": 1080320
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 1,
+        "prefill_tokens": 128,
+        "context_tokens": 128,
+        "cpu_requests": 0,
+        "elapsed_ms": 10.062400018796325,
+        "workspace_bytes": 22286336
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 18.326600082218647,
+        "workspace_bytes": 20350464
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 2,
+        "elapsed_ms": 23.93219992518425,
+        "workspace_bytes": 10765824
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 4,
+        "elapsed_ms": 24.05509992968291,
+        "workspace_bytes": 1172480
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 18.913300009444356,
+        "workspace_bytes": 114755584
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 2,
+        "elapsed_ms": 26.625200058333576,
+        "workspace_bytes": 57985024
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 4,
+        "elapsed_ms": 29.196100076660514,
+        "workspace_bytes": 1172480
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 32,
+        "cpu_requests": 0,
+        "elapsed_ms": 19.141400000080466,
+        "workspace_bytes": 20810752
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 31.283200019970536,
+        "workspace_bytes": 40617472
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 4,
+        "elapsed_ms": 39.3426000373438,
+        "workspace_bytes": 21448192
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 8,
+        "elapsed_ms": 46.47650010883808,
+        "workspace_bytes": 2270208
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 33.570899977348745,
+        "workspace_bytes": 231465984
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 4,
+        "elapsed_ms": 42.99149999860674,
+        "workspace_bytes": 116950016
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 8,
+        "elapsed_ms": 51.7448999453336,
+        "workspace_bytes": 1781760
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 16,
+        "cpu_requests": 0,
+        "elapsed_ms": 29.148300061933696,
+        "workspace_bytes": 20737024
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 20.350600010715425,
+        "workspace_bytes": 75129856
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 1,
+        "elapsed_ms": 28.55520008597523,
+        "workspace_bytes": 46759936
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 2,
+        "elapsed_ms": 29.093199991621077,
+        "workspace_bytes": 18221056
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 30.33430001232773,
+        "workspace_bytes": 191987712
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 3,
+        "elapsed_ms": 46.24199995305389,
+        "workspace_bytes": 106871808
+      },
+      {
+        "quantized_layers": [],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 6,
+        "elapsed_ms": 49.93620002642274,
+        "workspace_bytes": 19355648
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 10.382000007666647,
+        "workspace_bytes": 32342528
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 1,
+        "elapsed_ms": 11.77280000410974,
+        "workspace_bytes": 28340224
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 9.156699990853667,
+        "workspace_bytes": 52935680
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 1,
+        "elapsed_ms": 14.012900064699352,
+        "workspace_bytes": 28340224
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 128,
+        "context_tokens": 128,
+        "cpu_requests": 0,
+        "elapsed_ms": 10.084700072184205,
+        "workspace_bytes": 42733568
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 19.889999995939434,
+        "workspace_bytes": 44406272
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 2,
+        "elapsed_ms": 25.51329997368157,
+        "workspace_bytes": 36419072
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 4,
+        "elapsed_ms": 23.49049993790686,
+        "workspace_bytes": 28423168
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 17.98230002168566,
+        "workspace_bytes": 123082752
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 2,
+        "elapsed_ms": 27.95340004377067,
+        "workspace_bytes": 75773952
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 4,
+        "elapsed_ms": 28.77420000731945,
+        "workspace_bytes": 28423168
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 32,
+        "cpu_requests": 0,
+        "elapsed_ms": 18.64139991812408,
+        "workspace_bytes": 41257984
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 31.877100002020597,
+        "workspace_bytes": 60491264
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 4,
+        "elapsed_ms": 48.03239996545017,
+        "workspace_bytes": 44516864
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 8,
+        "elapsed_ms": 44.09550002310425,
+        "workspace_bytes": 28533760
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 32.370800036005676,
+        "workspace_bytes": 229880832
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 4,
+        "elapsed_ms": 42.888499912805855,
+        "workspace_bytes": 123193344
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 8,
+        "elapsed_ms": 52.48239997308701,
+        "workspace_bytes": 28533760
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 16,
+        "cpu_requests": 0,
+        "elapsed_ms": 32.076000003144145,
+        "workspace_bytes": 41184256
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 21.21639996767044,
+        "workspace_bytes": 88592384
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 1,
+        "elapsed_ms": 28.587899985723197,
+        "workspace_bytes": 64845824
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 2,
+        "elapsed_ms": 27.1665999898687,
+        "workspace_bytes": 40167424
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 31.395799946039915,
+        "workspace_bytes": 192089088
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 3,
+        "elapsed_ms": 43.65990008227527,
+        "workspace_bytes": 113665024
+      },
+      {
+        "quantized_layers": [
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 6,
+        "elapsed_ms": 55.830900091677904,
+        "workspace_bytes": 41320448
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 10.712599963881075,
+        "workspace_bytes": 32342528
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 1,
+        "elapsed_ms": 12.228199979290366,
+        "workspace_bytes": 28340224
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 10.464699938893318,
+        "workspace_bytes": 52036608
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 1,
+        "elapsed_ms": 15.12590004131198,
+        "workspace_bytes": 28340224
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 1,
+        "prefill_tokens": 128,
+        "context_tokens": 128,
+        "cpu_requests": 0,
+        "elapsed_ms": 11.59339991863817,
+        "workspace_bytes": 42733568
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 22.009100066497922,
+        "workspace_bytes": 44406272
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 2,
+        "elapsed_ms": 31.25579992774874,
+        "workspace_bytes": 36419072
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 4,
+        "elapsed_ms": 25.92250006273389,
+        "workspace_bytes": 28423168
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 21.812399965710938,
+        "workspace_bytes": 123082752
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 2,
+        "elapsed_ms": 29.905800009146333,
+        "workspace_bytes": 75773952
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 4,
+        "elapsed_ms": 35.26679996866733,
+        "workspace_bytes": 28423168
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 32,
+        "cpu_requests": 0,
+        "elapsed_ms": 19.23580002039671,
+        "workspace_bytes": 41257984
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 0,
+        "elapsed_ms": 32.531000091694295,
+        "workspace_bytes": 60491264
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 4,
+        "elapsed_ms": 38.6303000850603,
+        "workspace_bytes": 44516864
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 65,
+        "cpu_requests": 8,
+        "elapsed_ms": 45.19810003694147,
+        "workspace_bytes": 28533760
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 31.436200020834804,
+        "workspace_bytes": 231493632
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 4,
+        "elapsed_ms": 44.18389999773353,
+        "workspace_bytes": 123940864
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 0,
+        "context_tokens": 385,
+        "cpu_requests": 8,
+        "elapsed_ms": 53.84160007815808,
+        "workspace_bytes": 28533760
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 16,
+        "cpu_requests": 0,
+        "elapsed_ms": 33.993100048974156,
+        "workspace_bytes": 41184256
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 22.600900032557547,
+        "workspace_bytes": 87809024
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 1,
+        "elapsed_ms": 30.31519998330623,
+        "workspace_bytes": 64276480
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 4,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 2,
+        "elapsed_ms": 32.44300000369549,
+        "workspace_bytes": 40167424
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 0,
+        "elapsed_ms": 33.34650001488626,
+        "workspace_bytes": 192700416
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 3,
+        "elapsed_ms": 45.215100049972534,
+        "workspace_bytes": 113622016
+      },
+      {
+        "quantized_layers": [
+          1,
+          7,
+          9
+        ],
+        "batch_size": 8,
+        "prefill_tokens": 128,
+        "context_tokens": 385,
+        "cpu_requests": 6,
+        "elapsed_ms": 52.264299942180514,
+        "workspace_bytes": 40441856
+      }
+    ],
+    "to_int4_layer_ms": 25.766583314786352,
+    "to_fp_layer_ms": 3.4849000318596763,
+    "source": "measured_actual_batches"
+  },
+  "sensitivity": [
+    0.04567024111747742,
+    0.008510236628353596,
+    0.015332920476794243,
+    0.015269862487912178,
+    0.009746568277478218,
+    0.01187470555305481,
+    0.01434275321662426,
+    0.009160378947854042,
+    0.01265091821551323,
+    0.00774378189817071,
+    0.01020665094256401,
+    0.012675117701292038
+  ],
+  "repeats": 1,
+  "source": "Real tensor batches with warmup, synchronized timing and allocator deltas",
+  "notes": [
+    "Workspace records incremental CUDA peak beyond already-live allocations; safety headroom added by controller.",
+    "Model and KV bytes are independently reserved by the planner; workspace deltas may conservatively count new KV twice.",
+    "Ragged attention loops per request; dense projections are batched across all current tokens.",
+    "Calibration contains no held-out test continuations."
+  ],
+  "model_path": "models/gpt2"
+}

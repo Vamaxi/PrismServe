@@ -1,0 +1,51 @@
+{
+  "measurement_kind": "real_tiny_model_quality",
+  "device": "cuda:0",
+  "checkpoint": "results\\demo\\tiny_checkpoint.pt",
+  "trained": true,
+  "evaluation_tokens": 480,
+  "variants": [
+    {
+      "variant": "fp32",
+      "quantized_layers": [],
+      "nll": 2.6266562779744467,
+      "perplexity": 13.827457343441669,
+      "relative_perplexity_change_pct": 0.0,
+      "mean_logit_kl": 2.372856577892435e-09,
+      "resident_model_bytes": 596992,
+      "host_master_bytes": 0,
+      "max_dequantization_scratch_bytes": 0
+    },
+    {
+      "variant": "int4_one_layer",
+      "quantized_layers": [
+        0
+      ],
+      "nll": 2.626066875457764,
+      "perplexity": 13.819309806609343,
+      "relative_perplexity_change_pct": -0.058922885314038886,
+      "mean_logit_kl": 0.00013446224329527467,
+      "resident_model_bytes": 428032,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 65536
+    },
+    {
+      "variant": "int4_all_layers",
+      "quantized_layers": [
+        0,
+        1
+      ],
+      "nll": 2.6260336875915526,
+      "perplexity": 13.818851180814798,
+      "relative_perplexity_change_pct": -0.06223966137166581,
+      "mean_logit_kl": 0.0001564707636134699,
+      "resident_model_bytes": 259072,
+      "host_master_bytes": 393216,
+      "max_dequantization_scratch_bytes": 65536
+    }
+  ],
+  "restore_max_abs_logit_error": 0.0,
+  "restore_nll": 2.6266562779744467,
+  "quality_scope": "Held-out authored bytes; not MMLU, GSM8K, WikiText or LLM accuracy.",
+  "quality_bound": "No accuracy guarantee follows from the controller sensitivity proxy."
+}

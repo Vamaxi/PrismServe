@@ -1,0 +1,14 @@
+{
+  "measurement_kind": "real_pretrained_correctness",
+  "device": "cuda:0",
+  "hf_forward_max_abs_error": 0.0,
+  "cached_decode_max_abs_error": 9.1552734375e-05,
+  "cpu_attention_max_abs_error": 4.57763671875e-05,
+  "absolute_tolerances": {
+    "original_forward": 0.002,
+    "cached_decode": 0.002,
+    "cpu_attention": 0.002
+  },
+  "passed": true,
+  "note": "FP32 custom path compared with Transformers eager attention on the same actual checkpoint"
+}

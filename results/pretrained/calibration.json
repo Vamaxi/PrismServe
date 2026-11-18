@@ -1,0 +1,77 @@
+{
+  "method": "one-layer validation logit KL relative to FP32; additive use is a surrogate, not a quality guarantee",
+  "input_tokens": 128,
+  "layers": [
+    {
+      "layer": 0,
+      "mean_logit_kl": 0.04567024111747742
+    },
+    {
+      "layer": 1,
+      "mean_logit_kl": 0.008510236628353596
+    },
+    {
+      "layer": 2,
+      "mean_logit_kl": 0.015332920476794243
+    },
+    {
+      "layer": 3,
+      "mean_logit_kl": 0.015269862487912178
+    },
+    {
+      "layer": 4,
+      "mean_logit_kl": 0.009746568277478218
+    },
+    {
+      "layer": 5,
+      "mean_logit_kl": 0.01187470555305481
+    },
+    {
+      "layer": 6,
+      "mean_logit_kl": 0.01434275321662426
+    },
+    {
+      "layer": 7,
+      "mean_logit_kl": 0.009160378947854042
+    },
+    {
+      "layer": 8,
+      "mean_logit_kl": 0.01265091821551323
+    },
+    {
+      "layer": 9,
+      "mean_logit_kl": 0.00774378189817071
+    },
+    {
+      "layer": 10,
+      "mean_logit_kl": 0.01020665094256401
+    },
+    {
+      "layer": 11,
+      "mean_logit_kl": 0.012675117701292038
+    }
+  ],
+  "layer_order": [
+    9,
+    1,
+    7,
+    4,
+    10,
+    5,
+    8,
+    11,
+    6,
+    3,
+    2,
+    0
+  ],
+  "restore_max_abs_logit_error": 0.0,
+  "data": {
+    "dataset": "WikiText-2 raw v1",
+    "split": "validation",
+    "selection": "First 100 dataset rows, joined with two newlines; then fixed token prefix",
+    "file": "data\\wikitext2\\wiki.validation.prefix.txt",
+    "sha256": "f2fba6d2f2c0f252aee38e1d69205c37750dc8823b7e5a18efba895b6b4c0ae0",
+    "input_tokens": 128
+  }
+}

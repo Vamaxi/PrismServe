@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "model_path": "models/gpt2",
+  "calibration_repeats": 1,
+  "policies": ["full", "joint"],
+  "seeds": [7],
+  "serving": {"max_batch_size": 4, "prefill_chunk_size": 32, "prefill_token_budget": 64},
+  "workload": {"requests": 4, "prompt_tokens": 64, "output_tokens": 8, "duration_s": 0.05},
+  "scenarios": [{"name": "smoke", "traffic": "bursty", "device_budget_mib": 1400}],
+  "quality_audit": {"enabled": false}
+}

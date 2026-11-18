@@ -1,0 +1,343 @@
+{
+  "measurement_kind": "real_tiny_model_microbenchmark",
+  "training": {
+    "measurement_kind": "real_tiny_model_training",
+    "seed": 7,
+    "steps": 80,
+    "device": "cuda:0",
+    "elapsed_s": 1.9180229000048712,
+    "parameters": 149248,
+    "history": [
+      {
+        "step": 1,
+        "train_nll": 5.682897567749023
+      },
+      {
+        "step": 10,
+        "train_nll": 4.167775630950928
+      },
+      {
+        "step": 20,
+        "train_nll": 3.159860372543335
+      },
+      {
+        "step": 30,
+        "train_nll": 3.0130579471588135
+      },
+      {
+        "step": 40,
+        "train_nll": 2.8815958499908447
+      },
+      {
+        "step": 50,
+        "train_nll": 2.76180100440979
+      },
+      {
+        "step": 60,
+        "train_nll": 2.6530885696411133
+      },
+      {
+        "step": 70,
+        "train_nll": 2.651977300643921
+      },
+      {
+        "step": 80,
+        "train_nll": 2.5619306564331055
+      }
+    ],
+    "training_data": "authored in torch_backend.TRAIN_TEXT; disjoint heldout text",
+    "limitation": "Tiny byte model trained from scratch; not a pretrained LLM."
+  },
+  "quality_file": "quality.json",
+  "quality": {
+    "measurement_kind": "real_tiny_model_quality",
+    "device": "cuda:0",
+    "checkpoint": "results\\demo\\tiny_checkpoint.pt",
+    "trained": true,
+    "evaluation_tokens": 480,
+    "variants": [
+      {
+        "variant": "fp32",
+        "quantized_layers": [],
+        "nll": 2.6266562779744467,
+        "perplexity": 13.827457343441669,
+        "relative_perplexity_change_pct": 0.0,
+        "mean_logit_kl": 2.372856577892435e-09,
+        "resident_model_bytes": 596992,
+        "host_master_bytes": 0,
+        "max_dequantization_scratch_bytes": 0
+      },
+      {
+        "variant": "int4_one_layer",
+        "quantized_layers": [
+          0
+        ],
+        "nll": 2.626066875457764,
+        "perplexity": 13.819309806609343,
+        "relative_perplexity_change_pct": -0.058922885314038886,
+        "mean_logit_kl": 0.00013446224329527467,
+        "resident_model_bytes": 428032,
+        "host_master_bytes": 196608,
+        "max_dequantization_scratch_bytes": 65536
+      },
+      {
+        "variant": "int4_all_layers",
+        "quantized_layers": [
+          0,
+          1
+        ],
+        "nll": 2.6260336875915526,
+        "perplexity": 13.818851180814798,
+        "relative_perplexity_change_pct": -0.06223966137166581,
+        "mean_logit_kl": 0.0001564707636134699,
+        "resident_model_bytes": 259072,
+        "host_master_bytes": 393216,
+        "max_dequantization_scratch_bytes": 65536
+      }
+    ],
+    "restore_max_abs_logit_error": 0.0,
+    "restore_nll": 2.6266562779744467,
+    "quality_scope": "Held-out authored bytes; not MMLU, GSM8K, WikiText or LLM accuracy.",
+    "quality_bound": "No accuracy guarantee follows from the controller sensitivity proxy."
+  },
+  "measurements": [
+    {
+      "device": "cpu",
+      "variant": "fp32",
+      "cpu_offload_effective": false,
+      "ttft_ms_mean": 4.461233348896106,
+      "tbt_ms_mean": 2.8885333359034524,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cpu",
+      "resident_model_bytes": 596992,
+      "host_master_bytes": 0,
+      "max_dequantization_scratch_bytes": 0
+    },
+    {
+      "device": "cpu",
+      "variant": "int4",
+      "cpu_offload_effective": false,
+      "ttft_ms_mean": 5.989100007961194,
+      "tbt_ms_mean": 4.255831109670301,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cpu",
+      "resident_model_bytes": 428032,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 65536
+    },
+    {
+      "device": "cpu",
+      "variant": "cpu_attention",
+      "cpu_offload_effective": false,
+      "ttft_ms_mean": 3.9464333094656467,
+      "tbt_ms_mean": 2.789360015756554,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cpu",
+      "resident_model_bytes": 596992,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 0
+    },
+    {
+      "device": "cpu",
+      "variant": "hybrid",
+      "cpu_offload_effective": false,
+      "ttft_ms_mean": 5.364266689866781,
+      "tbt_ms_mean": 3.929359996173945,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cpu",
+      "resident_model_bytes": 428032,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 65536
+    },
+    {
+      "device": "cuda",
+      "variant": "fp32",
+      "cpu_offload_effective": false,
+      "ttft_ms_mean": 4.191033309325576,
+      "tbt_ms_mean": 4.173737785054578,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cuda:0",
+      "resident_model_bytes": 596992,
+      "host_master_bytes": 0,
+      "max_dequantization_scratch_bytes": 0
+    },
+    {
+      "device": "cuda",
+      "variant": "int4",
+      "cpu_offload_effective": false,
+      "ttft_ms_mean": 6.161433334151904,
+      "tbt_ms_mean": 6.623748889089459,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cuda:0",
+      "resident_model_bytes": 428032,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 65536
+    },
+    {
+      "device": "cuda",
+      "variant": "cpu_attention",
+      "cpu_offload_effective": true,
+      "ttft_ms_mean": 4.6530666295439005,
+      "tbt_ms_mean": 4.103475555570589,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cpu",
+      "resident_model_bytes": 596992,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 0
+    },
+    {
+      "device": "cuda",
+      "variant": "hybrid",
+      "cpu_offload_effective": true,
+      "ttft_ms_mean": 6.6214333443591995,
+      "tbt_ms_mean": 6.1600177833396526,
+      "output_token_ids": [
+        101,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110,
+        32,
+        97,
+        110
+      ],
+      "cache_device": "cpu",
+      "resident_model_bytes": 428032,
+      "host_master_bytes": 196608,
+      "max_dequantization_scratch_bytes": 65536
+    }
+  ],
+  "notes": [
+    "Synchronous reference kernels with per-matrix INT4 dequantization scratch.",
+    "CUDA measurements synchronize the device; CPU placement is a no-op on CPU.",
+    "Cache precision stays FP32. No optimized asymmetric GPU/CPU overlap.",
+    "Timing samples are small and are not large-model performance evidence."
+  ]
+}

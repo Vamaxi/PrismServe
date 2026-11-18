@@ -1,0 +1,5 @@
+{
+  "cases": [],
+  "selection": "lowest fully completed quota with quantization exposure for each prompt length and morph/joint policy",
+  "note": "Selection uses completion and precision exposure, never test NLL. Quality is a separate trajectory."
+}

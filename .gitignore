@@ -1,0 +1,53 @@
+# Python environments and generated build metadata
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+/build/
+/dist/
+/htmlcov/
+.coverage*
+
+# Local tools, credentials and editor state
+/.publish/
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Prepare the pinned public model explicitly; track its provenance only.
+/models/*
+!/models/gpt2/
+/models/gpt2/*
+!/models/gpt2/prismserve_source.json
+*.safetensors
+*.partial
+
+# Supplied research PDFs/extracts are local inputs, not project distributions.
+/*.pdf
+/artifacts/source_text/*.txt
+/artifacts/*
+!/artifacts/source_text/
+
+# Keep raw accepted/diagnostic evidence; omit disposable output.
+*.log
+/results/scratch*/
+/results/demo_sessions/
+/results/local*/
+/results/*_reproduction/
+/results/demo_stdout.json
+**/*preview*.png
+**/*page_*.png
+/reports/detailed/previews/
+/reports/detailed/debug*
+/reports/detailed/_*source.md
+
+# These duplicate source/document content and are built locally.
+/deliverables/*.zip
+/deliverables/package_manifest.json

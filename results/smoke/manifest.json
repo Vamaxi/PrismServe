@@ -1,0 +1,27 @@
+{
+  "mode": "analytical_simulation",
+  "created_utc": "2026-11-18T05:17:23.710197+00:00",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "config_sha256": "ad6344b0cf006acc0f2c70d9c2fe67121dcb299cbc2693742fe3436cea6207b6",
+  "runs": 4,
+  "trace_sha256": {
+    "7": "7b8735aaae70cfec97630e3246eeac212ef25f2589343a9e9505b2b940c7bdba"
+  },
+  "source_sha256": {
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\__init__.py": "6a742989957d135562d6acfdfc5fd72dee34a558030e1b7f47b772eae3b8746e",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\cli.py": "486cfafb2ffc912c3f33d88be52e3d7e9a6c52c1ec1e72f12ebfdce015595940",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\estimator.py": "f4e53fc45708fdf0877a21c641d16d30c3ff7b15b1fa4bc86f71c8c8cb045eb6",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\experiments.py": "08b5a076e85a745f53c3c80815c7f515dddce58f1bc509f15fb330cf65d96989",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\policy.py": "a0d96cf1ba78179663334ec8f046e6644e144749ebf3dd6b5e5de3128eea8d0e",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\quantization.py": "26d681877bbcc3e25111b7c8e08b2f0cdbccb449f29de0cac73bd41fa248c7c2",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\reporting.py": "d398dbfa470c713e30850a5ce59a070d868745f7fd63809964f0f68e10a08f4f",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\service.py": "f6216f789665bc92b7432abc7ffb4d8df1846e442730fa465862ada6982f3411",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\simulator.py": "85e455e0c6ba02c477d41d2cea9519d65d9bf21dc93a40fcc3ec77f85d93ca76",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\telemetry.py": "3e7eb165f313623e485df6b1e1641360a7a898b9ba9cd2838431ef8b941e1f15",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\torch_backend.py": "d30790f0750523c1a0c34ac9f517afdf07667f5a8742909ada166a9737ce4fd1",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\types.py": "0fa7b7dec908788166b41475d4b8524419c4534a8b458b1fa406bd640eace0ca",
+    "C:\\Users\\Vamaxi Maheshwari\\Desktop\\hardware_dl_project\\prismserve\\workload.py": "d99d8d64b93b138972995868cba5e6ff80ca472ded98279710f6679d8e4a7c26"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "measurement_kind": "real_tiny_model_training",
+  "seed": 7,
+  "steps": 80,
+  "device": "cuda:0",
+  "elapsed_s": 1.9180229000048712,
+  "parameters": 149248,
+  "history": [
+    {
+      "step": 1,
+      "train_nll": 5.682897567749023
+    },
+    {
+      "step": 10,
+      "train_nll": 4.167775630950928
+    },
+    {
+      "step": 20,
+      "train_nll": 3.159860372543335
+    },
+    {
+      "step": 30,
+      "train_nll": 3.0130579471588135
+    },
+    {
+      "step": 40,
+      "train_nll": 2.8815958499908447
+    },
+    {
+      "step": 50,
+      "train_nll": 2.76180100440979
+    },
+    {
+      "step": 60,
+      "train_nll": 2.6530885696411133
+    },
+    {
+      "step": 70,
+      "train_nll": 2.651977300643921
+    },
+    {
+      "step": 80,
+      "train_nll": 2.5619306564331055
+    }
+  ],
+  "training_data": "authored in torch_backend.TRAIN_TEXT; disjoint heldout text",
+  "limitation": "Tiny byte model trained from scratch; not a pretrained LLM."
+}

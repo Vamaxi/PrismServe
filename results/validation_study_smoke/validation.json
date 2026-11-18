@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "version": "0.5.0",
+  "gpu_runs": 2,
+  "gpu_requests": 4,
+  "gpu_runs_with_clock_temperature_samples": 2,
+  "portability_runs": 4,
+  "portability_requests": 8,
+  "prediction_shapes": 12,
+  "matched_prediction_executions": 24,
+  "quality_targets_per_arm": 8,
+  "quality_arms": 8,
+  "quality_target_evaluations": 64,
+  "fp32_protocol_and_cpu_attention_max_abs_nll_error": {
+    "dynamic_full": 1.5497207641601562e-05,
+    "cpu_attention": 1.3828277587890625e-05
+  },
+  "tests_passed": 111,
+  "archived_sources_verified": true,
+  "paired_cpu_cuda_traces_verified": true,
+  "rejected_requests": 0,
+  "notes": [
+    "CPU/CUDA portability is on one physical laptop.",
+    "GPU measurements have instrumentation; clocks and power source are not fixed.",
+    "Target evaluations across arms reuse the same held-out targets."
+  ]
+}

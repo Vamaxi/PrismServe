@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "serving_runs": 36,
+  "quality_audits": 6,
+  "completed_requests": 432,
+  "rejected_requests": 0,
+  "greedy_output_tokens": 10368,
+  "teacher_forced_targets": 384,
+  "reused_iterations_with_fresh_resource_checks": 1246,
+  "actual_cuda_peak_over_quota_runs": 0,
+  "tests_passed": 112,
+  "paired_traces_verified": true,
+  "archived_source_hashes_verified": true,
+  "concurrent_http_passed": true
+}

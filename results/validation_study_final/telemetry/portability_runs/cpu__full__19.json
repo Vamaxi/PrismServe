@@ -1,0 +1,69 @@
+{
+  "before": {
+    "unix_s": 1795006684.0827787,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 1240645632,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 26,
+    "power_plugged": true
+  },
+  "after": {
+    "unix_s": 1795006685.3639705,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 1255464960,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 26,
+    "power_plugged": true
+  },
+  "gpu_fields": [
+    "timestamp",
+    "index",
+    "uuid",
+    "temperature.gpu",
+    "clocks.current.sm",
+    "clocks.current.memory",
+    "power.draw",
+    "utilization.gpu",
+    "memory.used",
+    "pstate",
+    "clocks_event_reasons.sw_power_cap",
+    "clocks_event_reasons.hw_thermal_slowdown",
+    "clocks_event_reasons.sw_thermal_slowdown"
+  ],
+  "gpu_samples": [],
+  "host_samples": [
+    {
+      "unix_s": 1795006684.0827787,
+      "process_rss_bytes": 2358673408,
+      "host_available_bytes": 1240702976,
+      "cpu_utilization_pct": 0.0,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006684.5883398,
+      "process_rss_bytes": 2358697984,
+      "host_available_bytes": 1247121408,
+      "cpu_utilization_pct": 19.2,
+      "power_plugged": true,
+      "battery_percent": 26
+    },
+    {
+      "unix_s": 1795006685.09199,
+      "process_rss_bytes": 2358685696,
+      "host_available_bytes": 1253429248,
+      "cpu_utilization_pct": 23.7,
+      "power_plugged": true,
+      "battery_percent": 26
+    }
+  ],
+  "error": null,
+  "notes": [
+    "Driver event flags describe reported clock-limit reasons; correlation does not establish causality.",
+    "Read-only sampling at 500 ms. Clock settings and laptop power source are not controlled."
+  ]
+}

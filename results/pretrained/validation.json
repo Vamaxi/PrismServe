@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "suite_tests": 58,
+  "hf_parity_passed": true,
+  "wiki_test_targets_per_variant": 4095,
+  "validation_test_separated": true,
+  "generations_per_condition": 9,
+  "new_tokens_per_generation": 32,
+  "measured_conditions": 6,
+  "actual_api_smoke_passed": true,
+  "cpu_attention_decode_steps": 12,
+  "gpu_restoration_checked": true,
+  "exact_benchmark_source_snapshot_verified": true,
+  "saved_artifact_hashes_verified": true
+}

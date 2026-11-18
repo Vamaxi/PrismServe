@@ -1,0 +1,1762 @@
+[
+  {
+    "iteration": 0,
+    "device_limit": 654311376,
+    "host_limit": 2173136896,
+    "device_reserved": 581502976,
+    "host_reserved": 545534976,
+    "host_available": 2240245760,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 1,
+    "device_limit": 654311376,
+    "host_limit": 2173411328,
+    "device_reserved": 581502976,
+    "host_reserved": 545534976,
+    "host_available": 2240520192,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 2,
+    "device_limit": 654311376,
+    "host_limit": 2183204864,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2250313728,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 3,
+    "device_limit": 654311376,
+    "host_limit": 2183147520,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2250256384,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 4,
+    "device_limit": 654311376,
+    "host_limit": 2183442432,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2250551296,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 5,
+    "device_limit": 654311376,
+    "host_limit": 2172235776,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2239344640,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 6,
+    "device_limit": 654311376,
+    "host_limit": 2173542400,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2240651264,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 7,
+    "device_limit": 654311376,
+    "host_limit": 2174160896,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2241269760,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 8,
+    "device_limit": 654311376,
+    "host_limit": 2174529536,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2241638400,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 9,
+    "device_limit": 654311376,
+    "host_limit": 2191790080,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2258898944,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 10,
+    "device_limit": 654311376,
+    "host_limit": 2184912896,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2252021760,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 11,
+    "device_limit": 654311376,
+    "host_limit": 2176917504,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2244026368,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 12,
+    "device_limit": 654311376,
+    "host_limit": 2174881792,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2241990656,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 13,
+    "device_limit": 654311376,
+    "host_limit": 2176909312,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2244018176,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 14,
+    "device_limit": 654311376,
+    "host_limit": 2182836224,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2249945088,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 15,
+    "device_limit": 654311376,
+    "host_limit": 2189070336,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2256179200,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 16,
+    "device_limit": 654311376,
+    "host_limit": 2198388736,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2265497600,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 17,
+    "device_limit": 654311376,
+    "host_limit": 2199158784,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2266267648,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 18,
+    "device_limit": 654311376,
+    "host_limit": 2199126016,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2266234880,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 19,
+    "device_limit": 654311376,
+    "host_limit": 2192396288,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2259505152,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 20,
+    "device_limit": 654311376,
+    "host_limit": 2190733312,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2257842176,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 21,
+    "device_limit": 654311376,
+    "host_limit": 2190729216,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2257838080,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 22,
+    "device_limit": 654311376,
+    "host_limit": 2190729216,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2257838080,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 23,
+    "device_limit": 654311376,
+    "host_limit": 2190729216,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2257838080,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 24,
+    "device_limit": 654311376,
+    "host_limit": 2190729216,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2257838080,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 25,
+    "device_limit": 654311376,
+    "host_limit": 2192961536,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2260070400,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 26,
+    "device_limit": 654311376,
+    "host_limit": 2193862656,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2260971520,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 27,
+    "device_limit": 654311376,
+    "host_limit": 2193051648,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2260160512,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 28,
+    "device_limit": 654311376,
+    "host_limit": 2193104896,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2260213760,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 29,
+    "device_limit": 654311376,
+    "host_limit": 2195480576,
+    "device_reserved": 581502976,
+    "host_reserved": 545534976,
+    "host_available": 2262589440,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 30,
+    "device_limit": 654311376,
+    "host_limit": 2209423360,
+    "device_reserved": 581502976,
+    "host_reserved": 545534976,
+    "host_available": 2276532224,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 31,
+    "device_limit": 654311376,
+    "host_limit": 2209288192,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2276397056,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 32,
+    "device_limit": 654311376,
+    "host_limit": 2207420416,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2274529280,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 33,
+    "device_limit": 654311376,
+    "host_limit": 2233200640,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2300309504,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 34,
+    "device_limit": 654311376,
+    "host_limit": 2251542528,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318651392,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 35,
+    "device_limit": 654311376,
+    "host_limit": 2250780672,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2317889536,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 36,
+    "device_limit": 654311376,
+    "host_limit": 2247757824,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314866688,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 37,
+    "device_limit": 654311376,
+    "host_limit": 2245066752,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312175616,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 38,
+    "device_limit": 654311376,
+    "host_limit": 2259787776,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326896640,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 39,
+    "device_limit": 654311376,
+    "host_limit": 2258677760,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2325786624,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 40,
+    "device_limit": 654311376,
+    "host_limit": 2253021184,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320130048,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 41,
+    "device_limit": 654311376,
+    "host_limit": 2251157504,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318266368,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 42,
+    "device_limit": 654311376,
+    "host_limit": 2249089024,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316197888,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 43,
+    "device_limit": 654311376,
+    "host_limit": 2247254016,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314362880,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 44,
+    "device_limit": 654311376,
+    "host_limit": 2245267456,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312376320,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 45,
+    "device_limit": 654311376,
+    "host_limit": 2243321856,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310430720,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 46,
+    "device_limit": 654311376,
+    "host_limit": 2259288064,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326396928,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 47,
+    "device_limit": 654311376,
+    "host_limit": 2257473536,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324582400,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 48,
+    "device_limit": 654311376,
+    "host_limit": 2254852096,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2321960960,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 49,
+    "device_limit": 654311376,
+    "host_limit": 2250919936,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318028800,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 50,
+    "device_limit": 654311376,
+    "host_limit": 2247802880,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314911744,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 51,
+    "device_limit": 654311376,
+    "host_limit": 2244898816,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312007680,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 52,
+    "device_limit": 654311376,
+    "host_limit": 2259841024,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326949888,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 53,
+    "device_limit": 654311376,
+    "host_limit": 2259849216,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326958080,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 54,
+    "device_limit": 654311376,
+    "host_limit": 2257354752,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324463616,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 55,
+    "device_limit": 654311376,
+    "host_limit": 2255245312,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2322354176,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 56,
+    "device_limit": 654311376,
+    "host_limit": 2252242944,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2319351808,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 57,
+    "device_limit": 654311376,
+    "host_limit": 2250088448,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2317197312,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 58,
+    "device_limit": 654311376,
+    "host_limit": 2246475776,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313584640,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 59,
+    "device_limit": 654311376,
+    "host_limit": 2245173248,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312282112,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 60,
+    "device_limit": 654311376,
+    "host_limit": 2258792448,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2325901312,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 61,
+    "device_limit": 654311376,
+    "host_limit": 2257530880,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324639744,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 62,
+    "device_limit": 654311376,
+    "host_limit": 2260996096,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2328104960,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 63,
+    "device_limit": 654311376,
+    "host_limit": 2259136512,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326245376,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 64,
+    "device_limit": 654311376,
+    "host_limit": 2257301504,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324410368,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 65,
+    "device_limit": 654311376,
+    "host_limit": 2254991360,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2322100224,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 66,
+    "device_limit": 654311376,
+    "host_limit": 2252820480,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2319929344,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 67,
+    "device_limit": 654311376,
+    "host_limit": 2251010048,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318118912,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 68,
+    "device_limit": 654311376,
+    "host_limit": 2249175040,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316283904,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 69,
+    "device_limit": 654311376,
+    "host_limit": 2248273920,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2315382784,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 70,
+    "device_limit": 654311376,
+    "host_limit": 2264915968,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2332024832,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 71,
+    "device_limit": 654311376,
+    "host_limit": 2264911872,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2332020736,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 72,
+    "device_limit": 654311376,
+    "host_limit": 2263994368,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2331103232,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 73,
+    "device_limit": 654311376,
+    "host_limit": 2261762048,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2328870912,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 74,
+    "device_limit": 654311376,
+    "host_limit": 2259402752,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326511616,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 75,
+    "device_limit": 654311376,
+    "host_limit": 2257567744,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324676608,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 76,
+    "device_limit": 654311376,
+    "host_limit": 2255732736,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2322841600,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 77,
+    "device_limit": 654311376,
+    "host_limit": 2253373440,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320482304,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 78,
+    "device_limit": 654311376,
+    "host_limit": 2250555392,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2317664256,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 79,
+    "device_limit": 654311376,
+    "host_limit": 2257461248,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324570112,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 80,
+    "device_limit": 654311376,
+    "host_limit": 2263502848,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2330611712,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 81,
+    "device_limit": 654311376,
+    "host_limit": 2259640320,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2326749184,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 82,
+    "device_limit": 654311376,
+    "host_limit": 2250002432,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2317111296,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 83,
+    "device_limit": 654311376,
+    "host_limit": 2246483968,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313592832,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 84,
+    "device_limit": 654311376,
+    "host_limit": 2247417856,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314526720,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 85,
+    "device_limit": 654311376,
+    "host_limit": 2245705728,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312814592,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 86,
+    "device_limit": 654311376,
+    "host_limit": 2242822144,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2309931008,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 87,
+    "device_limit": 654311376,
+    "host_limit": 2254004224,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2321113088,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 88,
+    "device_limit": 654311376,
+    "host_limit": 2257108992,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2324217856,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 89,
+    "device_limit": 654311376,
+    "host_limit": 2255532032,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2322640896,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 90,
+    "device_limit": 654311376,
+    "host_limit": 2253172736,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320281600,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 91,
+    "device_limit": 654311376,
+    "host_limit": 2251337728,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318446592,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 92,
+    "device_limit": 654311376,
+    "host_limit": 2249199616,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316308480,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 93,
+    "device_limit": 654311376,
+    "host_limit": 2246135808,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313244672,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 94,
+    "device_limit": 654311376,
+    "host_limit": 2243538944,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310647808,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 95,
+    "device_limit": 654311376,
+    "host_limit": 2241146880,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308255744,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 96,
+    "device_limit": 654311376,
+    "host_limit": 2241941504,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2309050368,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 97,
+    "device_limit": 654311376,
+    "host_limit": 2254774272,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2321883136,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 98,
+    "device_limit": 654311376,
+    "host_limit": 2253103104,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320211968,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 99,
+    "device_limit": 654311376,
+    "host_limit": 2251317248,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318426112,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 100,
+    "device_limit": 654311376,
+    "host_limit": 2249646080,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316754944,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 101,
+    "device_limit": 654311376,
+    "host_limit": 2247385088,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314493952,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 102,
+    "device_limit": 654311376,
+    "host_limit": 2244501504,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2311610368,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 103,
+    "device_limit": 654311376,
+    "host_limit": 2241630208,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308739072,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 104,
+    "device_limit": 654311376,
+    "host_limit": 2245574656,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312683520,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 105,
+    "device_limit": 654311376,
+    "host_limit": 2256044032,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2323152896,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 106,
+    "device_limit": 654311376,
+    "host_limit": 2253484032,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320592896,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 107,
+    "device_limit": 654311376,
+    "host_limit": 2252341248,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2319450112,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 108,
+    "device_limit": 654311376,
+    "host_limit": 2249072640,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316181504,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 109,
+    "device_limit": 654311376,
+    "host_limit": 2245918720,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313027584,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 110,
+    "device_limit": 654311376,
+    "host_limit": 2243035136,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310144000,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 111,
+    "device_limit": 654311376,
+    "host_limit": 2239819776,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2306928640,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 112,
+    "device_limit": 654311376,
+    "host_limit": 2237198336,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2304307200,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 113,
+    "device_limit": 654311376,
+    "host_limit": 2253025280,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320134144,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 114,
+    "device_limit": 654311376,
+    "host_limit": 2251362304,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318471168,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 115,
+    "device_limit": 654311376,
+    "host_limit": 2249379840,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316488704,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 116,
+    "device_limit": 654311376,
+    "host_limit": 2247299072,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314407936,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 117,
+    "device_limit": 654311376,
+    "host_limit": 2244648960,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2311757824,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 118,
+    "device_limit": 654311376,
+    "host_limit": 2237001728,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2304110592,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 119,
+    "device_limit": 654311376,
+    "host_limit": 2233307136,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2300416000,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 120,
+    "device_limit": 654311376,
+    "host_limit": 2230669312,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2297778176,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 121,
+    "device_limit": 654311376,
+    "host_limit": 2245873664,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312982528,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 122,
+    "device_limit": 654311376,
+    "host_limit": 2245939200,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313048064,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 123,
+    "device_limit": 654311376,
+    "host_limit": 2243575808,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310684672,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 124,
+    "device_limit": 654311376,
+    "host_limit": 2240786432,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2307895296,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 125,
+    "device_limit": 654311376,
+    "host_limit": 2238332928,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2305441792,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 126,
+    "device_limit": 654311376,
+    "host_limit": 2237022208,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2304131072,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 127,
+    "device_limit": 654311376,
+    "host_limit": 2234925056,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2302033920,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 128,
+    "device_limit": 654311376,
+    "host_limit": 2233090048,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2300198912,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 129,
+    "device_limit": 654311376,
+    "host_limit": 2229944320,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2297053184,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 130,
+    "device_limit": 654311376,
+    "host_limit": 2245935104,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313043968,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 131,
+    "device_limit": 654311376,
+    "host_limit": 2243051520,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310160384,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 132,
+    "device_limit": 654311376,
+    "host_limit": 2241216512,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308325376,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 133,
+    "device_limit": 654311376,
+    "host_limit": 2238574592,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2305683456,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 134,
+    "device_limit": 654311376,
+    "host_limit": 2237497344,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2304606208,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 135,
+    "device_limit": 654311376,
+    "host_limit": 2230087680,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2297196544,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 136,
+    "device_limit": 654311376,
+    "host_limit": 2223267840,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2290376704,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 137,
+    "device_limit": 654311376,
+    "host_limit": 2220515328,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2287624192,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 138,
+    "device_limit": 654311376,
+    "host_limit": 2231345152,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2298454016,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 139,
+    "device_limit": 654311376,
+    "host_limit": 2234077184,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2301186048,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 140,
+    "device_limit": 654311376,
+    "host_limit": 2231119872,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2298228736,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 141,
+    "device_limit": 654311376,
+    "host_limit": 2224304128,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2291412992,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 142,
+    "device_limit": 654311376,
+    "host_limit": 2221215744,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2288324608,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 143,
+    "device_limit": 654311376,
+    "host_limit": 2230620160,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2297729024,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 144,
+    "device_limit": 654311376,
+    "host_limit": 2246365184,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313474048,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 145,
+    "device_limit": 654311376,
+    "host_limit": 2244624384,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2311733248,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 146,
+    "device_limit": 654311376,
+    "host_limit": 2241409024,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308517888,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 147,
+    "device_limit": 654311376,
+    "host_limit": 2238001152,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2305110016,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 148,
+    "device_limit": 654311376,
+    "host_limit": 2235641856,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2302750720,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 149,
+    "device_limit": 654311376,
+    "host_limit": 2232897536,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2300006400,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 150,
+    "device_limit": 654311376,
+    "host_limit": 2233733120,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2300841984,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 151,
+    "device_limit": 654311376,
+    "host_limit": 2250067968,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2317176832,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 152,
+    "device_limit": 654311376,
+    "host_limit": 2248798208,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2315907072,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 153,
+    "device_limit": 654311376,
+    "host_limit": 2246135808,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313244672,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 154,
+    "device_limit": 654311376,
+    "host_limit": 2245337088,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312445952,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 155,
+    "device_limit": 654311376,
+    "host_limit": 2242977792,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310086656,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 156,
+    "device_limit": 654311376,
+    "host_limit": 2241142784,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308251648,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 157,
+    "device_limit": 654311376,
+    "host_limit": 2237997056,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2305105920,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 158,
+    "device_limit": 654311376,
+    "host_limit": 2235957248,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2303066112,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 159,
+    "device_limit": 654311376,
+    "host_limit": 2252222464,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2319331328,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 160,
+    "device_limit": 654311376,
+    "host_limit": 2250768384,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2317877248,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 161,
+    "device_limit": 654311376,
+    "host_limit": 2249109504,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316218368,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 162,
+    "device_limit": 654311376,
+    "host_limit": 2247397376,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2314506240,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 163,
+    "device_limit": 654311376,
+    "host_limit": 2245890048,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2312998912,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 164,
+    "device_limit": 654311376,
+    "host_limit": 2244317184,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2311426048,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 165,
+    "device_limit": 654311376,
+    "host_limit": 2241798144,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308907008,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 166,
+    "device_limit": 654311376,
+    "host_limit": 2239414272,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2306523136,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 167,
+    "device_limit": 654311376,
+    "host_limit": 2237685760,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2304794624,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 168,
+    "device_limit": 654311376,
+    "host_limit": 2253496320,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320605184,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 169,
+    "device_limit": 654311376,
+    "host_limit": 2253492224,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2320601088,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 170,
+    "device_limit": 654311376,
+    "host_limit": 2251632640,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2318741504,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 171,
+    "device_limit": 654311376,
+    "host_limit": 2248912896,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2316021760,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 172,
+    "device_limit": 654311376,
+    "host_limit": 2246651904,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2313760768,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 173,
+    "device_limit": 654311376,
+    "host_limit": 2243710976,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2310819840,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 174,
+    "device_limit": 654311376,
+    "host_limit": 2240942080,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2308050944,
+    "quantized_layers": [],
+    "cpu_ids": []
+  },
+  {
+    "iteration": 175,
+    "device_limit": 654311376,
+    "host_limit": 2238361600,
+    "device_reserved": 649185280,
+    "host_reserved": 545534976,
+    "host_available": 2305470464,
+    "quantized_layers": [],
+    "cpu_ids": []
+  }
+]

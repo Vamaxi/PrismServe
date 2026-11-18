@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "prompt_tokens": 768,
+      "policy": "joint",
+      "device_budget_mib": 675
+    },
+    {
+      "prompt_tokens": 768,
+      "policy": "morph_only",
+      "device_budget_mib": 675
+    }
+  ],
+  "selection": "lowest fully completed quota with quantization exposure for each prompt length and morph/joint policy",
+  "note": "Selection uses completion and precision exposure, never test NLL. Quality is a separate trajectory."
+}

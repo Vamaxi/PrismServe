@@ -1,0 +1,110 @@
+[
+  {
+    "policy": "full",
+    "phase": "decode",
+    "iterations": 534,
+    "mae_ms": 6.3182407216531
+  },
+  {
+    "policy": "full",
+    "phase": "mixed",
+    "iterations": 117,
+    "mae_ms": 24.683937307915425
+  },
+  {
+    "policy": "full",
+    "phase": "prefill",
+    "iterations": 130,
+    "mae_ms": 19.258470006670343
+  },
+  {
+    "policy": "full_v03",
+    "phase": "decode",
+    "iterations": 552,
+    "mae_ms": 10.52251987901327
+  },
+  {
+    "policy": "full_v03",
+    "phase": "mixed",
+    "iterations": 165,
+    "mae_ms": 29.480969540532012
+  },
+  {
+    "policy": "full_v03",
+    "phase": "prefill",
+    "iterations": 144,
+    "mae_ms": 50.76800914186817
+  },
+  {
+    "policy": "joint",
+    "phase": "decode",
+    "iterations": 326,
+    "mae_ms": 13.875187096655239
+  },
+  {
+    "policy": "joint",
+    "phase": "mixed",
+    "iterations": 197,
+    "mae_ms": 22.584393823928295
+  },
+  {
+    "policy": "joint",
+    "phase": "prefill",
+    "iterations": 60,
+    "mae_ms": 20.876529151661227
+  },
+  {
+    "policy": "joint_no_gate",
+    "phase": "decode",
+    "iterations": 355,
+    "mae_ms": 16.934844746231366
+  },
+  {
+    "policy": "joint_no_gate",
+    "phase": "mixed",
+    "iterations": 198,
+    "mae_ms": 19.12656081014249
+  },
+  {
+    "policy": "joint_no_gate",
+    "phase": "prefill",
+    "iterations": 66,
+    "mae_ms": 22.061377817543494
+  },
+  {
+    "policy": "joint_no_reuse",
+    "phase": "decode",
+    "iterations": 372,
+    "mae_ms": 12.446800756631617
+  },
+  {
+    "policy": "joint_no_reuse",
+    "phase": "mixed",
+    "iterations": 173,
+    "mae_ms": 22.679229282211892
+  },
+  {
+    "policy": "joint_no_reuse",
+    "phase": "prefill",
+    "iterations": 78,
+    "mae_ms": 18.837925374149545
+  },
+  {
+    "policy": "joint_v03",
+    "phase": "decode",
+    "iterations": 422,
+    "mae_ms": 8.638387622751528
+  },
+  {
+    "policy": "joint_v03",
+    "phase": "mixed",
+    "iterations": 154,
+    "mae_ms": 14.764041365988554
+  },
+  {
+    "policy": "joint_v03",
+    "phase": "prefill",
+    "iterations": 96,
+    "mae_ms": 20.663465575983707
+  }
+]

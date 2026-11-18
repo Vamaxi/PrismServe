@@ -1,0 +1,1084 @@
+{
+  "title": "PrismServe Comprehensive Technical Report",
+  "companion_to_version": "1.0.0",
+  "created_utc": "2026-11-18T14:30:42.502013+00:00",
+  "pdf": {
+    "pages": 78,
+    "embedded_image_placements": 53,
+    "bookmarks": 46,
+    "internal_links": 3020
+  },
+  "docx": {
+    "image_placements": 53,
+    "tables": 74,
+    "bookmarks": 168
+  },
+  "figures": [
+    {
+      "number": 1,
+      "caption": "Lowest tested complete serving quotas across prompt lengths. Lines connect sampled points only; they do not identify an exact continuous physical frontier.",
+      "kind": "Measured experiment",
+      "asset": "assets/sampled_minima.png",
+      "source": "Derived from results/capacity_frontier/analysis.json"
+    },
+    {
+      "number": 2,
+      "caption": "End-to-end architecture: concurrent request handling, common control interface, one worker, owned request state and measured feedback.",
+      "kind": "Original architecture schematic",
+      "asset": "assets/architecture.png",
+      "source": "prismserve/{types,efficient_policy,live_engine,batching,batch_service}.py"
+    },
+    {
+      "number": 3,
+      "caption": "Request states and explicit unsuccessful outcomes. A rejection is different from worker failure, and neither is silently treated as a completed request.",
+      "kind": "Original flowchart",
+      "asset": "assets/lifecycle.png",
+      "source": "prismserve/live_engine.py"
+    },
+    {
+      "number": 4,
+      "caption": "Selective batching: dense work is shared while causal positions, histories and output ownership remain separate. Illustrative token counts are not measured data.",
+      "kind": "Original architecture schematic",
+      "asset": "assets/batching.png",
+      "source": "prismserve/batching.py"
+    },
+    {
+      "number": 5,
+      "caption": "Precision transition and restoration lifecycle, including host masters, staging and temporary unpack scratch.",
+      "kind": "Original mechanism diagram",
+      "asset": "assets/precision.png",
+      "source": "prismserve/quantization.py and prismserve/pretrained.py"
+    },
+    {
+      "number": 6,
+      "caption": "Placement and link traffic in the reference CPU-attention path. Migration differs from steady-state offloaded decode.",
+      "kind": "Original data-flow diagram",
+      "asset": "assets/offload.png",
+      "source": "prismserve/batching.py and prismserve/pretrained.py"
+    },
+    {
+      "number": 7,
+      "caption": "Separate memory pools and temporary lifetimes. The diagram is schematic and not to scale.",
+      "kind": "Original memory-accounting diagram",
+      "asset": "assets/memory.png",
+      "source": "prismserve/estimator.py, measured_policy.py and efficient_policy.py"
+    },
+    {
+      "number": 8,
+      "caption": "Validation-only one-block logit-KL sensitivity. Blocks 1, 7 and 9 form the selected three-block set.",
+      "kind": "Derived from measured validation data",
+      "asset": "assets/layer_sensitivity.png",
+      "source": "results/pretrained/calibration.json; 128 validation input tokens"
+    },
+    {
+      "number": 9,
+      "caption": "A control tick with plan reuse, fresh feasibility, search, execution and explicit failure paths.",
+      "kind": "Original algorithm flowchart",
+      "asset": "assets/controller_flow.png",
+      "source": "prismserve/live_engine.py and efficient_policy.py"
+    },
+    {
+      "number": 10,
+      "caption": "Separation of calibration, greedy serving, quality auditing and preserved experiment provenance.",
+      "kind": "Original validation flowchart",
+      "asset": "assets/validation.png",
+      "source": "prismserve/live_experiments.py, validation_study.py and frontier.py"
+    },
+    {
+      "number": 11,
+      "caption": "Sampled training NLL for the actual 80-step tiny-decoder run. This demonstrates executable training, not general language capability.",
+      "kind": "Derived measured training curve",
+      "asset": "assets/tiny_training.png",
+      "source": "results/demo/real_backend.json"
+    },
+    {
+      "number": 12,
+      "caption": "Actual tiny-decoder resident storage and mean reference latency. Packed storage does not imply accelerated arithmetic.",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_12_measured_storage_latency.png",
+      "source": "results/demo/figures/measured_storage_latency.png"
+    },
+    {
+      "number": 13,
+      "caption": "Real pretrained GPT-2: measured storage, reference latency and WikiText-2 subset quality",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_13_pretrained_tradeoffs.png",
+      "source": "results/pretrained/figures/pretrained_tradeoffs.png"
+    },
+    {
+      "number": 14,
+      "caption": "Real GPT-2 placement transitions under declared capacity changes. Measured application/migration cost is displayed separately from execution.",
+      "kind": "Derived measured execution trace",
+      "asset": "assets/adaptive_placement.png",
+      "source": "results/pretrained/adaptive.json"
+    },
+    {
+      "number": 15,
+      "caption": "Analytical simulation: mean P95 TTFT and individual workload seeds",
+      "kind": "Analytical simulation",
+      "asset": "assets/figure_15_ttft_p95_ms.png",
+      "source": "results/simulation/figures/ttft_p95_ms.png"
+    },
+    {
+      "number": 16,
+      "caption": "Analytical simulation: joint precision, placement and device reservation timeline",
+      "kind": "Analytical simulation",
+      "asset": "assets/figure_16_controller_timeline.png",
+      "source": "results/simulation/figures/controller_timeline.png"
+    },
+    {
+      "number": 17,
+      "caption": "Analytical simulation: throughput versus tail latency across offered loads",
+      "kind": "Analytical simulation",
+      "asset": "assets/figure_17_throughput_latency.png",
+      "source": "results/load_sweep/throughput_latency.png"
+    },
+    {
+      "number": 18,
+      "caption": "Analytical request-SLO violation rates across synthetic profiles and policies. These are virtual-service outcomes.",
+      "kind": "Analytical simulation",
+      "asset": "assets/figure_18_slo_violation_rate.png",
+      "source": "results/simulation/figures/slo_violation_rate.png"
+    },
+    {
+      "number": 19,
+      "caption": "Analytical offered-load sensitivity of request-SLO failure. One load-sweep seed limits uncertainty claims.",
+      "kind": "Analytical simulation",
+      "asset": "assets/figure_19_failures_vs_load.png",
+      "source": "results/load_sweep/failures_vs_load.png"
+    },
+    {
+      "number": 20,
+      "caption": "Actual output token/s",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_20_output_tokens_per_s.png",
+      "source": "results/live/figures/output_tokens_per_s.png"
+    },
+    {
+      "number": 21,
+      "caption": "Measured P95 TTFT ms",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_21_ttft_p95_ms.png",
+      "source": "results/live/figures/ttft_p95_ms.png"
+    },
+    {
+      "number": 22,
+      "caption": "Separate M8 teacher-forced policy-quality changes. Exposure and 64-target counts must accompany the small PPL differences.",
+      "kind": "Derived measured audit data",
+      "asset": "assets/live_quality.png",
+      "source": "results/live/quality.json"
+    },
+    {
+      "number": 23,
+      "caption": "Actual control overhead",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_23_control_overhead.png",
+      "source": "results/controller/figures/control_overhead.png"
+    },
+    {
+      "number": 24,
+      "caption": "Actual throughput",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_24_controller_throughput.png",
+      "source": "results/controller/figures/controller_throughput.png"
+    },
+    {
+      "number": 25,
+      "caption": "M9 automatic throughput view, retained alongside the focused comparison figure for complete chart coverage. Individual repeats are visible.",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_25_output_tokens_per_s.png",
+      "source": "results/controller/figures/output_tokens_per_s.png"
+    },
+    {
+      "number": 26,
+      "caption": "M9 automatic P95 TTFT view. Lower planning cost does not by itself imply improved tail latency.",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_26_ttft_p95_ms.png",
+      "source": "results/controller/figures/ttft_p95_ms.png"
+    },
+    {
+      "number": 27,
+      "caption": "Repeated real throughput",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_27_repeated_throughput.png",
+      "source": "results/validation_study_final/figures/repeated_throughput.png"
+    },
+    {
+      "number": 28,
+      "caption": "Observed GPU clocks",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_28_clock_throughput.png",
+      "source": "results/validation_study_final/figures/clock_throughput.png"
+    },
+    {
+      "number": 29,
+      "caption": "Matched prediction error",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_29_matched_prediction_mae.png",
+      "source": "results/validation_study_final/figures/matched_prediction_mae.png"
+    },
+    {
+      "number": 30,
+      "caption": "Controlled precision-history audit",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_30_quality_history.png",
+      "source": "results/validation_study_final/figures/quality_history.png"
+    },
+    {
+      "number": 31,
+      "caption": "Measured backend throughput and P95 engine TTFT for the matched smaller CPU/CUDA workload. These are means of three repeats.",
+      "kind": "Derived measured portability results",
+      "asset": "assets/cpu_cuda.png",
+      "source": "results/validation_study_final/portability_runs/*.json"
+    },
+    {
+      "number": 32,
+      "caption": "Controlled precision history explains why FP32 restoration can leave later quality effects through retained KV. The 0.881% observation belongs to the M10 controlled audit.",
+      "kind": "Original causal mechanism diagram",
+      "asset": "assets/history.png",
+      "source": "results/validation_study_final/quality_fixed/early_prefill_int4_restore.json"
+    },
+    {
+      "number": 33,
+      "caption": "Actual completion frontier",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_33_capacity_frontier.png",
+      "source": "results/capacity_frontier/figures/capacity_frontier.png"
+    },
+    {
+      "number": 34,
+      "caption": "Observed concurrency",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_34_concurrency.png",
+      "source": "results/capacity_frontier/figures/concurrency.png"
+    },
+    {
+      "number": 35,
+      "caption": "Frontier quality tradeoff",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_35_quality.png",
+      "source": "results/capacity_frontier/figures/quality.png"
+    },
+    {
+      "number": 36,
+      "caption": "Throughput among fully completed cells",
+      "kind": "Measured experiment",
+      "asset": "assets/figure_36_throughput.png",
+      "source": "results/capacity_frontier/figures/throughput.png"
+    },
+    {
+      "number": 37,
+      "caption": "Complete requested-work accounting across all frontier cells. Rejections remain in the denominator and count as SLO failures.",
+      "kind": "Derived measured outcome counts",
+      "asset": "assets/frontier_outcomes.png",
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 38,
+      "caption": "Mixed-power diagnostic session: repeated throughput; excluded from the primary AC comparison.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_38_repeated_throughput.png",
+      "source": "results/validation_study/figures/repeated_throughput.png"
+    },
+    {
+      "number": 39,
+      "caption": "Mixed-power diagnostic clock/throughput association; correlation does not establish causality.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_39_clock_throughput.png",
+      "source": "results/validation_study/figures/clock_throughput.png"
+    },
+    {
+      "number": 40,
+      "caption": "Matched prediction errors in the earlier mixed-power diagnostic session; use the final AC probe table for primary conclusions.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_40_matched_prediction_mae.png",
+      "source": "results/validation_study/figures/matched_prediction_mae.png"
+    },
+    {
+      "number": 41,
+      "caption": "Functional actual-serving smoke chart; small-protocol diagnostic only.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_41_output_tokens_per_s.png",
+      "source": "results/live_smoke/figures/output_tokens_per_s.png"
+    },
+    {
+      "number": 42,
+      "caption": "Functional actual-serving smoke TTFT chart; not a production performance result.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_42_ttft_p95_ms.png",
+      "source": "results/live_smoke/figures/ttft_p95_ms.png"
+    },
+    {
+      "number": 43,
+      "caption": "Serving regression chart retained for pipeline verification.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_43_output_tokens_per_s.png",
+      "source": "results/live_regression/figures/output_tokens_per_s.png"
+    },
+    {
+      "number": 44,
+      "caption": "Serving regression TTFT chart retained for pipeline verification.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_44_ttft_p95_ms.png",
+      "source": "results/live_regression/figures/ttft_p95_ms.png"
+    },
+    {
+      "number": 45,
+      "caption": "Analytical smoke-test TTFT chart; neither the main simulation nor physical serving.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_45_ttft_p95_ms.png",
+      "source": "results/smoke/figures/ttft_p95_ms.png"
+    },
+    {
+      "number": 46,
+      "caption": "Analytical smoke-test SLO chart; diagnostic only.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_46_slo_violation_rate.png",
+      "source": "results/smoke/figures/slo_violation_rate.png"
+    },
+    {
+      "number": 47,
+      "caption": "Analytical smoke-test control timeline; diagnostic only.",
+      "kind": "Diagnostic / functional test",
+      "asset": "assets/figure_47_controller_timeline.png",
+      "source": "results/smoke/figures/controller_timeline.png"
+    }
+  ],
+  "tables": [
+    {
+      "number": 1,
+      "caption": "Evidence map and headline counts",
+      "rows": 8,
+      "source": "Archived manifests and validation files; stage counts are not independent-machine replications."
+    },
+    {
+      "number": 2,
+      "caption": "Research mechanisms and this implementation",
+      "rows": 6,
+      "source": "User-supplied MorphServe and NEO papers; docs/research_review.md"
+    },
+    {
+      "number": 3,
+      "caption": "Implementation map",
+      "rows": 8,
+      "source": ""
+    },
+    {
+      "number": 4,
+      "caption": "Derived GPT-2 reservation geometry",
+      "rows": 9,
+      "source": ""
+    },
+    {
+      "number": 5,
+      "caption": "Metric definitions and common interpretation errors",
+      "rows": 7,
+      "source": ""
+    },
+    {
+      "number": 6,
+      "caption": "Recorded software and model environment (rows 1-18)",
+      "rows": 18,
+      "source": "results/environment.json and pinned model manifest"
+    },
+    {
+      "number": 7,
+      "caption": "Recorded software and model environment (rows 19-19)",
+      "rows": 1,
+      "source": "results/environment.json and pinned model manifest"
+    },
+    {
+      "number": 8,
+      "caption": "Tiny-model quality and storage \u2014 published results",
+      "rows": 3,
+      "source": "docs/final_report.md"
+    },
+    {
+      "number": 9,
+      "caption": "Tiny-model quality and storage \u2014 published results",
+      "rows": 6,
+      "source": "docs/final_report.md"
+    },
+    {
+      "number": 10,
+      "caption": "Pretrained GPT-2 measured variants \u2014 published results",
+      "rows": 5,
+      "source": "docs/final_report.md"
+    },
+    {
+      "number": 11,
+      "caption": "Independent numerical and batching checks",
+      "rows": 6,
+      "source": ""
+    },
+    {
+      "number": 12,
+      "caption": "Analytical synthetic-profile comparison \u2014 published results",
+      "rows": 9,
+      "source": "docs/final_report.md"
+    },
+    {
+      "number": 13,
+      "caption": "report \u2014 published results (field panel 1) (rows 1-18)",
+      "rows": 18,
+      "source": "results/live/report.md"
+    },
+    {
+      "number": 14,
+      "caption": "report \u2014 published results (field panel 1) (rows 19-21)",
+      "rows": 3,
+      "source": "results/live/report.md"
+    },
+    {
+      "number": 15,
+      "caption": "report \u2014 published results (field panel 2) (rows 1-18)",
+      "rows": 18,
+      "source": "results/live/report.md"
+    },
+    {
+      "number": 16,
+      "caption": "report \u2014 published results (field panel 2) (rows 19-21)",
+      "rows": 3,
+      "source": "results/live/report.md"
+    },
+    {
+      "number": 17,
+      "caption": "Quality audit \u2014 published results",
+      "rows": 7,
+      "source": "results/live/report.md"
+    },
+    {
+      "number": 18,
+      "caption": "comparison \u2014 published results",
+      "rows": 3,
+      "source": "results/controller/comparison.md"
+    },
+    {
+      "number": 19,
+      "caption": "Complete policy results \u2014 published results",
+      "rows": 18,
+      "source": "results/controller/comparison.md"
+    },
+    {
+      "number": 20,
+      "caption": "Separate policy quality audits \u2014 published results",
+      "rows": 6,
+      "source": "results/controller/comparison.md"
+    },
+    {
+      "number": 21,
+      "caption": "report \u2014 published results",
+      "rows": 2,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 22,
+      "caption": "Repeated GPU comparison \u2014 published results",
+      "rows": 3,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 23,
+      "caption": "Repeated GPU comparison \u2014 published results (field panel 1)",
+      "rows": 12,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 24,
+      "caption": "Repeated GPU comparison \u2014 published results (field panel 2)",
+      "rows": 12,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 25,
+      "caption": "Repeated GPU comparison \u2014 published results",
+      "rows": 12,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 26,
+      "caption": "Prediction on identical actual executions \u2014 published results",
+      "rows": 16,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 27,
+      "caption": "CPU/CUDA execution portability \u2014 published results",
+      "rows": 4,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 28,
+      "caption": "Expanded history-aware quality audit \u2014 published results",
+      "rows": 8,
+      "source": "results/validation_study_final/report.md"
+    },
+    {
+      "number": 29,
+      "caption": "Lowest tested quota completing every request in every repeat \u2014 published results",
+      "rows": 3,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 30,
+      "caption": "Lowest tested quota completing every request in every repeat \u2014 published results",
+      "rows": 2,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 31,
+      "caption": "Quality where the policy actually quantizes \u2014 published results",
+      "rows": 6,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 32,
+      "caption": "Complete cell results \u2014 published results (field panel 1) (rows 1-18)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 33,
+      "caption": "Complete cell results \u2014 published results (field panel 1) (rows 19-36)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 34,
+      "caption": "Complete cell results \u2014 published results (field panel 1) (rows 37-54)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 35,
+      "caption": "Complete cell results \u2014 published results (field panel 1) (rows 55-72)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 36,
+      "caption": "Complete cell results \u2014 published results (field panel 2) (rows 1-18)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 37,
+      "caption": "Complete cell results \u2014 published results (field panel 2) (rows 19-36)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 38,
+      "caption": "Complete cell results \u2014 published results (field panel 2) (rows 37-54)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 39,
+      "caption": "Complete cell results \u2014 published results (field panel 2) (rows 55-72)",
+      "rows": 18,
+      "source": "results/capacity_frontier/report.md"
+    },
+    {
+      "number": 40,
+      "caption": "Research conclusions and their evidence bounds",
+      "rows": 9,
+      "source": ""
+    },
+    {
+      "number": 41,
+      "caption": "Recorded live capacity demonstration",
+      "rows": 2,
+      "source": "results/final_demo/capacity_summary.json; demonstration, not a controlled benchmark"
+    },
+    {
+      "number": 42,
+      "caption": "A.1 Analytical main study \u2014 every recorded run (rows 1-18)",
+      "rows": 18,
+      "source": "results/simulation/summary.csv"
+    },
+    {
+      "number": 43,
+      "caption": "A.1 Analytical main study \u2014 every recorded run (rows 19-36)",
+      "rows": 18,
+      "source": "results/simulation/summary.csv"
+    },
+    {
+      "number": 44,
+      "caption": "A.1 Analytical main study \u2014 every recorded run (rows 37-54)",
+      "rows": 18,
+      "source": "results/simulation/summary.csv"
+    },
+    {
+      "number": 45,
+      "caption": "A.1 Analytical main study \u2014 every recorded run (rows 55-63)",
+      "rows": 9,
+      "source": "results/simulation/summary.csv"
+    },
+    {
+      "number": 46,
+      "caption": "A.2 Analytical offered-load study \u2014 every recorded run (rows 1-18)",
+      "rows": 18,
+      "source": "results/load_sweep/summary.csv"
+    },
+    {
+      "number": 47,
+      "caption": "A.2 Analytical offered-load study \u2014 every recorded run (rows 19-25)",
+      "rows": 7,
+      "source": "results/load_sweep/summary.csv"
+    },
+    {
+      "number": 48,
+      "caption": "A.3 M8 actual serving \u2014 every recorded run (rows 1-18)",
+      "rows": 18,
+      "source": "results/live/summary.csv"
+    },
+    {
+      "number": 49,
+      "caption": "A.3 M8 actual serving \u2014 every recorded run (rows 19-36)",
+      "rows": 18,
+      "source": "results/live/summary.csv"
+    },
+    {
+      "number": 50,
+      "caption": "A.3 M8 actual serving \u2014 every recorded run (rows 37-42)",
+      "rows": 6,
+      "source": "results/live/summary.csv"
+    },
+    {
+      "number": 51,
+      "caption": "A.4 M9 actual serving \u2014 every recorded run (rows 1-18)",
+      "rows": 18,
+      "source": "results/controller/summary.csv"
+    },
+    {
+      "number": 52,
+      "caption": "A.4 M9 actual serving \u2014 every recorded run (rows 19-36)",
+      "rows": 18,
+      "source": "results/controller/summary.csv"
+    },
+    {
+      "number": 53,
+      "caption": "A.5 M10 final GPU repeats \u2014 every recorded run (rows 1-18)",
+      "rows": 18,
+      "source": "results/validation_study_final/gpu_runs/*.json"
+    },
+    {
+      "number": 54,
+      "caption": "A.5 M10 final GPU repeats \u2014 every recorded run (rows 19-36)",
+      "rows": 18,
+      "source": "results/validation_study_final/gpu_runs/*.json"
+    },
+    {
+      "number": 55,
+      "caption": "A.5 M10 final GPU repeats \u2014 every recorded run (rows 37-54)",
+      "rows": 18,
+      "source": "results/validation_study_final/gpu_runs/*.json"
+    },
+    {
+      "number": 56,
+      "caption": "A.5 M10 final GPU repeats \u2014 every recorded run (rows 55-60)",
+      "rows": 6,
+      "source": "results/validation_study_final/gpu_runs/*.json"
+    },
+    {
+      "number": 57,
+      "caption": "A.6 M10 backend portability \u2014 every recorded run",
+      "rows": 12,
+      "source": "results/validation_study_final/portability_runs/*.json"
+    },
+    {
+      "number": 58,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 1-18)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 59,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 19-36)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 60,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 37-54)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 61,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 55-72)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 62,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 73-90)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 63,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 91-108)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 64,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 109-126)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 65,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 127-144)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 66,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 145-162)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 67,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 163-180)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 68,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 181-198)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 69,
+      "caption": "M11 all 216 repeats; C/R means completed/rejected (rows 199-216)",
+      "rows": 18,
+      "source": "results/capacity_frontier/summary.csv"
+    },
+    {
+      "number": 70,
+      "caption": "Final unit suite",
+      "rows": 8,
+      "source": "results/validation.json"
+    },
+    {
+      "number": 71,
+      "caption": "M10 final validation (rows 1-18)",
+      "rows": 18,
+      "source": "results/validation_study_final/validation.json"
+    },
+    {
+      "number": 72,
+      "caption": "M10 final validation (rows 19-20)",
+      "rows": 2,
+      "source": "results/validation_study_final/validation.json"
+    },
+    {
+      "number": 73,
+      "caption": "M11 final validation (rows 1-18)",
+      "rows": 18,
+      "source": "results/capacity_frontier/validation.json"
+    },
+    {
+      "number": 74,
+      "caption": "M11 final validation (rows 19-21)",
+      "rows": 3,
+      "source": "results/capacity_frontier/validation.json"
+    }
+  ],
+  "equations": [
+    {
+      "number": 1,
+      "expression": "s_g=\\max_{i\\in g}|w_i|/7,\\qquad q_i=\\mathrm{clip}(\\mathrm{round}(w_i/s_g),-7,7)",
+      "asset": "assets/equation_01.png"
+    },
+    {
+      "number": 2,
+      "expression": "m_{KV}=2L H_{KV}d\\,(b_{KV}/8)",
+      "asset": "assets/equation_02.png"
+    },
+    {
+      "number": 3,
+      "expression": "J(Q,C)=\\frac{\\widehat T_{iter}+\\lambda_t\\widehat T_{change}/H}{T_{SLO}}+\\lambda_q\\frac{\\widehat R(Q)}{R_{budget}}",
+      "asset": "assets/equation_03.png"
+    },
+    {
+      "number": 4,
+      "expression": "\\widehat R(Q)=\\sum_{\\ell\\in Q}s_\\ell,\\qquad \\widehat R(Q)\\leq R_{budget}",
+      "asset": "assets/equation_04.png"
+    },
+    {
+      "number": 5,
+      "expression": "TTFT=t_1-a,\\qquad TBT_i=t_i-t_{i-1},\\qquad TPOT=(t_n-t_1)/(n-1)",
+      "asset": "assets/equation_05.png"
+    },
+    {
+      "number": 6,
+      "expression": "NLL=-\\frac{1}{N}\\sum_i\\log p(y_i\\mid x,y_{<i}),\\qquad PPL=\\exp(NLL)",
+      "asset": "assets/equation_06.png"
+    }
+  ],
+  "existing_result_charts_covered": 31,
+  "run_level_table_rows": 454,
+  "atlas_pages": 47,
+  "input_sha256": {
+    "deliverables/release.json": "e896f972a47864cc42dcf562172a665c59579d3c0116be8a1ec4b560f3f64bb7",
+    "docs/final_report.md": "6106bd529d61c63a92ce214a7a5ee4feaa54cb1ef6cf1fa274abaf4cc368ba85",
+    "Hardware_Project_Proposal (1).pdf": "cb6fb95710bc8df09a312f91e9811fd242b2b1475f72d6db2114b323c2f7fd74",
+    "mid_project_ppt.pdf": "efce2f6148522acacc166e3bebb6805e2490a9c64a751cd7be9c8301f5158594",
+    "MORPHSERVE_paper_reference.pdf": "141de666ba4aa7119f101b0a6837a29be7e0c07fb55fb9f545714d5bec4f627c",
+    "neo_saving_gpu_research_paper_reference.pdf": "e743f7e21a385504050c567ae15ea871b2912d6576628e38c9de43dd073709e8",
+    "results/capacity_frontier/analysis.json": "49aefa1e8d4e05598afd4c6d494443845fbb28825eb356b4d0a7de506ea50d15",
+    "results/capacity_frontier/figures/capacity_frontier.png": "6402f0a828affeebd32c86cb8b8c9d2e74d5c9db0d66cf98fc06490cc3ef0cb6",
+    "results/capacity_frontier/figures/concurrency.png": "1f9d8ced2156f8f3ff675236df2fa72c8c71a22419c9ff5cf9ad13f32c0d1a3d",
+    "results/capacity_frontier/figures/quality.png": "cfcc67523b89700a09e39fdceec47acdef7a7727503b84201c62e26c7ef5f4d3",
+    "results/capacity_frontier/figures/throughput.png": "2f80c340e92b5985a5dac74e29756106ee53c8c85589dc193d7d27b2f7e86322",
+    "results/capacity_frontier/report.md": "dc1be3bc4dada4352b9076d7ca99759d0158e9a101404d51c04948a94376dbe2",
+    "results/capacity_frontier/summary.csv": "9de3d89b7ba1cd12982eb4f8731eea8430970556158d409c1c35b5b15ec9c75c",
+    "results/capacity_frontier/validation.json": "5b97f23a8cd4564590f8f1ccf68b19ce5a109fc2881ea8ab52225dde0906346d",
+    "results/controller/comparison.md": "16e62cd599904ad10169aa101d450def0c1656821c6530d483b088ab5d9e1952",
+    "results/controller/figures/control_overhead.png": "1c998d8a6ce8ed6857f874e62b46d4f419b9a97f02f7889da6582ca848649eff",
+    "results/controller/figures/controller_throughput.png": "5bd0ce0ce547f3664da8af8f422ed5369a0bd675622eca819199ddad2b8d9abe",
+    "results/controller/figures/output_tokens_per_s.png": "d4db0eb1f3e3f67b9757e4ab01fe6be6d9ff55cb064b2ba575bafa914b07ee85",
+    "results/controller/figures/ttft_p95_ms.png": "d5d1e6446b23d12e3ff6701e6ed1c46660ddf3cdf8f8f137b4cf08e18c2a5586",
+    "results/controller/summary.csv": "bb3efc45732261bd0c0f262f37f4b8fea89a0322763cee9180da922da51dbd07",
+    "results/demo/figures/measured_storage_latency.png": "f8058a55f81edf153f757b536c6413d5439bf820ff525f6c2079c956084bfe47",
+    "results/demo/quality.json": "62248de1e3e66be5accc405a2bf7a185206396c5d9555a5a48992db4cd83803f",
+    "results/demo/real_backend.json": "2d522cff0fdfaa4ddc9b2aae81cea1163639bd632adbf703c48c93df3a90d5a8",
+    "results/environment.json": "f6bfb81da635f7560794f76b71139c350d1fd6d04be0b80eb19a7e59928f88c7",
+    "results/final_demo/capacity_summary.json": "b38c5861a502112df3914e34855146b842cd49ddc545256a7a401a303a4d1d8b",
+    "results/live/figures/output_tokens_per_s.png": "8ca2862e4a41e112a84776541d1fc3746a28fbb4e100964c723dc1aaa8f9b888",
+    "results/live/figures/ttft_p95_ms.png": "7fcd7dc4f026ac655faf46fceedf4ca1085966dd9035145f00d04c1b908024e5",
+    "results/live/quality.json": "812c9ee42a332953eac45898d9b6f9bb81f9f3786d9550530aeae357b257a072",
+    "results/live/real_batch_parity.json": "5a6542bc20e76ccbb6c2f3f24765dcbdeed6cae9210804881bf34a883f906dca",
+    "results/live/report.md": "477186398497703902c98549c4d09b81cbede98d68df37767356818a90f0b984",
+    "results/live/summary.csv": "435e86e71c5c9db4e32f31507dc835d990fac900f434f15bf4530a95643e2bcb",
+    "results/live_regression/figures/output_tokens_per_s.png": "39fc1f676a80ffa4e5a5fe5aa7dac3c0b2b8945f0874d6642a93de78d9c461b4",
+    "results/live_regression/figures/ttft_p95_ms.png": "ab7f9d02d757d1316bf42e4f34896b3851b617963384bebafb68943e8edb5eb6",
+    "results/live_smoke/figures/output_tokens_per_s.png": "79cf773dfc770008296b27f89f11a1ca0ce4c306f3f5c5c31109e2ae063e3b68",
+    "results/live_smoke/figures/ttft_p95_ms.png": "78f7044b1fe69faa0d0370933aeca1ac013eb22ee3ce119e235dccbaa255603c",
+    "results/load_sweep/failures_vs_load.png": "e5729934962521611cf784dc8d1609d5fe0da8788f3c94a9cd8eff1e65943da2",
+    "results/load_sweep/summary.csv": "256a6c9d15793228a69fb11909852da6389226fbc0f48c7ca3cbc96cfb3321dc",
+    "results/load_sweep/throughput_latency.png": "9ad05b557d00e7acd0da3708d37f8f05416896d55ef29d896f1f33f3ae296b53",
+    "results/pretrained/adaptive.json": "56da6d63d04ee35a7f63569a44e77a591b688c14831462ad4928c7890ad61bb4",
+    "results/pretrained/calibration.json": "28f0a27ebafe5deefb5c6e6c738aa1856ec3204914cb4005b6f835dd33510e79",
+    "results/pretrained/figures/pretrained_tradeoffs.png": "a11962c179864157c0ab5bd429ae13ec92da31940499165184c98f381536b335",
+    "results/pretrained/parity.json": "b3abad6b5276b4e6faa8ae3dac40c77d0faa37e14432109d7406487a138d6e79",
+    "results/simulation/figures/controller_timeline.png": "d44855ccd4fc7c427a7a26c684669934f829b03355c162c795466cc75906079c",
+    "results/simulation/figures/slo_violation_rate.png": "44a266a5cce808ec0ca5a3b7ccb85a8c6d12b873f30f0d63fbeccc2f35fa0ef5",
+    "results/simulation/figures/ttft_p95_ms.png": "75de8d382fb11107ff992773f3ae1fb293c98e177c863b08451483bf1d2b6d2d",
+    "results/simulation/summary.csv": "b2399a3d5da8d3f6c40a5924cfd50671030e6a986d5a3563baf049206db3cc23",
+    "results/smoke/figures/controller_timeline.png": "b4217e24937be6ca30c99817a76ab36d582855df60356553d4e0a881f465c041",
+    "results/smoke/figures/slo_violation_rate.png": "fd57e16099eb53ff9c18207a9750a05b9a81c170a4b4f2d072f4d48e68861a21",
+    "results/smoke/figures/ttft_p95_ms.png": "6988c50c876805ec39fa74fc22f0868dd3124f2a9fc734ffa1641260835328d1",
+    "results/validation.json": "692a9fb2b43a0fadbba1dd7af44df861e387f7e8083eee4c0c427670a203e7b4",
+    "results/validation_study/figures/clock_throughput.png": "5acf67d172684cbedd0d1150baf2e2b0d35c70c7a06ac07edf58e41d56c9211c",
+    "results/validation_study/figures/matched_prediction_mae.png": "c4ba663f8148db93f5158ee8104811327ad4d8a9af53547e0e339b529bff0474",
+    "results/validation_study/figures/repeated_throughput.png": "fd80e1f69f9b7c093d9012b28cf12ce08a711665d46e284188b4bd5f01f74a79",
+    "results/validation_study_final/analysis.json": "d0d3120a65ab362b06b7e0d6fcabe8451df2cf63c5b4d7b6750b019e3a832bd4",
+    "results/validation_study_final/figures/clock_throughput.png": "03cf0fd2f5b6e74b9ab4215fa94b15366e1a4a849e215dfa10e8208d1d0fc6e4",
+    "results/validation_study_final/figures/matched_prediction_mae.png": "440738390d5a6c0f49e51b8671ca3469130d2b05a4a570391e80c272966dfb14",
+    "results/validation_study_final/figures/quality_history.png": "443d65fed395fee18e42582a05a3b15f4210f2be3ad57049fe166a190bdc2ebf",
+    "results/validation_study_final/figures/repeated_throughput.png": "c08e4a4ce715b607a2f9293aa5c38268664467501ab653bc9180d2ec51fe8284",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full__19.json": "35177d13df36d66967a3a09023082954342b395589bf40ae586d314959450b54",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full__31.json": "e6a421071101dc2eee2fb852cbdcd282ac2480440fe3c0bca91e09dcc4765e7a",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full__43.json": "81c8c19703561e71d1ddfafb8792393c5ad1c806cee54f4eb0135abd47f3c2f5",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full__59.json": "0dbfe98d99457d35dd926c59735b0af6258e8394d7ff8a63f8de9f65240c6b7d",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full__7.json": "11353840595a803292d50bb8b6f6a534ae238273fcfc719b96396194f7de7041",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full_v03__19.json": "fbe64ccd232b3b31e59b98396a82590fef1e75d506fa26c6d4f2f1c3757e5bee",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full_v03__31.json": "a726bcbf8b39db4db55a82a15b06d386434c6ddfd2ae3df02c2a5a11e9f4b200",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full_v03__43.json": "1361a513cf891dd2da26f75e125021805f22a33d35434ce9d1e0cd070a83ef95",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full_v03__59.json": "eea7b2002498d8adb88d147639a3415485aad2dbd03e5aba2d522636a2a14032",
+    "results/validation_study_final/gpu_runs/bursty_constrained__full_v03__7.json": "a98fe3ad56e7714017c62249fc6e2ebe26e99e683353b59d74dd8573d87bbc01",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint__19.json": "5df0001f35fbab61693d1724697622d617fb09e92367f205eb17cec7065fe126",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint__31.json": "299c01836896c5dad54e38668c2ebe9068686114bb37e72a65e02d990619d53b",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint__43.json": "cf30a7860e26fb5ee1941c64418439717c00596a3e07b6fee17445bee338feb0",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint__59.json": "0f574df52e4b7f79d2631a7507294c04f86d75d314de0b7a5e6c29d2d50789a6",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint__7.json": "33a074ceead1984a05c8db3d81a0f7ed750380f25adc4365eee4a5eb65d4f8f0",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint_v03__19.json": "92b474ff4eb7bd58b9c8e007e6b1106e7ce362c8ae7d394b95db3f7e54eea2b2",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint_v03__31.json": "a07ae221b08ffb3617c93e2f1f75fd83fcc05e6d81f6b364cdda5563131cccab",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint_v03__43.json": "437653c5b8650d200b1da22e33a19546146a389cc8460c93137a04274ed078ac",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint_v03__59.json": "41e09f21852994c6dbc98c99df918bc6c215166a1cdd6b01c764d47035a259a6",
+    "results/validation_study_final/gpu_runs/bursty_constrained__joint_v03__7.json": "5bbdbce578bc8fe082bcdfaafe46e036bf806a3284c77d1ee5f70dc5b128d3a3",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full__19.json": "5836b562492a5dedb5f270791d5fc0032e17c653ac631fc189569725e4bd493a",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full__31.json": "63dc6334f1f617284e2568d5833aa476500d0956f542a2d683671abc69383f85",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full__43.json": "d377138cfc46bc90ff7926772a12e9a56a94600e7046d84688bce53a199190fc",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full__59.json": "157f8499ca768b027ebc61d312092cb8b0c6a64eca8b04a33bad9a78ac14a517",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full__7.json": "dafcd1c60015390e272f1c3d6930ea17edf3fe44696fda722ef623e47e982fd7",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full_v03__19.json": "33c4dbbdbbe37c897a3e4a4208e898354c53ec363e62167d6d2a4127d03fc15d",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full_v03__31.json": "63e80188c9b7806de0fed722482b806b08cb30549ebb6beb2323f16297a6cef8",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full_v03__43.json": "007ada5f408c93b7c413e2f2ff03c674896e197e615d62829ff37f0b4ad8d13b",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full_v03__59.json": "ce7a469ef4840c0cc68ea41ef0d482bdcfc9a2b731c887ab1859833a1a0a50e6",
+    "results/validation_study_final/gpu_runs/bursty_roomy__full_v03__7.json": "e21af0059da5bea93c9197f8d4faff6e73fc27ec628aadb9819b256364761193",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint__19.json": "27e36cd6401d51534de05bff9823a1f44ecdf09ebbb217a91ee887de77371633",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint__31.json": "7fdebc65a14586aeda103242daf31fe619e98660e14b51c9c23f99ac445a1918",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint__43.json": "52d1fb3298f838143c9e594dc4b5d265d2e7b69b1c5230b8fe4b43b86f983637",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint__59.json": "0815b4743a52029b2223909859a849ccd1ce3eab521166dc292d1a2e624224e7",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint__7.json": "b571a1bcbf15be26822eeeaad58a4dc5c62df2c72d5713f9a571862e810a908b",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint_v03__19.json": "a90b795a1d39476d372cf90b882527daa7aae9a8d79c01e654e496f3a82b34f3",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint_v03__31.json": "2f62472e808c3ce66cacfcfd195df3d033863e826cbbaa9a31dd60427de77e48",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint_v03__43.json": "ec9ce7b216176b6eb0e100e5ad9aa8fab7689f0bd38a15c45ba84a902939f7c5",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint_v03__59.json": "700238b33bd20f4bbb8f486999bcae1fd66cd3d0d0c760133a4fa70e752bc099",
+    "results/validation_study_final/gpu_runs/bursty_roomy__joint_v03__7.json": "11c5a163685fa0b9c4d8ad25b59858dd00b8e3a6cb889257bacebb3310df63c4",
+    "results/validation_study_final/gpu_runs/steady_roomy__full__19.json": "1622e0dc7a617b13b09ef533c0de0f25708e26e294cda5f2eab67f64fd5ea4be",
+    "results/validation_study_final/gpu_runs/steady_roomy__full__31.json": "be4aeec0658958e151039c8d7d8c06876dd5c3d6725dc9432f603227e4027c05",
+    "results/validation_study_final/gpu_runs/steady_roomy__full__43.json": "204afd463ba9c9e13b41b1a0f617930db469f203807cdbe6f0af43be2047e549",
+    "results/validation_study_final/gpu_runs/steady_roomy__full__59.json": "ac26801a020066abc3fc74e69e9fed780339e53e5fcb8ac6fa85ef7da0cebdcb",
+    "results/validation_study_final/gpu_runs/steady_roomy__full__7.json": "4f6fa5c46adcc9d4a1d03e0c80120744cd0db44e282af4855dc60c64637c156d",
+    "results/validation_study_final/gpu_runs/steady_roomy__full_v03__19.json": "c5cc77412cea2fe601b8b3531eed4300207b42df79359c20d5ce3b8cd364c1ee",
+    "results/validation_study_final/gpu_runs/steady_roomy__full_v03__31.json": "f573f4b7b6a8b121f39db59dfce51a03a8d0a0d3ca52fe8fa5acbe38fb6e3084",
+    "results/validation_study_final/gpu_runs/steady_roomy__full_v03__43.json": "bf495074c28c1813f4026d649961c6eb44921cdec6a07c0c392d52fcb322348b",
+    "results/validation_study_final/gpu_runs/steady_roomy__full_v03__59.json": "4b9386f7f1752d69bb5488e36d278083f7804dee8b37e7aebcc20b9352c78521",
+    "results/validation_study_final/gpu_runs/steady_roomy__full_v03__7.json": "fc9b3a09250cb09a95e4a459f5612c452ff53c6cb16c59a846835f9402045462",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint__19.json": "988b491a76222a8d43a43e3d1d6b606776e830cfac0c594ed7546db512629151",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint__31.json": "9e752da7b559672ac8e0483abc181cb84ad2522ea9b614f5cf0d7214a5a2a6be",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint__43.json": "fe6763ef36b9668f2e68e056aa50f39c22ac97e8c18268ed19ade7c632795f1f",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint__59.json": "bf94eeabf9d0b05ef380d711edeca3dd3e4dbfeda80592be9caa7bd97ac18345",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint__7.json": "0a1891008c12f3793bfbf4e84e37a7debffa555607ea66e991cf5141f9f71954",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint_v03__19.json": "d66ded33296fe2c1bf2f603f05fbe04029f3815e435dff230011b34511fe6f3b",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint_v03__31.json": "a8b15215204f663e2d7aa59e8478d52ed47d1b0cc5c005203f08a8956864aaed",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint_v03__43.json": "ba2940f8b493b4acd347926a921ddebf3d02a441dda1f7bc4041499b6480f34b",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint_v03__59.json": "3c72e44a4bc43963a454ffec3aa6a07fa36cf743bc329743ccb370936c2fcc7d",
+    "results/validation_study_final/gpu_runs/steady_roomy__joint_v03__7.json": "13dfa52da58b5aa3a722c13dc6e0f4e95ee1aec77d4a3c6e0376ad211c400480",
+    "results/validation_study_final/portability_runs/cpu__full__19.json": "f4793571a46e94d21b2861db83300ffaade18a3cc1c231c23ee5d1efc7717d88",
+    "results/validation_study_final/portability_runs/cpu__full__31.json": "a4b7c42c76c80189b464fe1574caa901b7297c54b1520650b9e2231e0465db54",
+    "results/validation_study_final/portability_runs/cpu__full__7.json": "9b57b35a85b03a58843ce40010a0f296ac8c999a7f5f7f473400332f59ed935b",
+    "results/validation_study_final/portability_runs/cpu__joint__19.json": "9640381fd83531531902d625df0405398f845b64dbbc26ce6519637a82bfa33f",
+    "results/validation_study_final/portability_runs/cpu__joint__31.json": "941eb509d98810176af75864c89461bae7defff83f5d22482d0f3a7fed52a896",
+    "results/validation_study_final/portability_runs/cpu__joint__7.json": "05e9a6d7f3adb86e5777aa015e89f9bcf90f82b4d20018c5fa79224e347d6a96",
+    "results/validation_study_final/portability_runs/cuda__full__19.json": "b8dfd685f74a5040b0df1e145588f5dfeb5ed84e108b2b5b9123926141c1c4c4",
+    "results/validation_study_final/portability_runs/cuda__full__31.json": "21d08d228d852e245e93295f2f854717cf6cb783af4df1d39f2129307bd0bcdc",
+    "results/validation_study_final/portability_runs/cuda__full__7.json": "55315053216066bad26b5456d8f0da7ca2aca65ba008a1e21188eaaacae2253b",
+    "results/validation_study_final/portability_runs/cuda__joint__19.json": "5e4e31b4f1d57c951f14d1e5d1f707da268244daccf7af1e3c3940ea2f0f5d04",
+    "results/validation_study_final/portability_runs/cuda__joint__31.json": "91652160c86caf5ee3aad8a2885fe05b063202cd48c8e8cbcffea259c48bcc63",
+    "results/validation_study_final/portability_runs/cuda__joint__7.json": "58824cb710476fc6d56e59cafaff5c2d371f1a9ff6d8e46a56b5e1829484b276",
+    "results/validation_study_final/report.md": "3689c2c627d3c7eeced7fbf00cbed7f1e0bf620ca2f590161ebfa00d68487e51",
+    "results/validation_study_final/validation.json": "48cbd6ac4b8aea93141fcb83397d219f10b9cd967125eb2e7bab422f33307720"
+  },
+  "original_release_and_submission_unchanged": true,
+  "protected_original_sha256": {
+    "docs/backend.md": "1571ab103a4d70f8c9ace9c7c2d2a3f241b5181df6fe47bd42fb2512d9c884a0",
+    "tests/test_efficient_policy.py": "5023bf95d6162b6c812fa470f00ec5022be6b8d430253fd49f1a48e5cdb69382",
+    "tests/test_pretrained_service.py": "991e2ee2704221109c4c172c4142084f2b88019e20c1ea269a3f5950a8225d6f",
+    "deliverables/PrismServe_Presentation.pptx": "9d7395ededda18cd3ee5c6fd66590dc56f230ef8954c4a151b2b88a6d7941e7c",
+    "tests/test_batch_service.py": "ce946d550782a2fbec8a11a2d97a308e92c5c729a86f3c2f17ca6cd8acd1d7d4",
+    "deliverables/PrismServe_Presentation.pdf": "21ee5973cde7cb0c7785629fd3def22ee5c2ed72d73d286964798b4529c8d89c",
+    "data/wikitext2/ATTRIBUTION.md": "9e0ecb498a04c571672daac06dc281fb7045ca716a202228f201fd2ef44d902a",
+    "prismserve/__init__.py": "a0759b46132ad04486b63cee483019197c3b403c01e47c06978f80824516b51e",
+    "prismserve/policy.py": "a0d96cf1ba78179663334ec8f046e6644e144749ebf3dd6b5e5de3128eea8d0e",
+    "configs/live_experiment.json": "19d732d76a2ca702d14b6b344812d5a2fff92d3fcf8f22d641057ed0a9a23a8f",
+    "configs/validation_study.json": "25c69e8fc917939680f21126bdb8ad1cf732b2021b9e5a8c2b1666fcc03e560e",
+    "docs/live_serving.md": "27737e60c827b6896c94f82d86e5110d00232ff61933ce54253d9ebd4499bf27",
+    "configs/live_smoke.json": "1710c05305aefb6382ff48437c1138ae611a9b8b228f20355c99b9764e31b69b",
+    "scripts/check_live_results.py": "ecb06cc051735a19741ea724077213f8d0607e5aef8a151453f10b0c79697cab",
+    "scripts/smoke_batch_api.py": "2f9504793ab5350794e740ad2942ff3171c3958011361c1f959e438fb31a5842",
+    "configs/controller_experiment.json": "ff13cd1a0bd0b9ee09bd2e2579eba4e8bca07f4e3590ece4f050af3e343c68b6",
+    "prismserve/simulator.py": "85e455e0c6ba02c477d41d2cea9519d65d9bf21dc93a40fcc3ec77f85d93ca76",
+    "prismserve/estimator.py": "c4009b5e44b965bde01f883cc904a688d30449b9736af0e113e6312e22cec1cd",
+    "results/capacity_frontier/validation.json": "5b97f23a8cd4564590f8f1ccf68b19ce5a109fc2881ea8ab52225dde0906346d",
+    "data/wikitext2/wiki.validation.prefix.txt": "f2fba6d2f2c0f252aee38e1d69205c37750dc8823b7e5a18efba895b6b4c0ae0",
+    "prismserve/live_engine.py": "17ba649e5cc5d21d3971a4df5a245c1a68b4da1b65079e6878b380325c3f57ea",
+    "prismserve/service.py": "6c55e46c7a758cf8ac8b399b85d0e4d1bdce02e62fe69801bc25597669af3cd7",
+    "docs/demo_and_viva.md": "f2cb696a1fa6970044ed75a415386558d04642f3c3eba6f8850af4baa9d43312",
+    "prismserve/torch_backend.py": "0823f1ab50b1a280b0edaaf8ab763a15db6747324e57f37622d53a32d72b1e14",
+    "tests/test_frontier.py": "aefdcd58aea92f9718315003b38049e8999a723ab46da8d9eeffc4e98fae4576",
+    "docs/milestones.md": "29f998c89679ddd6e06eb78c459270bdc77d62dcceed15d77a8d82e0fe332c11",
+    "docs/final_report.md": "6106bd529d61c63a92ce214a7a5ee4feaa54cb1ef6cf1fa274abaf4cc368ba85",
+    "prismserve/measured_policy.py": "9bd44114a57d9e7e90659d6888e4929b054083da82cac1cd4c3171f3275f6282",
+    "prismserve/study_monitor.py": "ec1e715dcc7de26c7d3bb78957cb5ca5c9e3c910301f308335d1fc36ed1f282e",
+    "prismserve/experiments.py": "08b5a076e85a745f53c3c80815c7f515dddce58f1bc509f15fb330cf65d96989",
+    "data/wikitext2/validation.rows.json": "93931489059a6c06a0d81c1367b6ef89ab31460f4ff8a342a0215f809bc1224a",
+    "references.bib": "bf0cc4bfbc939cfdef2f2a2705f495b3fee8cd0677ba164bcb213772a4a180b9",
+    "tests/test_batching.py": "fb958acce74b35ee3326e964ceb72a18e076f362354057eb5fa475539b2da798",
+    "scripts/load_sweep.py": "4161190110020f96325f157b0b71ec319276313577db3196cdcaf4329ef6c7de",
+    "deliverables/PrismServe_Project.zip": "0b887f97f49e616bacdcd10c4315eac4281ced7d5cee21844521a02646edf0ff",
+    "scripts/validate.py": "5771d0ecdef0d4d734fb0f69b1c182321dafd97a002d491d85854909b2a4862a",
+    "tests/test_torch_backend.py": "c8a2d8ea9a7c1bde1380b69158ae5d21c00d6b94ab29674b07d74e142502a40d",
+    "prismserve/validation_study.py": "5659631dad8cde936f803a40d198c52cc45bb93301c524edd11f3b1ac69ba3a0",
+    "scripts/update_live_report.py": "5286caacba9becb67fbc8ab93fcba8871b17871ec5790ab4865dc7a8367c9506",
+    "scripts/build_submission.py": "87baa64a3bb1e2df52fa713c2d2796c556fdf831ec99b05d3482440ec00c456c",
+    "scripts/check_controller_results.py": "6378d9ca9158d21e662ff06014a6282a8474accee2f0411b328a831dcf40a55b",
+    "prismserve/__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "results/capacity_frontier/manifest.json": "544ffde1211e2be34bfffd942a300b09c2f5b8f9bfa9ea229e70921be793dfe2",
+    "deliverables/PrismServe_Final_Report.pdf": "4183267c24a005d40eb2189b4509eb9979c9dc6fd809ad4eb81b1cb6fed8ef9d",
+    "configs/smoke.json": "ad6344b0cf006acc0f2c70d9c2fe67121dcb299cbc2693742fe3436cea6207b6",
+    "scripts/check_submission.py": "6e017ff3ecbee167bf984a4054ce69666daf30c012840364cfd39d3bac154ff2",
+    "results/validation.json": "692a9fb2b43a0fadbba1dd7af44df861e387f7e8083eee4c0c427670a203e7b4",
+    "docs/capacity_frontier.md": "2270ef839a9aee95bf9c1adcd9da0582392d6ff5e469e026a870550f155e74dc",
+    "tests/test_measured_policy.py": "c46feecc7db726b5d95547bb2db98ebed1a493db914ec597bb11f66ad478b841",
+    "results/final_demo/demo_validation.json": "06fddfa129aa35b4aa0f28e8abb58c09022d69b18ab21700230405e9c474b913",
+    "prismserve/runtime.py": "48aa7792fc7d0753da4b66e62d2572d6776e1b78800bdbd610f2fa3e318def8d",
+    "data/wikitext2/test.rows.json": "08ef9d542bf24fbb1e22dc4b96d6651c0a3622be974c71566d32a397f2eafeca",
+    "scripts/package_project.py": "e10f062a202f0376737b95e71ff0fc8b7fb19674ce3a098c7cc6d5fc54dcffa4",
+    "prismserve/workload.py": "d99d8d64b93b138972995868cba5e6ff80ca472ded98279710f6679d8e4a7c26",
+    "docs/presentation.md": "c72e17568353b6439a3212fdc1e89317fa85978c9030d7022f3000d9268920b9",
+    "prismserve/reporting.py": "d398dbfa470c713e30850a5ce59a070d868745f7fd63809964f0f68e10a08f4f",
+    "configs/capacity_frontier_refined_smoke.json": "395c030cd37b6e0323b2ee44b02d367a26d4172c2fdca55faf1c6a4d35e0d835",
+    "configs/capacity_frontier_smoke.json": "ba0dc7298d77be927fb9353e583d76c93db72c7bdd42ba680b401f2da90ab575",
+    "docs/validation_study.md": "84da00c589164b27986741f818906074507a1fdd4c375c9b890e7f176c4494cd",
+    "tests/test_validation_study.py": "0be4af4121b38fbc975c2adab00e38552087b5734106f9c27ffc4ebcc234158c",
+    "tests/test_live_engine.py": "197e0066da0a94b0be60d89b6943b64e22930f1dc8153003ee45afd4479b840a",
+    "scripts/update_validation_report.py": "8c8096173a9e99222169e2c4f20db0e0b1536c08dfe45daf3d3048478e57c166",
+    "docs/design.md": "cd11c9a0374eb3593222232ea9c9ac6aaf75daac8f65992f02bf99daee78996d",
+    "tests/test_pretrained_experiments.py": "6f542cfeb5ac9674776c5c84e8cb6c55c2b008e72cb4cc0fbf26c8f0656194fd",
+    "prismserve/telemetry.py": "fd26b97273aa7f3b78405aa859c87c8d0a4dcf9dc9e55d9c4bf8a1fda637a237",
+    "scripts/check_capacity_frontier.py": "f564020dcc5dc0041874bea1fa5dbdedd2b7018a1c11ff7b45c19eda3b07b760",
+    "prismserve/pretrained_assets.py": "691e383c121c27e1ab65ad6cd44f2384cfd968fc8700b165066d246d4d04ffa3",
+    "prismserve/pretrained.py": "ef83c639f610a0803e0e62c81c9f82b4f74e499addc5d71e63e2f76ae6a1b2d0",
+    "scripts/update_frontier_report.py": "49b8f79caa0220d3b7db266e874297635f0dcac42035a1d86e0006a1658aad1b",
+    "scripts/smoke_api.py": "8c9bae91a4df2f17084ccecc39b5b3fb80f63b65214508729e2e04987e5b14e3",
+    "prismserve/batching.py": "f89cd856abac94daa4ce6f0f63e010c4f2a303988c3bcf3e9f673cef2f1ed6e1",
+    "tests/test_controller.py": "5742711502f7cda06b2cdd73d2d38e7eec7e0defa05d22d4c3f86b62efa4134f",
+    "prismserve/efficient_policy.py": "6eac29ee687934bfbd7cac86da018d76b8dfabd474baacc7e5068b525c37f179",
+    "tests/test_simulator.py": "825aa8698c70c12de6167cc247bcf3bbabed060f84f214a1ab82b81928d8ce32",
+    "prismserve/pretrained_service.py": "a0d8dfbf1d9c2453a75c537595f48105fb558b786d4b5504057a26687d9ee01e",
+    "configs/experiment.json": "bd787fbca5d58fbd727cff3733c5a41d991d93e90c60ac935a2e5af54e8ab735",
+    "configs/validation_study_ac.json": "7da5aef9d0c925d95449cd4fd8aee6ccbc08d809c5237b77b1ff525b3be91ef6",
+    "configs/validation_study_smoke.json": "568bb24243e34b3488555b8cff22fa8f869ad22ecd5c3fe8755cb9bdb77f169b",
+    "prismserve/cli.py": "32c00dd0b742640fa333da21d1b9a75dd50e35c26a562ebbb98d874cee344c48",
+    "pyproject.toml": "05f225be35f2c9996cb56b47a73c7002f566e5b2790debc0cd730f11ac0da0f4",
+    "tests/test_pretrained.py": "64e69b39ad19b912242ee232dfd238365a1b575e4fc4265d0b831943700965a7",
+    "results/capacity_frontier/submission_check.json": "4f45ca01cfac64f42c967dd6d4dc8d9055a3396afb040fb90e9ab8241efc5aaa",
+    "configs/live_regression.json": "23491a4967452baace7c1d7787e43373d5012cd66fcec0b984f2cc92ca4597ca",
+    "scripts/demo_concurrent.py": "b3f618b334b6b61f3da08bcf93369711135f610661211edcc7d60e9503bea697",
+    "deliverables/release.json": "e896f972a47864cc42dcf562172a665c59579d3c0116be8a1ec4b560f3f64bb7",
+    "prismserve/types.py": "0fa7b7dec908788166b41475d4b8524419c4534a8b458b1fa406bd640eace0ca",
+    "prismserve/quantization.py": "81b8e1aca5778bd91fa7c4d251ddbb37444121795a1f776fa0dd5fd2459a7648",
+    "prismserve/batch_service.py": "bea9e52f71b99de70748080c24e9e46587f69dba3731e089c261300b51c95f3f",
+    "configs/capacity_frontier.json": "6fd4e3070e70841e59f7a20004b0eeadd94066ef203ecc3416ca85bf3ba3559d",
+    "data/wikitext2/wiki.test.prefix.txt": "62281ace1175323ebccb12728a5ce29e5382c6f99224c09057216842124ef466",
+    "scripts/extract_sources.py": "f3ed87d188eb15653797fb11159bfd00ce3f5a95711da5aa49a07b7b58ad8e06",
+    "data/wikitext2/source.json": "3302c0f6b9132186ca07ea2805071fdcf472bdb84c106ebe9fcd85781c4243e2",
+    "prismserve/pretrained_experiments.py": "64feb06cf84ea155fe027ab7aa6d1af16aa16e2c892682a15d2141a7d9a9e893",
+    "README.md": "912e4d228e944d1ecef03ba4112157c18d66530184b575136011c93a522ceb3f",
+    "prismserve/live_experiments.py": "342b5ee07843ecc045c3c75bc729600535df718bf5afbe0c6c076fecf220f42c",
+    "docs/research_review.md": "591aea7ef973f380b2081b32fb1bbd00bcbf485bb72e58f0cdf6dda970f7a2c1",
+    "prismserve/frontier.py": "af29f04e5522d5b4a7e68ccc12442eeb0e07a21666d188bb92faff1ac1e92b64",
+    "scripts/diagnose_admission.py": "f24b64978f78c555e750d05ded5395e5a4aeba0a31faddf5aecd82f97273e8ff",
+    "docs/pretrained.md": "2a1c2688a8a0399b7afe5549196a5596a6606ec41b3b7dc145a257b2679292ba",
+    "docs/experiments.md": "b90101d7511d6cf3a8a3540cae74972e90a9236f065f809d8a7a345752770019",
+    "scripts/run_validation_study.py": "c4fc3c780af527027962f1949e2f98ee381237fdcdc15dd2f89cd9ab76f62112",
+    "docs/controller_efficiency.md": "6d459386db16848b09e1268992c00624f1e82048276cac61135695270d083341",
+    "scripts/run_capacity_frontier.py": "5dbb92609cc8b0c3d83dc5d79873a8e3d82df24760bea36db1ff12d500ad92ea",
+    "scripts/freeze_release.py": "a64e4336d37c9fdba7ceaed539666fbc620b185e04abf0df3e48dcf8fdeb96df",
+    "scripts/check_validation_study.py": "f2a5b101c1e23e005ca9d8517eab0050bcd9f42edd660e20916ed76223cb14fc",
+    "scripts/update_controller_report.py": "adacc2620770199b8c0535c4466f8b37c37e06a65846c5eeeaa701fcb01dfdf7",
+    "results/validation_study_final/manifest.json": "a4e4bca509c0bc58515f2676785fcba0cb9c816f4e7ef320b1db9dca0a4984b9",
+    "scripts/demo_project.py": "2bbd4f4e91d3ca5b5de29564898b2c8331819a3eb4b07691d05e4bb838a08e4f"
+  },
+  "artifact_sha256": {
+    "PrismServe_Detailed_Report.pdf": "96398c6fc3861a3bb3638ebc63594348e217d15d00148c2d577a494fae985f96",
+    "PrismServe_Detailed_Report.docx": "354ee002c097ec410674dcd355bcba38e63f5e84522da3694bec21620b5875c1",
+    "PrismServe_Detailed_Report.html": "4a9816baed1465fd36db52b54aa7062267f86dd7d070ecb24b249463770acdb6",
+    "PrismServe_Graph_and_Diagram_Atlas.pdf": "529b8a190346556fc1c21696af5ce8ecfda7f2a44767598ba728700ed7e74e9e"
+  },
+  "notes": [
+    "All numbers derive from archived measurements or explicitly derived model geometry.",
+    "Architecture/flowcharts are original schematics; diagnostic and analytical charts are labeled.",
+    "PDF was programmatically checked; DOCX OOXML/media were structurally checked."
+  ]
+}

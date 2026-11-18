@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "serving_runs": 42,
+  "quality_audits": 7,
+  "completed_requests": 504,
+  "rejected_requests": 0,
+  "greedy_output_tokens": 12096,
+  "teacher_forced_audit_targets": 448,
+  "max_actual_execution_batch": 8,
+  "projection_calls_per_iteration_verified": 48,
+  "calibration_shapes": 75,
+  "reservation_quota_checks_passed": true,
+  "runs_with_actual_cuda_peak_above_declared_quota": 0,
+  "tests_passed": 112,
+  "exact_source_snapshot_verified": true,
+  "paired_traces_verified": true,
+  "dataset_hashes_verified": true,
+  "real_concurrent_http_passed": true,
+  "note": "Quotas govern admission estimates. Actual CUDA peaks are reported separately; no physical OOM is forced."
+}

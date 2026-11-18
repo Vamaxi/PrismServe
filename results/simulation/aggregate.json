@@ -1,0 +1,901 @@
+{
+  "groups": [
+    {
+      "profile": "20GiB-balanced",
+      "policy": "full",
+      "ttft_p95_ms": {
+        "mean": 18180.02495953435,
+        "ci95_low": 16625.03702679955,
+        "ci95_high": 19667.591672627328,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 307.53183529301253,
+        "ci95_low": 260.9962081587191,
+        "ci95_high": 343.1896143564792,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 120.0273946707639,
+        "ci95_low": 115.80274325593356,
+        "ci95_high": 124.2262330367368,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.14141295886178998,
+        "ci95_low": 0.11401064360837734,
+        "ci95_high": 0.17174133599548866,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "policy": "static_int4",
+      "ttft_p95_ms": {
+        "mean": 17818.955700656174,
+        "ci95_low": 16474.285823118105,
+        "ci95_high": 19227.414769495186,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 321.7815835818669,
+        "ci95_low": 305.4071881011211,
+        "ci95_high": 352.1164057907207,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9340277777777778,
+        "ci95_low": 0.9166666666666666,
+        "ci95_high": 0.9479166666666666,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 125.72461354754965,
+        "ci95_low": 119.86876586103178,
+        "ci95_high": 131.22213762790656,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.1880787517921234,
+        "ci95_low": 0.14334939710718939,
+        "ci95_high": 0.23947376477437918,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "policy": "morph_only",
+      "ttft_p95_ms": {
+        "mean": 18176.181752900604,
+        "ci95_low": 16594.733125901817,
+        "ci95_high": 19605.829075411635,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 363.2166263022931,
+        "ci95_low": 348.1653489766394,
+        "ci95_high": 391.36634446848007,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 119.13527820772589,
+        "ci95_low": 114.25575475368323,
+        "ci95_high": 123.59203263659253,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.140347280610972,
+        "ci95_low": 0.11354040572925157,
+        "ci95_high": 0.17086456124874544,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "policy": "offload_only",
+      "ttft_p95_ms": {
+        "mean": 18575.537541673242,
+        "ci95_low": 17044.25643467707,
+        "ci95_high": 19968.887196199947,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 365.4027453701687,
+        "ci95_low": 339.47405919231954,
+        "ci95_high": 396.4963277858118,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 117.82789477047321,
+        "ci95_low": 113.46657991314683,
+        "ci95_high": 121.96593712097372,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.1388063283859447,
+        "ci95_low": 0.11210937063371233,
+        "ci95_high": 0.16861650293222175,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "policy": "naive",
+      "ttft_p95_ms": {
+        "mean": 18488.019035779213,
+        "ci95_low": 16868.723930404274,
+        "ci95_high": 19882.44471814367,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 365.7982252748807,
+        "ci95_low": 348.0659230003198,
+        "ci95_high": 391.13329845248046,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 118.46398285757387,
+        "ci95_low": 113.38844023806338,
+        "ci95_high": 122.56908817973073,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.1394910062851933,
+        "ci95_low": 0.11342300109679726,
+        "ci95_high": 0.16945035232220837,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "policy": "joint",
+      "ttft_p95_ms": {
+        "mean": 18581.808715343926,
+        "ci95_low": 17044.25643467707,
+        "ci95_high": 19968.887196199947,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 365.4027453701687,
+        "ci95_low": 339.47405919231954,
+        "ci95_high": 396.4963277858118,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 117.77457187940836,
+        "ci95_low": 113.46657991314683,
+        "ci95_high": 121.80596844777914,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.13873261010336657,
+        "ci95_low": 0.11210937063371233,
+        "ci95_high": 0.16839534808448728,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "policy": "joint_no_hysteresis",
+      "ttft_p95_ms": {
+        "mean": 18581.808715343926,
+        "ci95_low": 17044.25643467707,
+        "ci95_high": 19968.887196199947,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 365.4027453701687,
+        "ci95_low": 339.47405919231954,
+        "ci95_high": 396.4963277858118,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 117.77457187940836,
+        "ci95_low": 113.46657991314683,
+        "ci95_high": 121.80596844777914,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.13873261010336657,
+        "ci95_low": 0.11210937063371233,
+        "ci95_high": 0.16839534808448728,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "full",
+      "ttft_p95_ms": {
+        "mean": 18180.02495953435,
+        "ci95_low": 16625.03702679955,
+        "ci95_high": 19667.591672627328,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 307.53183529301253,
+        "ci95_low": 260.9962081587191,
+        "ci95_high": 343.1896143564792,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 120.0273946707639,
+        "ci95_low": 115.80274325593356,
+        "ci95_high": 124.2262330367368,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.14141295886178998,
+        "ci95_low": 0.11401064360837734,
+        "ci95_high": 0.17174133599548866,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "static_int4",
+      "ttft_p95_ms": {
+        "mean": 17818.955700656174,
+        "ci95_low": 16474.285823118105,
+        "ci95_high": 19227.414769495186,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 321.7815835818669,
+        "ci95_low": 305.4071881011211,
+        "ci95_high": 352.1164057907207,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9166666666666666,
+        "ci95_high": 0.9791666666666666,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 125.72461354754965,
+        "ci95_low": 119.86876586103178,
+        "ci95_high": 131.22213762790656,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.14776473101550083,
+        "ci95_low": 0.0604710311649339,
+        "ci95_high": 0.23947376477437918,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "morph_only",
+      "ttft_p95_ms": {
+        "mean": 18194.64812584283,
+        "ci95_low": 16575.759060728484,
+        "ci95_high": 19681.73821674497,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 362.44442347861275,
+        "ci95_low": 347.8015769907188,
+        "ci95_high": 391.36634446848007,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 120.11781108054355,
+        "ci95_low": 115.23696533134789,
+        "ci95_high": 124.48528481281608,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.14148976373193187,
+        "ci95_low": 0.11455952810775563,
+        "ci95_high": 0.1720994720914508,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "offload_only",
+      "ttft_p95_ms": {
+        "mean": 22496.45345172319,
+        "ci95_low": 21993.016897393103,
+        "ci95_high": 23154.346102653282,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 418.114305430187,
+        "ci95_low": 393.02255644330586,
+        "ci95_high": 459.85688533333405,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 104.27274084232178,
+        "ci95_low": 101.52532108639141,
+        "ci95_high": 108.546417275625,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.12301730186009979,
+        "ci95_low": 0.09757500870365518,
+        "ci95_high": 0.15006417134879033,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "naive",
+      "ttft_p95_ms": {
+        "mean": 33397.11480000002,
+        "ci95_low": 32068.721624884085,
+        "ci95_high": 34618.29666836992,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 426.8536865325512,
+        "ci95_low": 408.7583843225602,
+        "ci95_high": 443.7022613333319,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9583333333333334,
+        "ci95_low": 0.9479166666666666,
+        "ci95_high": 0.96875,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 74.13602775539962,
+        "ci95_low": 72.32663238420244,
+        "ci95_high": 75.34992522528354,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.06984990988899019,
+        "ci95_low": 0.05208520176862917,
+        "ci95_high": 0.08649441806290653,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "joint",
+      "ttft_p95_ms": {
+        "mean": 19917.587036622605,
+        "ci95_low": 17714.46324130861,
+        "ci95_high": 21986.701331277498,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 376.88672148707525,
+        "ci95_low": 350.09181377536083,
+        "ci95_high": 407.7061372142907,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 112.64008156748585,
+        "ci95_low": 106.2438567918271,
+        "ci95_high": 116.4974096682555,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.13249787649451905,
+        "ci95_low": 0.10938174571925446,
+        "ci95_high": 0.16105632673030715,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "policy": "joint_no_hysteresis",
+      "ttft_p95_ms": {
+        "mean": 19917.587036622605,
+        "ci95_low": 17714.46324130861,
+        "ci95_high": 21986.701331277498,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 376.88672148707525,
+        "ci95_low": 350.09181377536083,
+        "ci95_high": 407.7061372142907,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.9479166666666666,
+        "ci95_low": 0.9375,
+        "ci95_high": 0.9583333333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 112.64008156748585,
+        "ci95_low": 106.2438567918271,
+        "ci95_high": 116.4974096682555,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 0.13249787649451905,
+        "ci95_low": 0.10938174571925446,
+        "ci95_high": 0.16105632673030715,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "full",
+      "ttft_p95_ms": {
+        "mean": 3690.1707144946517,
+        "ci95_low": 3325.1107293855475,
+        "ci95_high": 4074.738463349322,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 107.46662085632035,
+        "ci95_low": 101.99299564544084,
+        "ci95_high": 116.26508138837366,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7604166666666666,
+        "ci95_low": 0.6979166666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 212.99406329180667,
+        "ci95_low": 208.83282113865727,
+        "ci95_high": 220.26167087306771,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.1524739664561812,
+        "ci95_low": 0.9538068068429099,
+        "ci95_high": 1.4378328141075642,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "static_int4",
+      "ttft_p95_ms": {
+        "mean": 3624.6372826233173,
+        "ci95_low": 3331.646679642323,
+        "ci95_high": 4007.229223213637,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 108.18390596835552,
+        "ci95_low": 102.67371895125343,
+        "ci95_high": 116.26508138837366,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7569444444444444,
+        "ci95_low": 0.6979166666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 218.6614612205814,
+        "ci95_low": 214.87048969750066,
+        "ci95_high": 225.3263932377923,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.2014581257766497,
+        "ci95_low": 0.9764504434949802,
+        "ci95_high": 1.4857164105097547,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "morph_only",
+      "ttft_p95_ms": {
+        "mean": 3690.1707144946517,
+        "ci95_low": 3325.1107293855475,
+        "ci95_high": 4074.738463349322,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 107.46662085632035,
+        "ci95_low": 101.99299564544084,
+        "ci95_high": 116.26508138837366,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7604166666666666,
+        "ci95_low": 0.6979166666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 212.99406329180667,
+        "ci95_low": 208.83282113865727,
+        "ci95_high": 220.26167087306771,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.1524739664561812,
+        "ci95_low": 0.9538068068429099,
+        "ci95_high": 1.4378328141075642,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "offload_only",
+      "ttft_p95_ms": {
+        "mean": 3690.1707144946517,
+        "ci95_low": 3325.1107293855475,
+        "ci95_high": 4074.738463349322,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 107.46662085632035,
+        "ci95_low": 101.99299564544084,
+        "ci95_high": 116.26508138837366,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7604166666666666,
+        "ci95_low": 0.6979166666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 212.99406329180667,
+        "ci95_low": 208.83282113865727,
+        "ci95_high": 220.26167087306771,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.1524739664561812,
+        "ci95_low": 0.9538068068429099,
+        "ci95_high": 1.4378328141075642,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "naive",
+      "ttft_p95_ms": {
+        "mean": 4030.831127979588,
+        "ci95_low": 3598.2274506468,
+        "ci95_high": 4469.548056327714,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 110.963914835058,
+        "ci95_low": 106.30403466240068,
+        "ci95_high": 117.80021063338708,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7708333333333334,
+        "ci95_low": 0.7291666666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 212.96833491491086,
+        "ci95_low": 208.76222197386969,
+        "ci95_high": 220.27921951350106,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.1027400042387792,
+        "ci95_low": 0.9536971303252509,
+        "ci95_high": 1.2886556911967264,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "joint",
+      "ttft_p95_ms": {
+        "mean": 3690.1707144946517,
+        "ci95_low": 3325.1107293855475,
+        "ci95_high": 4074.738463349322,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 107.46662085632035,
+        "ci95_low": 101.99299564544084,
+        "ci95_high": 116.26508138837366,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7604166666666666,
+        "ci95_low": 0.6979166666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 212.99406329180667,
+        "ci95_low": 208.83282113865727,
+        "ci95_high": 220.26167087306771,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.1524739664561812,
+        "ci95_low": 0.9538068068429099,
+        "ci95_high": 1.4378328141075642,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "policy": "joint_no_hysteresis",
+      "ttft_p95_ms": {
+        "mean": 3690.1707144946517,
+        "ci95_low": 3325.1107293855475,
+        "ci95_high": 4074.738463349322,
+        "n": 3
+      },
+      "tbt_p95_ms": {
+        "mean": 107.46662085632035,
+        "ci95_low": 101.99299564544084,
+        "ci95_high": 116.26508138837366,
+        "n": 3
+      },
+      "slo_violation_rate": {
+        "mean": 0.7604166666666666,
+        "ci95_low": 0.6979166666666666,
+        "ci95_high": 0.8020833333333334,
+        "n": 3
+      },
+      "output_tokens_per_s": {
+        "mean": 212.99406329180667,
+        "ci95_low": 208.83282113865727,
+        "ci95_high": 220.26167087306771,
+        "n": 3
+      },
+      "goodput_requests_per_s": {
+        "mean": 1.1524739664561812,
+        "ci95_low": 0.9538068068429099,
+        "ci95_high": 1.4378328141075642,
+        "n": 3
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "profile": "20GiB-balanced",
+      "baseline": "full",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -401.783755809578,
+        "ci95_low": -484.83633597859443,
+        "ci95_high": -301.29552357261855,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "baseline": "static_int4",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -762.8530146877553,
+        "ci95_low": -977.1160057995403,
+        "ci95_high": -569.9706115589652,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "baseline": "morph_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -405.62696244332255,
+        "ci95_low": -449.5233087752531,
+        "ci95_high": -363.0581207883115,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "baseline": "offload_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -6.27117367068422,
+        "ci95_low": -18.81352101205266,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "baseline": "naive",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -93.78967956471631,
+        "ci95_low": -175.53250427279636,
+        "ci95_high": -19.394056365075812,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-balanced",
+      "baseline": "joint_no_hysteresis",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "baseline": "full",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "baseline": "static_int4",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -65.53343187133457,
+        "ci95_low": -135.62700573509392,
+        "ci95_high": 6.5359502567753225,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "baseline": "morph_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "baseline": "offload_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "baseline": "naive",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 340.66041348493627,
+        "ci95_low": 273.1167212612527,
+        "ci95_high": 394.8095929783922,
+        "n": 3
+      }
+    },
+    {
+      "profile": "48GiB-server",
+      "baseline": "joint_no_hysteresis",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "baseline": "full",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -1737.562077088255,
+        "ci95_low": -2319.10965865017,
+        "ci95_high": -1089.4262145090615,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "baseline": "static_int4",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -2098.6313359664323,
+        "ci95_low": -2759.2865617823118,
+        "ci95_high": -1240.1774181905057,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "baseline": "morph_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": -1722.938910779776,
+        "ci95_low": -2304.9631145325293,
+        "ci95_high": -1138.7041805801273,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "baseline": "offload_only",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 2578.866415100587,
+        "ci95_low": 1167.6447713757843,
+        "ci95_high": 4278.553656084492,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "baseline": "naive",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 13479.527763377411,
+        "ci95_low": 11517.624775468543,
+        "ci95_high": 14566.700131088215,
+        "n": 3
+      }
+    },
+    {
+      "profile": "20GiB-slow-host",
+      "baseline": "joint_no_hysteresis",
+      "ttft_ms_baseline_minus_joint": {
+        "mean": 0.0,
+        "ci95_low": 0.0,
+        "ci95_high": 0.0,
+        "n": 3
+      }
+    }
+  ],
+  "ci_note": "Seed-level nonparametric bootstrap; n=3 is exploratory, not strong evidence. Positive paired TTFT means joint improves."
+}

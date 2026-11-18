@@ -1,0 +1,28 @@
+{
+  "dataset": "WikiText-2",
+  "configuration": "wikitext-2-raw-v1",
+  "selection": "First 100 rows of each split, joined with two newlines; benchmark further limits tokens.",
+  "dataset_card": "https://huggingface.co/datasets/Salesforce/wikitext",
+  "license": "CC BY-SA 3.0 / GFDL; Wikipedia contributors; see dataset card",
+  "source_revision": "Dataset viewer current revision; original response payloads retained and hashed.",
+  "splits": {
+    "validation": {
+      "file": "wiki.validation.prefix.txt",
+      "rows": 100,
+      "offset": 0,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=Salesforce%2Fwikitext&config=wikitext-2-raw-v1&split=validation&offset=0&length=100",
+      "text_sha256": "f2fba6d2f2c0f252aee38e1d69205c37750dc8823b7e5a18efba895b6b4c0ae0",
+      "payload_sha256": "93931489059a6c06a0d81c1367b6ef89ab31460f4ff8a342a0215f809bc1224a",
+      "bytes": 27926
+    },
+    "test": {
+      "file": "wiki.test.prefix.txt",
+      "rows": 100,
+      "offset": 0,
+      "url": "https://datasets-server.huggingface.co/rows?dataset=Salesforce%2Fwikitext&config=wikitext-2-raw-v1&split=test&offset=0&length=100",
+      "text_sha256": "62281ace1175323ebccb12728a5ce29e5382c6f99224c09057216842124ef466",
+      "payload_sha256": "08ef9d542bf24fbb1e22dc4b96d6651c0a3622be974c71566d32a397f2eafeca",
+      "bytes": 24469
+    }
+  }
+}

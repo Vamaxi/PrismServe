@@ -1,0 +1,13 @@
+{
+  "name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "device_memory_bytes": 5324668928,
+  "host_memory_bytes": 1288675328,
+  "device_bandwidth_gbps": 162.29816685980194,
+  "host_bandwidth_gbps": 15.26311499272198,
+  "link_bandwidth_gbps": 12.414560677898978,
+  "device_tflops": 1.9931116590361244,
+  "host_tflops": 0.03663947586809347,
+  "device_kind": "cuda",
+  "source": "measured_local_microbenchmarks",
+  "fixed_overhead_ms": 0.1
+}

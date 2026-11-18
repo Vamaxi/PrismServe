@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "version": "0.5.0",
+  "report_pages": 15,
+  "report_embedded_images": 12,
+  "presentation_slides": 20,
+  "wheel_runtime_matches_benchmark_snapshot": true
+}

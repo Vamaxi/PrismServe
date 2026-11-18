@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "mode": "live_capacity_demonstration_not_a_controlled_benchmark",
+      "policy": "full",
+      "prompt_tokens": 768,
+      "quota_mib": 675,
+      "completed": 0,
+      "rejected": 4,
+      "max_batch": 0,
+      "quantized_iterations": 0,
+      "cpu_attention_iterations": 0
+    },
+    {
+      "mode": "live_capacity_demonstration_not_a_controlled_benchmark",
+      "policy": "joint",
+      "prompt_tokens": 768,
+      "quota_mib": 675,
+      "completed": 4,
+      "rejected": 0,
+      "max_batch": 3,
+      "quantized_iterations": 63,
+      "cpu_attention_iterations": 51,
+      "sample_base_model_completion": " a rare glimpse into the world of the actor, who has been cast in a"
+    }
+  ]
+}

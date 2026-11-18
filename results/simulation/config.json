@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "description": "Synthetic effective hardware profiles; not measured GPU benchmarks.",
+  "model": {
+    "name": "llama-3.1-8b-shaped-analytical",
+    "layers": 32,
+    "hidden_size": 4096,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "parameters": 8030261248,
+    "weight_bits": 16,
+    "kv_bits": 16,
+    "group_size": 64,
+    "layer_parameters": [
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808,
+      218103808
+    ]
+  },
+  "planner": {
+    "quality_budget": 0.03,
+    "ttft_slo_ms": 2000,
+    "tbt_slo_ms": 100,
+    "memory_fraction": 0.9,
+    "max_quantized_fraction": 0.75,
+    "offload_fractions": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "cooldown_s": 0.25,
+    "transition_penalty": 1,
+    "quality_penalty": 1
+  },
+  "simulation": {
+    "max_batch_size": 32,
+    "prefill_chunk_size": 128,
+    "max_iterations": 100000
+  },
+  "workload": {
+    "kind": "bursty",
+    "requests": 96,
+    "duration_s": 20,
+    "prompt_min": 256,
+    "prompt_max": 1536,
+    "output_min": 24,
+    "output_max": 64
+  },
+  "seeds": [
+    7,
+    19,
+    41
+  ],
+  "policies": [
+    "full",
+    "static_int4",
+    "morph_only",
+    "offload_only",
+    "naive",
+    "joint",
+    "joint_no_hysteresis"
+  ],
+  "profiles": [
+    {
+      "name": "20GiB-balanced",
+      "device_memory_bytes": 21474836480,
+      "host_memory_bytes": 68719476736,
+      "device_bandwidth_gbps": 400,
+      "host_bandwidth_gbps": 65,
+      "link_bandwidth_gbps": 12,
+      "device_tflops": 50,
+      "host_tflops": 1,
+      "device_kind": "cuda",
+      "source": "synthetic"
+    },
+    {
+      "name": "20GiB-slow-host",
+      "device_memory_bytes": 21474836480,
+      "host_memory_bytes": 68719476736,
+      "device_bandwidth_gbps": 400,
+      "host_bandwidth_gbps": 12,
+      "link_bandwidth_gbps": 3,
+      "device_tflops": 50,
+      "host_tflops": 0.3,
+      "device_kind": "cuda",
+      "source": "synthetic"
+    },
+    {
+      "name": "48GiB-server",
+      "device_memory_bytes": 51539607552,
+      "host_memory_bytes": 137438953472,
+      "device_bandwidth_gbps": 1000,
+      "host_bandwidth_gbps": 150,
+      "link_bandwidth_gbps": 25,
+      "device_tflops": 150,
+      "host_tflops": 2,
+      "device_kind": "cuda",
+      "source": "synthetic"
+    }
+  ]
+}

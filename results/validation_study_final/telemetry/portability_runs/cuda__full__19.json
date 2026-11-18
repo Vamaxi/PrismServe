@@ -1,0 +1,92 @@
+{
+  "before": {
+    "unix_s": 1795006562.7123098,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 2074816512,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 25,
+    "power_plugged": true
+  },
+  "after": {
+    "unix_s": 1795006563.3291538,
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu_name": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "logical_cpus": 20,
+    "host_available_bytes": 2074349568,
+    "host_total_bytes": 16849256448,
+    "battery_percent": 25,
+    "power_plugged": true
+  },
+  "gpu_fields": [
+    "timestamp",
+    "index",
+    "uuid",
+    "temperature.gpu",
+    "clocks.current.sm",
+    "clocks.current.memory",
+    "power.draw",
+    "utilization.gpu",
+    "memory.used",
+    "pstate",
+    "clocks_event_reasons.sw_power_cap",
+    "clocks_event_reasons.hw_thermal_slowdown",
+    "clocks_event_reasons.sw_thermal_slowdown"
+  ],
+  "gpu_samples": [
+    {
+      "unix_s": 1795006562.775,
+      "index": 0.0,
+      "uuid": "GPU-44877771-6f64-ad32-a1a0-57d160363ffd",
+      "temperature.gpu": 60.0,
+      "clocks.current.sm": 2010.0,
+      "clocks.current.memory": 8001.0,
+      "power.draw": 21.8,
+      "utilization.gpu": 35.0,
+      "memory.used": 751.0,
+      "pstate": "P0",
+      "clocks_event_reasons.sw_power_cap": false,
+      "clocks_event_reasons.hw_thermal_slowdown": false,
+      "clocks_event_reasons.sw_thermal_slowdown": false
+    },
+    {
+      "unix_s": 1795006563.281,
+      "index": 0.0,
+      "uuid": "GPU-44877771-6f64-ad32-a1a0-57d160363ffd",
+      "temperature.gpu": 60.0,
+      "clocks.current.sm": 1755.0,
+      "clocks.current.memory": 8001.0,
+      "power.draw": 20.09,
+      "utilization.gpu": 36.0,
+      "memory.used": 727.0,
+      "pstate": "P0",
+      "clocks_event_reasons.sw_power_cap": false,
+      "clocks_event_reasons.hw_thermal_slowdown": false,
+      "clocks_event_reasons.sw_thermal_slowdown": false
+    }
+  ],
+  "host_samples": [
+    {
+      "unix_s": 1795006562.715156,
+      "process_rss_bytes": 1319632896,
+      "host_available_bytes": 2073231360,
+      "cpu_utilization_pct": 0.0,
+      "power_plugged": true,
+      "battery_percent": 25
+    },
+    {
+      "unix_s": 1795006563.2273479,
+      "process_rss_bytes": 1319690240,
+      "host_available_bytes": 2061873152,
+      "cpu_utilization_pct": 18.5,
+      "power_plugged": true,
+      "battery_percent": 25
+    }
+  ],
+  "error": null,
+  "notes": [
+    "Driver event flags describe reported clock-limit reasons; correlation does not establish causality.",
+    "Read-only sampling at 500 ms. Clock settings and laptop power source are not controlled."
+  ]
+}

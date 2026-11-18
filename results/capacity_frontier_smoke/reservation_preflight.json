@@ -1,0 +1,101 @@
+[
+  {
+    "prompt": 128,
+    "layers": [],
+    "device_estimate_mib": 512.798828125,
+    "minimum_total_quota_mib": 588.798928125,
+    "quality": 0,
+    "scratch_mib": 27.9736328125,
+    "transition_mib": 0.0
+  },
+  {
+    "prompt": 128,
+    "layers": [
+      9
+    ],
+    "device_estimate_mib": 530.845703125,
+    "minimum_total_quota_mib": 606.845803125,
+    "quality": 0.00774378189817071,
+    "scratch_mib": 52.3486328125,
+    "transition_mib": 3.796875
+  },
+  {
+    "prompt": 128,
+    "layers": [
+      1,
+      7,
+      9
+    ],
+    "device_estimate_mib": 530.845703125,
+    "minimum_total_quota_mib": 606.845803125,
+    "quality": 0.025414397474378347,
+    "scratch_mib": 52.3486328125,
+    "transition_mib": 3.796875
+  },
+  {
+    "prompt": 384,
+    "layers": [],
+    "device_estimate_mib": 553.298828125,
+    "minimum_total_quota_mib": 629.298928125,
+    "quality": 0,
+    "scratch_mib": 50.4736328125,
+    "transition_mib": 0.0
+  },
+  {
+    "prompt": 384,
+    "layers": [
+      9
+    ],
+    "device_estimate_mib": 554.470703125,
+    "minimum_total_quota_mib": 630.470803125,
+    "quality": 0.00774378189817071,
+    "scratch_mib": 74.8486328125,
+    "transition_mib": 3.796875
+  },
+  {
+    "prompt": 384,
+    "layers": [
+      1,
+      7,
+      9
+    ],
+    "device_estimate_mib": 553.345703125,
+    "minimum_total_quota_mib": 629.345803125,
+    "quality": 0.025414397474378347,
+    "scratch_mib": 74.8486328125,
+    "transition_mib": 3.796875
+  },
+  {
+    "prompt": 768,
+    "layers": [],
+    "device_estimate_mib": 614.048828125,
+    "minimum_total_quota_mib": 690.048928125,
+    "quality": 0,
+    "scratch_mib": 84.2236328125,
+    "transition_mib": 0.0
+  },
+  {
+    "prompt": 768,
+    "layers": [
+      9
+    ],
+    "device_estimate_mib": 615.220703125,
+    "minimum_total_quota_mib": 691.220803125,
+    "quality": 0.00774378189817071,
+    "scratch_mib": 108.5986328125,
+    "transition_mib": 3.796875
+  },
+  {
+    "prompt": 768,
+    "layers": [
+      1,
+      7,
+      9
+    ],
+    "device_estimate_mib": 587.095703125,
+    "minimum_total_quota_mib": 663.095803125,
+    "quality": 0.025414397474378347,
+    "scratch_mib": 108.5986328125,
+    "transition_mib": 3.796875
+  }
+]

@@ -1,0 +1,3751 @@
+{
+  "paired_gpu_comparisons": [
+    {
+      "scenario": "steady_roomy",
+      "alternative": "joint",
+      "reference": "joint_v03",
+      "paired_throughput_change_pct": {
+        "mean": 2.0789252707293726,
+        "lower_95": -2.45809855196375,
+        "upper_95": 7.849767186756864,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        -1.408399738079913,
+        -3.219318259897763,
+        12.483381874004262,
+        4.760690728591932,
+        -2.221728250971655
+      ]
+    },
+    {
+      "scenario": "steady_roomy",
+      "alternative": "full",
+      "reference": "full_v03",
+      "paired_throughput_change_pct": {
+        "mean": 0.2607114604430748,
+        "lower_95": -5.5746252716109295,
+        "upper_95": 3.9483590176554717,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        -10.86866303627131,
+        0.4733621507148289,
+        3.7834363004610516,
+        3.6559212872663505,
+        4.259500600044452
+      ]
+    },
+    {
+      "scenario": "steady_roomy",
+      "alternative": "joint",
+      "reference": "full",
+      "paired_throughput_change_pct": {
+        "mean": -6.383693532081371,
+        "lower_95": -13.456737463609167,
+        "upper_95": 0.7503569293158607,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        -9.79985737175153,
+        -9.792360786735866,
+        3.153513578810574,
+        3.46604281317342,
+        -18.945805893903454
+      ]
+    },
+    {
+      "scenario": "bursty_roomy",
+      "alternative": "joint",
+      "reference": "joint_v03",
+      "paired_throughput_change_pct": {
+        "mean": 24.543102596560157,
+        "lower_95": -8.599527443023899,
+        "upper_95": 58.096844769111485,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        29.67052126464513,
+        86.27861177384281,
+        -24.882008579716164,
+        1.002497214939635,
+        30.645891309089368
+      ]
+    },
+    {
+      "scenario": "bursty_roomy",
+      "alternative": "full",
+      "reference": "full_v03",
+      "paired_throughput_change_pct": {
+        "mean": 7.721296347828397,
+        "lower_95": -0.15475477604987448,
+        "upper_95": 14.556644201201303,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        -5.573758176180488,
+        14.558693719508199,
+        15.433094299959738,
+        1.3888069287838922,
+        12.799644967070645
+      ]
+    },
+    {
+      "scenario": "bursty_roomy",
+      "alternative": "joint",
+      "reference": "full",
+      "paired_throughput_change_pct": {
+        "mean": 1.218134369244066,
+        "lower_95": -5.133597200537134,
+        "upper_95": 9.52191271760532,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        17.350433119174703,
+        -2.220867884748756,
+        -7.53716198320058,
+        -4.186397075767879,
+        2.6846656707628425
+      ]
+    },
+    {
+      "scenario": "bursty_constrained",
+      "alternative": "joint",
+      "reference": "joint_v03",
+      "paired_throughput_change_pct": {
+        "mean": 20.635070239254762,
+        "lower_95": 17.09844674080429,
+        "upper_95": 23.20977493809559,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        13.749880513458091,
+        23.493070983941355,
+        20.74952117970583,
+        23.87985420342669,
+        21.303024315741848
+      ]
+    },
+    {
+      "scenario": "bursty_constrained",
+      "alternative": "full",
+      "reference": "full_v03",
+      "paired_throughput_change_pct": {
+        "mean": 6.609773446585625,
+        "lower_95": 5.525279327565316,
+        "upper_95": 7.886864241716447,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        9.025564867128022,
+        7.127730491442064,
+        5.646726600144736,
+        6.164747110889501,
+        5.0840981633238025
+      ]
+    },
+    {
+      "scenario": "bursty_constrained",
+      "alternative": "joint",
+      "reference": "full",
+      "paired_throughput_change_pct": {
+        "mean": -4.53241172518496,
+        "lower_95": -8.143253221922189,
+        "upper_95": -1.305326548507415,
+        "paired_repeats": 5,
+        "note": "exploratory paired bootstrap; repeats share one laptop and do not establish population confidence"
+      },
+      "individual_paired_changes_pct": [
+        -11.070224607895774,
+        -4.9948819712916865,
+        -5.8310766611146425,
+        0.9086402391862869,
+        -1.674515624808981
+      ]
+    }
+  ],
+  "prediction": [
+    {
+      "predictor": "fresh_legacy_ewma",
+      "phase": "all",
+      "executions": 270,
+      "mae_ms": 7.477717321211359,
+      "bias_ms": 5.274451137247887,
+      "mape_pct": 40.109172437340625
+    },
+    {
+      "predictor": "fresh_legacy_ewma",
+      "phase": "decode",
+      "executions": 120,
+      "mae_ms": 5.928670261707472,
+      "bias_ms": 3.9988556543088416,
+      "mape_pct": 36.8683799282395
+    },
+    {
+      "predictor": "fresh_legacy_ewma",
+      "phase": "mixed",
+      "executions": 90,
+      "mae_ms": 8.987991980312488,
+      "bias_ms": 8.820323361664698,
+      "mape_pct": 45.92082674624293
+    },
+    {
+      "predictor": "fresh_legacy_ewma",
+      "phase": "prefill",
+      "executions": 60,
+      "mae_ms": 8.31039945156744,
+      "bias_ms": 2.506833766500759,
+      "mape_pct": 37.873275992189406
+    },
+    {
+      "predictor": "fresh_phase_ewma",
+      "phase": "all",
+      "executions": 270,
+      "mae_ms": 12.571477965634621,
+      "bias_ms": 11.757213847511672,
+      "mape_pct": 67.55910381764858
+    },
+    {
+      "predictor": "fresh_phase_ewma",
+      "phase": "decode",
+      "executions": 120,
+      "mae_ms": 11.015821282231345,
+      "bias_ms": 9.589050019919089,
+      "mape_pct": 68.90894901146369
+    },
+    {
+      "predictor": "fresh_phase_ewma",
+      "phase": "mixed",
+      "executions": 90,
+      "mae_ms": 15.028531200302298,
+      "bias_ms": 15.028531200302298,
+      "mape_pct": 77.37419077121972
+    },
+    {
+      "predictor": "fresh_phase_ewma",
+      "phase": "prefill",
+      "executions": 60,
+      "mae_ms": 11.997211480439656,
+      "bias_ms": 11.18656547351089,
+      "mape_pct": 50.136782999661634
+    },
+    {
+      "predictor": "fresh_static",
+      "phase": "all",
+      "executions": 270,
+      "mae_ms": 38.513001498603394,
+      "bias_ms": 38.513001498603394,
+      "mape_pct": 221.9708966792644
+    },
+    {
+      "predictor": "fresh_static",
+      "phase": "decode",
+      "executions": 120,
+      "mae_ms": 34.32476962272289,
+      "bias_ms": 34.32476962272289,
+      "mape_pct": 217.1670189071295
+    },
+    {
+      "predictor": "fresh_static",
+      "phase": "mixed",
+      "executions": 90,
+      "mae_ms": 47.809083549266994,
+      "bias_ms": 47.809083549266994,
+      "mape_pct": 269.0852039622588
+    },
+    {
+      "predictor": "fresh_static",
+      "phase": "prefill",
+      "executions": 60,
+      "mae_ms": 32.94534217436902,
+      "bias_ms": 32.94534217436902,
+      "mape_pct": 160.90719129904264
+    },
+    {
+      "predictor": "old_static",
+      "phase": "all",
+      "executions": 270,
+      "mae_ms": 72.15914471539487,
+      "bias_ms": 72.15914471539487,
+      "mape_pct": 394.62881904838343
+    },
+    {
+      "predictor": "old_static",
+      "phase": "decode",
+      "executions": 120,
+      "mae_ms": 46.75350706227339,
+      "bias_ms": 46.75350706227339,
+      "mape_pct": 286.20037735313286
+    },
+    {
+      "predictor": "old_static",
+      "phase": "mixed",
+      "executions": 90,
+      "mae_ms": 96.29244288531751,
+      "bias_ms": 96.29244288531751,
+      "mape_pct": 523.5507429602437
+    },
+    {
+      "predictor": "old_static",
+      "phase": "prefill",
+      "executions": 60,
+      "mae_ms": 86.77047276675391,
+      "bias_ms": 86.77047276675391,
+      "mape_pct": 418.10281657109414
+    }
+  ],
+  "quality": [
+    {
+      "arm": "dynamic_full",
+      "targets": 2048,
+      "nll": 3.595980544052125,
+      "perplexity": 36.45142469786975,
+      "int4_output_pct": 0.0,
+      "quantized_prefill_iterations": 0,
+      "relative_ppl_pct": 1.0109520487720716e-05
+    },
+    {
+      "arm": "dynamic_joint",
+      "targets": 2048,
+      "nll": 3.5959803667138956,
+      "perplexity": 36.4514182336392,
+      "int4_output_pct": 0.0,
+      "quantized_prefill_iterations": 0,
+      "relative_ppl_pct": -7.624302676096684e-06
+    },
+    {
+      "arm": "dynamic_joint_no_gate",
+      "targets": 2048,
+      "nll": 3.595980239642536,
+      "perplexity": 36.45141360170822,
+      "int4_output_pct": 0.0,
+      "quantized_prefill_iterations": 0,
+      "relative_ppl_pct": -2.0331436865593596e-05
+    },
+    {
+      "arm": "fixed_fp32",
+      "targets": 2048,
+      "nll": 3.5959804429569253,
+      "perplexity": 36.451421012805866,
+      "int4_output_pct": 0.0,
+      "quantized_prefill_iterations": 0,
+      "relative_ppl_pct": 0.0
+    },
+    {
+      "arm": "fixed_static_int4",
+      "targets": 2048,
+      "nll": 3.628289053329044,
+      "perplexity": 37.648347166760985,
+      "int4_output_pct": 100.0,
+      "quantized_prefill_iterations": 8,
+      "relative_ppl_pct": 3.283620009037838
+    },
+    {
+      "arm": "fixed_early_prefill_int4_restore",
+      "targets": 2048,
+      "nll": 3.60475028125966,
+      "perplexity": 36.772499928231085,
+      "int4_output_pct": 0.0,
+      "quantized_prefill_iterations": 4,
+      "relative_ppl_pct": 0.8808405996364685
+    },
+    {
+      "arm": "fixed_decode_int4",
+      "targets": 2048,
+      "nll": 3.61027534672432,
+      "perplexity": 36.97623269781051,
+      "int4_output_pct": 99.21875,
+      "quantized_prefill_iterations": 0,
+      "relative_ppl_pct": 1.439756449605266
+    },
+    {
+      "arm": "fixed_cpu_attention",
+      "targets": 2048,
+      "nll": 3.595980733672331,
+      "perplexity": 36.45143160979705,
+      "int4_output_pct": 0.0,
+      "quantized_prefill_iterations": 0,
+      "relative_ppl_pct": 2.907154477842258e-05
+    }
+  ],
+  "portability_full_fp32_matching_tokens": 96,
+  "portability_full_fp32_total_tokens": 96,
+  "gpu_run_telemetry": [
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full",
+      "seed": 19,
+      "samples": 9,
+      "window_start_unix_s": 1795005486.1633377,
+      "window_end_unix_s": 1795005490.576832,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.666666666666664
+      },
+      "clocks.current.sm": {
+        "min": 795.0,
+        "max": 1650.0,
+        "mean": 1308.3333333333333
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6112.111111111111
+      },
+      "power.draw": {
+        "min": 11.45,
+        "max": 17.35,
+        "mean": 14.641111111111108
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 42.0,
+        "mean": 30.88888888888889
+      },
+      "memory.used": {
+        "min": 701.0,
+        "max": 861.0,
+        "mean": 841.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.6666666666666666
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.6666666666666666
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full",
+      "seed": 31,
+      "samples": 9,
+      "window_start_unix_s": 1795005540.9297307,
+      "window_end_unix_s": 1795005545.4080145,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.22222222222222
+      },
+      "clocks.current.sm": {
+        "min": 1185.0,
+        "max": 1665.0,
+        "mean": 1383.3333333333333
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6667.666666666667
+      },
+      "power.draw": {
+        "min": 13.43,
+        "max": 16.45,
+        "mean": 15.063333333333333
+      },
+      "utilization.gpu": {
+        "min": 6.0,
+        "max": 74.0,
+        "mean": 33.333333333333336
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 865.0,
+        "mean": 842.3333333333334
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5555555555555556
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5555555555555556
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005594.2380712,
+      "window_end_unix_s": 1795005596.8861647,
+      "temperature.gpu": {
+        "min": 59.0,
+        "max": 60.0,
+        "mean": 59.4
+      },
+      "clocks.current.sm": {
+        "min": 1080.0,
+        "max": 2370.0,
+        "mean": 2061.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7001.0
+      },
+      "power.draw": {
+        "min": 20.86,
+        "max": 25.3,
+        "mean": 23.419999999999998
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 60.0,
+        "mean": 42.0
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 865.0,
+        "mean": 830.6
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.2
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full",
+      "seed": 59,
+      "samples": 4,
+      "window_start_unix_s": 1795005639.009862,
+      "window_end_unix_s": 1795005641.3940701,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 61.0,
+        "mean": 60.25
+      },
+      "clocks.current.sm": {
+        "min": 1080.0,
+        "max": 2130.0,
+        "mean": 1725.0
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 23.74,
+        "max": 24.96,
+        "mean": 24.33
+      },
+      "utilization.gpu": {
+        "min": 25.0,
+        "max": 83.0,
+        "mean": 51.5
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 833.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.75
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full",
+      "seed": 7,
+      "samples": 9,
+      "window_start_unix_s": 1795005426.6945379,
+      "window_end_unix_s": 1795005431.4026787,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 60.0,
+        "mean": 59.0
+      },
+      "clocks.current.sm": {
+        "min": 915.0,
+        "max": 1785.0,
+        "mean": 1498.3333333333333
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6223.222222222223
+      },
+      "power.draw": {
+        "min": 13.76,
+        "max": 18.21,
+        "mean": 16.22222222222222
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 73.0,
+        "mean": 30.88888888888889
+      },
+      "memory.used": {
+        "min": 749.0,
+        "max": 857.0,
+        "mean": 836.5555555555555
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.6666666666666666
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.6666666666666666
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full_v03",
+      "seed": 19,
+      "samples": 10,
+      "window_start_unix_s": 1795005474.765156,
+      "window_end_unix_s": 1795005479.5769932,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.9
+      },
+      "clocks.current.sm": {
+        "min": 600.0,
+        "max": 1410.0,
+        "mean": 1143.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6901.0
+      },
+      "power.draw": {
+        "min": 11.32,
+        "max": 17.7,
+        "mean": 14.294
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 77.0,
+        "mean": 35.4
+      },
+      "memory.used": {
+        "min": 701.0,
+        "max": 861.0,
+        "mean": 842.6
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.3
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.3
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full_v03",
+      "seed": 31,
+      "samples": 10,
+      "window_start_unix_s": 1795005529.6791527,
+      "window_end_unix_s": 1795005534.4766364,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.3
+      },
+      "clocks.current.sm": {
+        "min": 1185.0,
+        "max": 1485.0,
+        "mean": 1339.5
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6501.0
+      },
+      "power.draw": {
+        "min": 13.13,
+        "max": 15.94,
+        "mean": 14.563999999999998
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 52.0,
+        "mean": 28.9
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 865.0,
+        "mean": 843.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full_v03",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005601.2258556,
+      "window_end_unix_s": 1795005604.0234797,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 61.0,
+        "mean": 59.4
+      },
+      "clocks.current.sm": {
+        "min": 1410.0,
+        "max": 2130.0,
+        "mean": 1707.0
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 15.45,
+        "max": 25.61,
+        "mean": 20.958000000000002
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 72.0,
+        "mean": 39.4
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 865.0,
+        "mean": 824.2
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full_v03",
+      "seed": 59,
+      "samples": 5,
+      "window_start_unix_s": 1795005645.2410223,
+      "window_end_unix_s": 1795005647.7722108,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0
+      },
+      "clocks.current.sm": {
+        "min": 1215.0,
+        "max": 2280.0,
+        "mean": 1917.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7401.0
+      },
+      "power.draw": {
+        "min": 22.94,
+        "max": 25.28,
+        "mean": 24.346
+      },
+      "utilization.gpu": {
+        "min": 41.0,
+        "max": 69.0,
+        "mean": 52.8
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 839.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "full_v03",
+      "seed": 7,
+      "samples": 10,
+      "window_start_unix_s": 1795005438.862263,
+      "window_end_unix_s": 1795005443.8097703,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.8
+      },
+      "clocks.current.sm": {
+        "min": 765.0,
+        "max": 1545.0,
+        "mean": 1252.5
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6901.0
+      },
+      "power.draw": {
+        "min": 12.08,
+        "max": 17.27,
+        "mean": 14.979
+      },
+      "utilization.gpu": {
+        "min": 12.0,
+        "max": 60.0,
+        "mean": 31.5
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 857.0,
+        "mean": 836.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.3
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.3
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint",
+      "seed": 19,
+      "samples": 10,
+      "window_start_unix_s": 1795005480.3895993,
+      "window_end_unix_s": 1795005485.3524978,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.8
+      },
+      "clocks.current.sm": {
+        "min": 750.0,
+        "max": 1395.0,
+        "mean": 1018.5
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6601.0
+      },
+      "power.draw": {
+        "min": 12.14,
+        "max": 14.96,
+        "mean": 13.588000000000003
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 60.0,
+        "mean": 26.0
+      },
+      "memory.used": {
+        "min": 701.0,
+        "max": 843.0,
+        "mean": 820.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.6
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.6
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint",
+      "seed": 31,
+      "samples": 9,
+      "window_start_unix_s": 1795005535.2944212,
+      "window_end_unix_s": 1795005540.00815,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.111111111111114
+      },
+      "clocks.current.sm": {
+        "min": 870.0,
+        "max": 1380.0,
+        "mean": 1190.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6778.777777777777
+      },
+      "power.draw": {
+        "min": 12.13,
+        "max": 15.04,
+        "mean": 13.57888888888889
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 55.0,
+        "mean": 23.88888888888889
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 865.0,
+        "mean": 828.5555555555555
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5555555555555556
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5555555555555556
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005590.954542,
+      "window_end_unix_s": 1795005593.7666092,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.8
+      },
+      "clocks.current.sm": {
+        "min": 780.0,
+        "max": 2130.0,
+        "mean": 1764.0
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 19.81,
+        "max": 25.78,
+        "mean": 22.768
+      },
+      "utilization.gpu": {
+        "min": 24.0,
+        "max": 64.0,
+        "mean": 46.6
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 865.0,
+        "mean": 829.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint",
+      "seed": 59,
+      "samples": 4,
+      "window_start_unix_s": 1795005648.223806,
+      "window_end_unix_s": 1795005650.5865452,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0
+      },
+      "clocks.current.sm": {
+        "min": 1605.0,
+        "max": 2025.0,
+        "mean": 1893.75
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7751.0
+      },
+      "power.draw": {
+        "min": 22.3,
+        "max": 24.88,
+        "mean": 23.9975
+      },
+      "utilization.gpu": {
+        "min": 47.0,
+        "max": 66.0,
+        "mean": 57.0
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 833.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint",
+      "seed": 7,
+      "samples": 9,
+      "window_start_unix_s": 1795005444.6496594,
+      "window_end_unix_s": 1795005449.4379814,
+      "temperature.gpu": {
+        "min": 59.0,
+        "max": 60.0,
+        "mean": 59.111111111111114
+      },
+      "clocks.current.sm": {
+        "min": 1005.0,
+        "max": 1545.0,
+        "mean": 1348.3333333333333
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7556.555555555556
+      },
+      "power.draw": {
+        "min": 14.66,
+        "max": 17.88,
+        "mean": 16.54888888888889
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 58.0,
+        "mean": 29.333333333333332
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 857.0,
+        "mean": 835.4444444444445
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.2222222222222222
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.2222222222222222
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint_v03",
+      "seed": 19,
+      "samples": 11,
+      "window_start_unix_s": 1795005468.317774,
+      "window_end_unix_s": 1795005473.9630651,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 58.0,
+        "mean": 58.0
+      },
+      "clocks.current.sm": {
+        "min": 660.0,
+        "max": 1065.0,
+        "mean": 880.9090909090909
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6546.454545454545
+      },
+      "power.draw": {
+        "min": 11.31,
+        "max": 14.36,
+        "mean": 13.023636363636363
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 43.0,
+        "mean": 22.727272727272727
+      },
+      "memory.used": {
+        "min": 717.0,
+        "max": 849.0,
+        "mean": 831.3636363636364
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.09090909090909091
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.09090909090909091
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint_v03",
+      "seed": 31,
+      "samples": 12,
+      "window_start_unix_s": 1795005546.3234053,
+      "window_end_unix_s": 1795005552.1445339,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.166666666666664
+      },
+      "clocks.current.sm": {
+        "min": 645.0,
+        "max": 1665.0,
+        "mean": 917.5
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6501.0
+      },
+      "power.draw": {
+        "min": 11.3,
+        "max": 15.36,
+        "mean": 13.134166666666665
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 61.0,
+        "mean": 24.75
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 857.0,
+        "mean": 834.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint_v03",
+      "seed": 43,
+      "samples": 6,
+      "window_start_unix_s": 1795005597.3548002,
+      "window_end_unix_s": 1795005600.750358,
+      "temperature.gpu": {
+        "min": 59.0,
+        "max": 60.0,
+        "mean": 59.333333333333336
+      },
+      "clocks.current.sm": {
+        "min": 1335.0,
+        "max": 2565.0,
+        "mean": 1877.5
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 17.57,
+        "max": 23.82,
+        "mean": 21.986666666666665
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 44.0,
+        "mean": 26.0
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 837.0,
+        "mean": 815.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.3333333333333333
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint_v03",
+      "seed": 59,
+      "samples": 6,
+      "window_start_unix_s": 1795005641.8550885,
+      "window_end_unix_s": 1795005644.7820466,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 62.0,
+        "mean": 60.333333333333336
+      },
+      "clocks.current.sm": {
+        "min": 1080.0,
+        "max": 2280.0,
+        "mean": 1812.5
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 23.28,
+        "max": 24.84,
+        "mean": 24.331666666666667
+      },
+      "utilization.gpu": {
+        "min": 29.0,
+        "max": 63.0,
+        "mean": 37.333333333333336
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 844.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_constrained",
+      "policy": "joint_v03",
+      "seed": 7,
+      "samples": 11,
+      "window_start_unix_s": 1795005432.2269998,
+      "window_end_unix_s": 1795005438.0353792,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.63636363636363
+      },
+      "clocks.current.sm": {
+        "min": 585.0,
+        "max": 1230.0,
+        "mean": 818.1818181818181
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6546.454545454545
+      },
+      "power.draw": {
+        "min": 11.63,
+        "max": 14.96,
+        "mean": 12.861818181818181
+      },
+      "utilization.gpu": {
+        "min": 14.0,
+        "max": 40.0,
+        "mean": 26.272727272727273
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 857.0,
+        "mean": 841.9090909090909
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.36363636363636365
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.36363636363636365
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full",
+      "seed": 19,
+      "samples": 8,
+      "window_start_unix_s": 1795005491.4351099,
+      "window_end_unix_s": 1795005495.713096,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.5
+      },
+      "clocks.current.sm": {
+        "min": 900.0,
+        "max": 1665.0,
+        "mean": 1248.75
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6501.0
+      },
+      "power.draw": {
+        "min": 12.96,
+        "max": 16.51,
+        "mean": 14.66125
+      },
+      "utilization.gpu": {
+        "min": 4.0,
+        "max": 47.0,
+        "mean": 28.25
+      },
+      "memory.used": {
+        "min": 701.0,
+        "max": 1201.0,
+        "mean": 1042.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.625
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.625
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full",
+      "seed": 31,
+      "samples": 7,
+      "window_start_unix_s": 1795005569.9494956,
+      "window_end_unix_s": 1795005573.4690228,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.142857142857146
+      },
+      "clocks.current.sm": {
+        "min": 795.0,
+        "max": 1335.0,
+        "mean": 1182.857142857143
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6572.428571428572
+      },
+      "power.draw": {
+        "min": 12.7,
+        "max": 15.9,
+        "mean": 14.39857142857143
+      },
+      "utilization.gpu": {
+        "min": 13.0,
+        "max": 56.0,
+        "mean": 35.857142857142854
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 1205.0,
+        "mean": 1025.5714285714287
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full",
+      "seed": 43,
+      "samples": 7,
+      "window_start_unix_s": 1795005583.644122,
+      "window_end_unix_s": 1795005587.0886326,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 57.0,
+        "mean": 57.0
+      },
+      "clocks.current.sm": {
+        "min": 795.0,
+        "max": 1245.0,
+        "mean": 1144.2857142857142
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7572.428571428572
+      },
+      "power.draw": {
+        "min": 13.6,
+        "max": 16.82,
+        "mean": 15.04142857142857
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 42.0,
+        "mean": 29.0
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 1195.0,
+        "mean": 1033.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full",
+      "seed": 59,
+      "samples": 4,
+      "window_start_unix_s": 1795005619.1104162,
+      "window_end_unix_s": 1795005621.2694347,
+      "temperature.gpu": {
+        "min": 61.0,
+        "max": 61.0,
+        "mean": 61.0
+      },
+      "clocks.current.sm": {
+        "min": 1740.0,
+        "max": 2565.0,
+        "mean": 2058.75
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 27.82,
+        "max": 29.77,
+        "mean": 28.9875
+      },
+      "utilization.gpu": {
+        "min": 7.0,
+        "max": 50.0,
+        "mean": 34.5
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1207.0,
+        "mean": 1009.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full",
+      "seed": 7,
+      "samples": 7,
+      "window_start_unix_s": 1795005411.63052,
+      "window_end_unix_s": 1795005415.288374,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.57142857142857
+      },
+      "clocks.current.sm": {
+        "min": 990.0,
+        "max": 1275.0,
+        "mean": 1146.4285714285713
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6572.428571428572
+      },
+      "power.draw": {
+        "min": 12.41,
+        "max": 15.44,
+        "mean": 13.959999999999999
+      },
+      "utilization.gpu": {
+        "min": 22.0,
+        "max": 57.0,
+        "mean": 38.285714285714285
+      },
+      "memory.used": {
+        "min": 711.0,
+        "max": 1197.0,
+        "mean": 989.5714285714286
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.42857142857142855
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.42857142857142855
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full_v03",
+      "seed": 19,
+      "samples": 8,
+      "window_start_unix_s": 1795005502.1058617,
+      "window_end_unix_s": 1795005506.1454031,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 57.0,
+        "mean": 57.0
+      },
+      "clocks.current.sm": {
+        "min": 735.0,
+        "max": 1515.0,
+        "mean": 1093.125
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6376.0
+      },
+      "power.draw": {
+        "min": 11.01,
+        "max": 15.58,
+        "mean": 13.570000000000002
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 53.0,
+        "mean": 31.125
+      },
+      "memory.used": {
+        "min": 725.0,
+        "max": 1205.0,
+        "mean": 1047.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full_v03",
+      "seed": 31,
+      "samples": 8,
+      "window_start_unix_s": 1795005560.5935302,
+      "window_end_unix_s": 1795005564.6254547,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.25
+      },
+      "clocks.current.sm": {
+        "min": 840.0,
+        "max": 1545.0,
+        "mean": 1083.75
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6126.0
+      },
+      "power.draw": {
+        "min": 11.83,
+        "max": 15.22,
+        "mean": 13.513750000000002
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 42.0,
+        "mean": 30.375
+      },
+      "memory.used": {
+        "min": 685.0,
+        "max": 1205.0,
+        "mean": 1040.25
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full_v03",
+      "seed": 43,
+      "samples": 8,
+      "window_start_unix_s": 1795005574.2944403,
+      "window_end_unix_s": 1795005578.2705457,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 57.0,
+        "mean": 57.0
+      },
+      "clocks.current.sm": {
+        "min": 900.0,
+        "max": 1335.0,
+        "mean": 1162.5
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7251.0
+      },
+      "power.draw": {
+        "min": 12.82,
+        "max": 17.05,
+        "mean": 15.088750000000001
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 47.0,
+        "mean": 28.5
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 1205.0,
+        "mean": 1061.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.125
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.125
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full_v03",
+      "seed": 59,
+      "samples": 4,
+      "window_start_unix_s": 1795005624.4779663,
+      "window_end_unix_s": 1795005626.6669695,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 62.0,
+        "mean": 60.75
+      },
+      "clocks.current.sm": {
+        "min": 1695.0,
+        "max": 2400.0,
+        "mean": 2107.5
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 25.31,
+        "max": 29.27,
+        "mean": 27.43
+      },
+      "utilization.gpu": {
+        "min": 34.0,
+        "max": 55.0,
+        "mean": 43.25
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1209.0,
+        "mean": 1010.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "full_v03",
+      "seed": 7,
+      "samples": 8,
+      "window_start_unix_s": 1795005421.7131684,
+      "window_end_unix_s": 1795005425.8392146,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.625
+      },
+      "clocks.current.sm": {
+        "min": 765.0,
+        "max": 1170.0,
+        "mean": 1021.875
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6126.0
+      },
+      "power.draw": {
+        "min": 12.03,
+        "max": 14.73,
+        "mean": 13.246250000000002
+      },
+      "utilization.gpu": {
+        "min": 8.0,
+        "max": 49.0,
+        "mean": 34.125
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1219.0,
+        "mean": 1034.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint",
+      "seed": 19,
+      "samples": 7,
+      "window_start_unix_s": 1795005506.9961462,
+      "window_end_unix_s": 1795005510.641626,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.42857142857143
+      },
+      "clocks.current.sm": {
+        "min": 870.0,
+        "max": 1515.0,
+        "mean": 1206.4285714285713
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6715.285714285715
+      },
+      "power.draw": {
+        "min": 12.24,
+        "max": 16.16,
+        "mean": 14.289999999999997
+      },
+      "utilization.gpu": {
+        "min": 19.0,
+        "max": 46.0,
+        "mean": 32.142857142857146
+      },
+      "memory.used": {
+        "min": 725.0,
+        "max": 1205.0,
+        "mean": 1025.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.2857142857142857
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.2857142857142857
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint",
+      "seed": 31,
+      "samples": 7,
+      "window_start_unix_s": 1795005565.4712982,
+      "window_end_unix_s": 1795005569.070765,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.42857142857143
+      },
+      "clocks.current.sm": {
+        "min": 855.0,
+        "max": 1545.0,
+        "mean": 1232.142857142857
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6572.428571428572
+      },
+      "power.draw": {
+        "min": 12.52,
+        "max": 15.91,
+        "mean": 14.47857142857143
+      },
+      "utilization.gpu": {
+        "min": 15.0,
+        "max": 41.0,
+        "mean": 31.571428571428573
+      },
+      "memory.used": {
+        "min": 685.0,
+        "max": 1205.0,
+        "mean": 1011.2857142857143
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint",
+      "seed": 43,
+      "samples": 7,
+      "window_start_unix_s": 1795005579.0870428,
+      "window_end_unix_s": 1795005582.812335,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.142857142857146
+      },
+      "clocks.current.sm": {
+        "min": 795.0,
+        "max": 1335.0,
+        "mean": 1112.142857142857
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7001.0
+      },
+      "power.draw": {
+        "min": 12.21,
+        "max": 16.71,
+        "mean": 14.54857142857143
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 41.0,
+        "mean": 30.857142857142858
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 1205.0,
+        "mean": 1012.4285714285714
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint",
+      "seed": 59,
+      "samples": 4,
+      "window_start_unix_s": 1795005616.3847425,
+      "window_end_unix_s": 1795005618.6380954,
+      "temperature.gpu": {
+        "min": 61.0,
+        "max": 62.0,
+        "mean": 61.25
+      },
+      "clocks.current.sm": {
+        "min": 1860.0,
+        "max": 2490.0,
+        "mean": 2212.5
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 27.86,
+        "max": 30.06,
+        "mean": 29.1325
+      },
+      "utilization.gpu": {
+        "min": 22.0,
+        "max": 45.0,
+        "mean": 33.75
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1207.0,
+        "mean": 954.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint",
+      "seed": 7,
+      "samples": 7,
+      "window_start_unix_s": 1795005407.0905552,
+      "window_end_unix_s": 1795005410.6527753,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.714285714285715
+      },
+      "clocks.current.sm": {
+        "min": 795.0,
+        "max": 1275.0,
+        "mean": 1047.857142857143
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 6001.0,
+        "mean": 6001.0
+      },
+      "power.draw": {
+        "min": 12.17,
+        "max": 14.6,
+        "mean": 13.562857142857142
+      },
+      "utilization.gpu": {
+        "min": 25.0,
+        "max": 53.0,
+        "mean": 38.285714285714285
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1219.0,
+        "mean": 1029.5714285714287
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.7142857142857143
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.7142857142857143
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint_v03",
+      "seed": 19,
+      "samples": 9,
+      "window_start_unix_s": 1795005496.5614023,
+      "window_end_unix_s": 1795005501.2885146,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.22222222222222
+      },
+      "clocks.current.sm": {
+        "min": 840.0,
+        "max": 1185.0,
+        "mean": 1035.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6778.777777777777
+      },
+      "power.draw": {
+        "min": 11.84,
+        "max": 15.57,
+        "mean": 13.638888888888891
+      },
+      "utilization.gpu": {
+        "min": 3.0,
+        "max": 59.0,
+        "mean": 31.11111111111111
+      },
+      "memory.used": {
+        "min": 701.0,
+        "max": 1201.0,
+        "mean": 1032.111111111111
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.1111111111111111
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.1111111111111111
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint_v03",
+      "seed": 31,
+      "samples": 13,
+      "window_start_unix_s": 1795005552.97237,
+      "window_end_unix_s": 1795005559.6774065,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.07692307692308
+      },
+      "clocks.current.sm": {
+        "min": 375.0,
+        "max": 1455.0,
+        "mean": 765.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6154.846153846154
+      },
+      "power.draw": {
+        "min": 10.12,
+        "max": 14.73,
+        "mean": 11.686153846153845
+      },
+      "utilization.gpu": {
+        "min": 18.0,
+        "max": 73.0,
+        "mean": 30.384615384615383
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 1207.0,
+        "mean": 1039.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.46153846153846156
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.46153846153846156
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint_v03",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005587.6733172,
+      "window_end_unix_s": 1795005590.4716818,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 59.0,
+        "mean": 57.8
+      },
+      "clocks.current.sm": {
+        "min": 930.0,
+        "max": 1800.0,
+        "mean": 1347.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6801.0
+      },
+      "power.draw": {
+        "min": 10.65,
+        "max": 19.75,
+        "mean": 14.278
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 40.0,
+        "mean": 23.0
+      },
+      "memory.used": {
+        "min": 705.0,
+        "max": 1205.0,
+        "mean": 993.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint_v03",
+      "seed": 59,
+      "samples": 4,
+      "window_start_unix_s": 1795005621.7403245,
+      "window_end_unix_s": 1795005624.0162673,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 61.0,
+        "mean": 60.75
+      },
+      "clocks.current.sm": {
+        "min": 1650.0,
+        "max": 2520.0,
+        "mean": 2190.0
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 27.86,
+        "max": 30.11,
+        "mean": 28.775
+      },
+      "utilization.gpu": {
+        "min": 31.0,
+        "max": 56.0,
+        "mean": 39.75
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1105.0,
+        "mean": 935.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.75
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "bursty_roomy",
+      "policy": "joint_v03",
+      "seed": 7,
+      "samples": 9,
+      "window_start_unix_s": 1795005416.1630716,
+      "window_end_unix_s": 1795005420.8169658,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.77777777777778
+      },
+      "clocks.current.sm": {
+        "min": 840.0,
+        "max": 1260.0,
+        "mean": 1046.6666666666667
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 6001.0,
+        "mean": 6001.0
+      },
+      "power.draw": {
+        "min": 12.07,
+        "max": 13.47,
+        "mean": 12.852222222222222
+      },
+      "utilization.gpu": {
+        "min": 7.0,
+        "max": 39.0,
+        "mean": 29.555555555555557
+      },
+      "memory.used": {
+        "min": 711.0,
+        "max": 1201.0,
+        "mean": 1015.2222222222222
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full",
+      "seed": 19,
+      "samples": 7,
+      "window_start_unix_s": 1795005455.113185,
+      "window_end_unix_s": 1795005458.6750793,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.714285714285715
+      },
+      "clocks.current.sm": {
+        "min": 900.0,
+        "max": 1620.0,
+        "mean": 1380.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6286.714285714285
+      },
+      "power.draw": {
+        "min": 12.59,
+        "max": 17.97,
+        "mean": 15.447142857142854
+      },
+      "utilization.gpu": {
+        "min": 10.0,
+        "max": 71.0,
+        "mean": 34.285714285714285
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1157.0,
+        "mean": 967.5714285714286
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.42857142857142855
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.42857142857142855
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full",
+      "seed": 31,
+      "samples": 7,
+      "window_start_unix_s": 1795005511.4741237,
+      "window_end_unix_s": 1795005515.044012,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.285714285714285
+      },
+      "clocks.current.sm": {
+        "min": 990.0,
+        "max": 1560.0,
+        "mean": 1386.4285714285713
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 6001.0,
+        "mean": 6001.0
+      },
+      "power.draw": {
+        "min": 13.18,
+        "max": 17.56,
+        "mean": 15.347142857142856
+      },
+      "utilization.gpu": {
+        "min": 25.0,
+        "max": 42.0,
+        "mean": 33.857142857142854
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1207.0,
+        "mean": 1011.0
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005613.46311,
+      "window_end_unix_s": 1795005615.896057,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 62.0,
+        "mean": 61.2
+      },
+      "clocks.current.sm": {
+        "min": 1470.0,
+        "max": 2340.0,
+        "mean": 2049.0
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 28.35,
+        "max": 30.4,
+        "mean": 29.586000000000002
+      },
+      "utilization.gpu": {
+        "min": 33.0,
+        "max": 48.0,
+        "mean": 43.8
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 831.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full",
+      "seed": 59,
+      "samples": 5,
+      "window_start_unix_s": 1795005633.1021223,
+      "window_end_unix_s": 1795005635.5805483,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 62.0,
+        "mean": 61.0
+      },
+      "clocks.current.sm": {
+        "min": 1035.0,
+        "max": 2220.0,
+        "mean": 1632.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7601.0
+      },
+      "power.draw": {
+        "min": 23.84,
+        "max": 25.37,
+        "mean": 24.79
+      },
+      "utilization.gpu": {
+        "min": 9.0,
+        "max": 60.0,
+        "mean": 43.8
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 823.4
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full",
+      "seed": 7,
+      "samples": 7,
+      "window_start_unix_s": 1795005398.2141294,
+      "window_end_unix_s": 1795005401.468525,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.714285714285715
+      },
+      "clocks.current.sm": {
+        "min": 840.0,
+        "max": 1560.0,
+        "mean": 1307.142857142857
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6143.857142857143
+      },
+      "power.draw": {
+        "min": 12.6,
+        "max": 17.61,
+        "mean": 15.21142857142857
+      },
+      "utilization.gpu": {
+        "min": 0.0,
+        "max": 64.0,
+        "mean": 31.285714285714285
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1137.0,
+        "mean": 1013.2857142857143
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full_v03",
+      "seed": 19,
+      "samples": 6,
+      "window_start_unix_s": 1795005464.2640605,
+      "window_end_unix_s": 1795005467.4388247,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.666666666666664
+      },
+      "clocks.current.sm": {
+        "min": 900.0,
+        "max": 1560.0,
+        "mean": 1330.0
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 7001.0,
+        "mean": 6167.666666666667
+      },
+      "power.draw": {
+        "min": 12.88,
+        "max": 17.74,
+        "mean": 15.638333333333334
+      },
+      "utilization.gpu": {
+        "min": 25.0,
+        "max": 60.0,
+        "mean": 35.333333333333336
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1137.0,
+        "mean": 1002.6666666666666
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.6666666666666666
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.6666666666666666
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full_v03",
+      "seed": 31,
+      "samples": 7,
+      "window_start_unix_s": 1795005520.4968574,
+      "window_end_unix_s": 1795005524.0836442,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.42857142857143
+      },
+      "clocks.current.sm": {
+        "min": 855.0,
+        "max": 1590.0,
+        "mean": 1377.857142857143
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6429.571428571428
+      },
+      "power.draw": {
+        "min": 12.35,
+        "max": 17.17,
+        "mean": 15.211428571428572
+      },
+      "utilization.gpu": {
+        "min": 23.0,
+        "max": 42.0,
+        "mean": 30.142857142857142
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1185.0,
+        "mean": 1038.4285714285713
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.7142857142857143
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.7142857142857143
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full_v03",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005607.643875,
+      "window_end_unix_s": 1795005610.168871,
+      "temperature.gpu": {
+        "min": 59.0,
+        "max": 61.0,
+        "mean": 59.8
+      },
+      "clocks.current.sm": {
+        "min": 1275.0,
+        "max": 2355.0,
+        "mean": 1911.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7601.0
+      },
+      "power.draw": {
+        "min": 23.75,
+        "max": 25.02,
+        "mean": 24.360000000000003
+      },
+      "utilization.gpu": {
+        "min": 18.0,
+        "max": 76.0,
+        "mean": 45.8
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 843.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full_v03",
+      "seed": 59,
+      "samples": 5,
+      "window_start_unix_s": 1795005627.155332,
+      "window_end_unix_s": 1795005629.7243674,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 61.0,
+        "mean": 60.2
+      },
+      "clocks.current.sm": {
+        "min": 1125.0,
+        "max": 2400.0,
+        "mean": 1980.0
+      },
+      "clocks.current.memory": {
+        "min": 8001.0,
+        "max": 8001.0,
+        "mean": 8001.0
+      },
+      "power.draw": {
+        "min": 23.99,
+        "max": 26.95,
+        "mean": 25.288
+      },
+      "utilization.gpu": {
+        "min": 18.0,
+        "max": 59.0,
+        "mean": 43.0
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 843.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.8
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "full_v03",
+      "seed": 7,
+      "samples": 7,
+      "window_start_unix_s": 1795005389.0161276,
+      "window_end_unix_s": 1795005392.4091442,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.57142857142857
+      },
+      "clocks.current.sm": {
+        "min": 1200.0,
+        "max": 1530.0,
+        "mean": 1401.4285714285713
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6858.142857142857
+      },
+      "power.draw": {
+        "min": 15.62,
+        "max": 21.47,
+        "mean": 18.01857142857143
+      },
+      "utilization.gpu": {
+        "min": 15.0,
+        "max": 45.0,
+        "mean": 29.857142857142858
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1137.0,
+        "mean": 1010.4285714285714
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.5714285714285714
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint",
+      "seed": 19,
+      "samples": 8,
+      "window_start_unix_s": 1795005450.2785394,
+      "window_end_unix_s": 1795005454.2274184,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.625
+      },
+      "clocks.current.sm": {
+        "min": 1065.0,
+        "max": 1290.0,
+        "mean": 1196.25
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6501.0
+      },
+      "power.draw": {
+        "min": 13.59,
+        "max": 16.67,
+        "mean": 15.088750000000001
+      },
+      "utilization.gpu": {
+        "min": 26.0,
+        "max": 44.0,
+        "mean": 34.875
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1159.0,
+        "mean": 972.75
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.75
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.75
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint",
+      "seed": 31,
+      "samples": 8,
+      "window_start_unix_s": 1795005524.8844788,
+      "window_end_unix_s": 1795005528.8418913,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 57.0,
+        "mean": 57.0
+      },
+      "clocks.current.sm": {
+        "min": 1035.0,
+        "max": 1335.0,
+        "mean": 1256.25
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 6001.0,
+        "mean": 6001.0
+      },
+      "power.draw": {
+        "min": 13.55,
+        "max": 15.57,
+        "mean": 14.628749999999998
+      },
+      "utilization.gpu": {
+        "min": 27.0,
+        "max": 52.0,
+        "mean": 37.75
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1207.0,
+        "mean": 1000.25
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint",
+      "seed": 43,
+      "samples": 4,
+      "window_start_unix_s": 1795005610.642386,
+      "window_end_unix_s": 1795005613.000955,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 62.0,
+        "mean": 60.75
+      },
+      "clocks.current.sm": {
+        "min": 1470.0,
+        "max": 2565.0,
+        "mean": 2115.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7751.0
+      },
+      "power.draw": {
+        "min": 24.66,
+        "max": 30.86,
+        "mean": 28.93
+      },
+      "utilization.gpu": {
+        "min": 21.0,
+        "max": 44.0,
+        "mean": 37.75
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 833.5
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.75
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint",
+      "seed": 59,
+      "samples": 5,
+      "window_start_unix_s": 1795005630.2150123,
+      "window_end_unix_s": 1795005632.6104126,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 60.0,
+        "mean": 60.0
+      },
+      "clocks.current.sm": {
+        "min": 1560.0,
+        "max": 2220.0,
+        "mean": 1896.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7401.0
+      },
+      "power.draw": {
+        "min": 23.47,
+        "max": 25.2,
+        "mean": 24.512
+      },
+      "utilization.gpu": {
+        "min": 44.0,
+        "max": 70.0,
+        "mean": 51.4
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 865.0,
+        "mean": 839.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint",
+      "seed": 7,
+      "samples": 8,
+      "window_start_unix_s": 1795005393.3123848,
+      "window_end_unix_s": 1795005397.3274708,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.625
+      },
+      "clocks.current.sm": {
+        "min": 945.0,
+        "max": 1425.0,
+        "mean": 1278.75
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6876.0
+      },
+      "power.draw": {
+        "min": 13.3,
+        "max": 16.99,
+        "mean": 15.4325
+      },
+      "utilization.gpu": {
+        "min": 20.0,
+        "max": 60.0,
+        "mean": 34.0
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1159.0,
+        "mean": 967.25
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.25
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.25
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint_v03",
+      "seed": 19,
+      "samples": 8,
+      "window_start_unix_s": 1795005459.5556426,
+      "window_end_unix_s": 1795005463.4489055,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.125
+      },
+      "clocks.current.sm": {
+        "min": 990.0,
+        "max": 1065.0,
+        "mean": 1042.5
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7626.0
+      },
+      "power.draw": {
+        "min": 12.61,
+        "max": 16.43,
+        "mean": 14.947500000000002
+      },
+      "utilization.gpu": {
+        "min": 26.0,
+        "max": 44.0,
+        "mean": 31.75
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1217.0,
+        "mean": 1053.75
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint_v03",
+      "seed": 31,
+      "samples": 8,
+      "window_start_unix_s": 1795005515.87201,
+      "window_end_unix_s": 1795005519.7020206,
+      "temperature.gpu": {
+        "min": 57.0,
+        "max": 58.0,
+        "mean": 57.125
+      },
+      "clocks.current.sm": {
+        "min": 885.0,
+        "max": 1245.0,
+        "mean": 1076.25
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 7376.0
+      },
+      "power.draw": {
+        "min": 12.63,
+        "max": 17.12,
+        "mean": 14.905000000000001
+      },
+      "utilization.gpu": {
+        "min": 25.0,
+        "max": 41.0,
+        "mean": 33.0
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 1205.0,
+        "mean": 1051.75
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint_v03",
+      "seed": 43,
+      "samples": 5,
+      "window_start_unix_s": 1795005604.4968944,
+      "window_end_unix_s": 1795005607.1498928,
+      "temperature.gpu": {
+        "min": 59.0,
+        "max": 60.0,
+        "mean": 59.2
+      },
+      "clocks.current.sm": {
+        "min": 1485.0,
+        "max": 2265.0,
+        "mean": 1956.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7601.0
+      },
+      "power.draw": {
+        "min": 23.14,
+        "max": 24.93,
+        "mean": 23.993999999999996
+      },
+      "utilization.gpu": {
+        "min": 36.0,
+        "max": 71.0,
+        "mean": 55.8
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 925.0,
+        "mean": 867.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint_v03",
+      "seed": 59,
+      "samples": 5,
+      "window_start_unix_s": 1795005636.0425584,
+      "window_end_unix_s": 1795005638.5519962,
+      "temperature.gpu": {
+        "min": 60.0,
+        "max": 61.0,
+        "mean": 60.6
+      },
+      "clocks.current.sm": {
+        "min": 2100.0,
+        "max": 2430.0,
+        "mean": 2250.0
+      },
+      "clocks.current.memory": {
+        "min": 7001.0,
+        "max": 8001.0,
+        "mean": 7201.0
+      },
+      "power.draw": {
+        "min": 23.92,
+        "max": 25.37,
+        "mean": 24.574
+      },
+      "utilization.gpu": {
+        "min": 19.0,
+        "max": 55.0,
+        "mean": 37.4
+      },
+      "memory.used": {
+        "min": 759.0,
+        "max": 925.0,
+        "mean": 871.8
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": true,
+        "max": true,
+        "mean": 1.0
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "power_plugged_before": true,
+      "power_plugged_after": true
+    },
+    {
+      "scenario": "steady_roomy",
+      "policy": "joint_v03",
+      "seed": 7,
+      "samples": 8,
+      "window_start_unix_s": 1795005402.3295944,
+      "window_end_unix_s": 1795005406.255476,
+      "temperature.gpu": {
+        "min": 58.0,
+        "max": 59.0,
+        "mean": 58.625
+      },
+      "clocks.current.sm": {
+        "min": 810.0,
+        "max": 1050.0,
+        "mean": 963.75
+      },
+      "clocks.current.memory": {
+        "min": 6001.0,
+        "max": 8001.0,
+        "mean": 6876.0
+      },
+      "power.draw": {
+        "min": 12.27,
+        "max": 16.61,
+        "mean": 14.192499999999999
+      },
+      "utilization.gpu": {
+        "min": 23.0,
+        "max": 51.0,
+        "mean": 34.75
+      },
+      "memory.used": {
+        "min": 751.0,
+        "max": 1217.0,
+        "mean": 1051.25
+      },
+      "pstate": null,
+      "clocks_event_reasons.sw_power_cap": {
+        "min": false,
+        "max": true,
+        "mean": 0.375
+      },
+      "clocks_event_reasons.hw_thermal_slowdown": {
+        "min": false,
+        "max": false,
+        "mean": 0.0
+      },
+      "clocks_event_reasons.sw_thermal_slowdown": {
+        "min": false,
+        "max": true,
+        "mean": 0.375
+      },
+      "power_plugged_before": false,
+      "power_plugged_after": false
+    }
+  ],
+  "gpu_sm_clock_range_mhz": [
+    375.0,
+    2565.0
+  ],
+  "gpu_temperature_range_c": [
+    57.0,
+    62.0
+  ]
+}
