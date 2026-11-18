@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/Vamaxi/PrismServe",
   "project_version": "1.0.0",
-  "created_utc": "2026-11-18T14:42:25.606128+00:00",
+  "created_utc": "2026-11-18T15:03:32.944035+00:00",
   "files": {
     ".gitattributes": {
       "bytes": 166,
@@ -12,8 +12,12 @@
       "sha256": "ab443978ddfe062cb3cb6b20e4e2418b7479e81a63f583605f8dcff963c66386"
     },
     "README.md": {
-      "bytes": 13262,
-      "sha256": "3eea8e76faa3605b21b79620e339b32e3772a41e4f14ec82201e448dd7cf97b2"
+      "bytes": 13407,
+      "sha256": "7eb7a8f269eb717fb53e6ad61791ef03c6b9b030e3352c678166a4425754ef32"
+    },
+    "SUMMARY.md": {
+      "bytes": 4625,
+      "sha256": "d2888912819328e0d045d97b7e02ee332ff0b7fe52c9235d6ed3c0c5d2cc653b"
     },
     "artifacts/source_text/manifest.json": {
       "bytes": 638,

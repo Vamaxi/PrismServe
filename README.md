@@ -2,6 +2,8 @@
 
 **Hardware-profile-driven control of layer precision and CPU attention for language-model serving.**
 
+**Quick overview:** read the [project summary](SUMMARY.md) for the research question, what we built, key experiments, results and deliverables.
+
 PrismServe is a course research prototype for DA4022, Hardware Aware Deep Learning, IIT Guwahati. It independently implements ideas inspired by **MorphServe (MLSys 2026)** and **NEO (MLSys 2025)** and evaluates when combining them helps memory feasibility, latency and generation quality.
 
 The project runs actual **124M-parameter GPT-2**, shares model computation across concurrent requests, and chooses quantized layers and CPU-attention placement through a common resource contract. It includes **116 passing tests**, archived experiment traces, a live demonstration, and detailed technical reports.
