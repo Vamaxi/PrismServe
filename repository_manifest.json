@@ -1,7 +1,7 @@
 {
   "repository": "https://github.com/Vamaxi/PrismServe",
   "project_version": "1.0.0",
-  "created_utc": "2026-11-18T15:03:32.944035+00:00",
+  "created_utc": "2026-11-18T15:13:11.630882+00:00",
   "files": {
     ".gitattributes": {
       "bytes": 166,
@@ -12,12 +12,12 @@
       "sha256": "ab443978ddfe062cb3cb6b20e4e2418b7479e81a63f583605f8dcff963c66386"
     },
     "README.md": {
-      "bytes": 13407,
-      "sha256": "7eb7a8f269eb717fb53e6ad61791ef03c6b9b030e3352c678166a4425754ef32"
+      "bytes": 13274,
+      "sha256": "d0e37559f4f5d551b72c04196364d41c6a38f9a025f8dea6941ffa95f8314d5b"
     },
     "SUMMARY.md": {
-      "bytes": 4625,
-      "sha256": "d2888912819328e0d045d97b7e02ee332ff0b7fe52c9235d6ed3c0c5d2cc653b"
+      "bytes": 4636,
+      "sha256": "8a285fae8178e54649a36209d35b776330d2feab7b7bb5cc38962d3432035037"
     },
     "artifacts/source_text/manifest.json": {
       "bytes": 638,
@@ -95,17 +95,13 @@
       "bytes": 27926,
       "sha256": "f2fba6d2f2c0f252aee38e1d69205c37750dc8823b7e5a18efba895b6b4c0ae0"
     },
-    "deliverables/PrismServe_Detailed_Report.docx": {
-      "bytes": 3931187,
-      "sha256": "354ee002c097ec410674dcd355bcba38e63f5e84522da3694bec21620b5875c1"
-    },
     "deliverables/PrismServe_Detailed_Report.html": {
-      "bytes": 5974752,
-      "sha256": "4a9816baed1465fd36db52b54aa7062267f86dd7d070ecb24b249463770acdb6"
+      "bytes": 5974678,
+      "sha256": "99873d3aacf140c49d216e200c25ad26ed1a7e40c09603471a6b75f1e38bb716"
     },
     "deliverables/PrismServe_Detailed_Report.pdf": {
-      "bytes": 5215264,
-      "sha256": "96398c6fc3861a3bb3638ebc63594348e217d15d00148c2d577a494fae985f96"
+      "bytes": 5215204,
+      "sha256": "d91925cf3ac8fa2376f1a2779b47d36713240e8d320bf97eaf12afe316fa149a"
     },
     "deliverables/PrismServe_Final_Report.html": {
       "bytes": 71090,
@@ -117,7 +113,7 @@
     },
     "deliverables/PrismServe_Graph_and_Diagram_Atlas.pdf": {
       "bytes": 3979881,
-      "sha256": "529b8a190346556fc1c21696af5ce8ecfda7f2a44767598ba728700ed7e74e9e"
+      "sha256": "5aef3ca5518b9395178fef7df158884224b241b6ef4d456d769fe0aca5d31a19"
     },
     "deliverables/PrismServe_Presentation.pdf": {
       "bytes": 1462843,
@@ -184,8 +180,8 @@
       "sha256": "2a1c2688a8a0399b7afe5549196a5596a6606ec41b3b7dc145a257b2679292ba"
     },
     "docs/repository_layout.md": {
-      "bytes": 5336,
-      "sha256": "54ac6dbd36e177be0340775197ded98b3e68f2ea1ed1598259e67f93dff0c16e"
+      "bytes": 5330,
+      "sha256": "e65dab8f0c3abc0bef87d947d5c527d794025b317a59dfbdb56db4611f693b5f"
     },
     "docs/research_review.md": {
       "bytes": 8642,
@@ -320,12 +316,12 @@
       "sha256": "bf0cc4bfbc939cfdef2f2a2705f495b3fee8cd0677ba164bcb213772a4a180b9"
     },
     "reports/detailed/PrismServe_Detailed_Report.md": {
-      "bytes": 163715,
-      "sha256": "c8df8310565faed788d5b8d5cd7f92ba52705f54d3d209d70d8282cc066ae730"
+      "bytes": 163641,
+      "sha256": "58138643b3acf21019108e46981b6259c06b4984cf8150f127cbd87cc347f80f"
     },
     "reports/detailed/README.md": {
-      "bytes": 2875,
-      "sha256": "a3cdb5364826e3a964801ba7fe4fb8f845b3393c214986da4f411fdf7e7e79a5"
+      "bytes": 2558,
+      "sha256": "a6d6dda7d365b42395f9d5cd4178902a1ab1d64e899f1b369ba39f396e3e648a"
     },
     "reports/detailed/assets/adaptive_placement.png": {
       "bytes": 48634,
@@ -604,24 +600,24 @@
       "sha256": "8f19e82b788d0ffca66060e16dacc25d8cf0409f037c46ae77adf1a3a48cc546"
     },
     "reports/detailed/build_report.py": {
-      "bytes": 67618,
-      "sha256": "4fd0203bd4c8c249fe3d9070ea8ee4bbbb8305726cf9d0a73d387b2d52b16e1b"
+      "bytes": 67105,
+      "sha256": "d2dab08568185c70fcba406e8347785cbad0e7a4abbcc7d82403ead546b49b59"
     },
     "reports/detailed/companion_validation.json": {
-      "bytes": 615,
-      "sha256": "1463501a785f33a8e98cfcfccc99f50f1007b6697c0ecfe3a789899d9ff2b0c2"
+      "bytes": 564,
+      "sha256": "dd49ef834cfcb6f1ece425dbb580c0cbda47801bb10f77090e9180a25a5aaf06"
     },
     "reports/detailed/diagrams.py": {
       "bytes": 12686,
       "sha256": "e43dfd5f0e057eeb372764062e33e7f1d8ec40e0816e90e823a59efab2b5a3e5"
     },
     "reports/detailed/renderers.py": {
-      "bytes": 16804,
-      "sha256": "ee26fe14455f550424f4122b078ef19db680ada600caad8c536f5f39715d8f72"
+      "bytes": 6499,
+      "sha256": "9bbfb7417701e7c0eb6408a0f5518eed4ffa4db55c71e2ccab16fef67531b1fb"
     },
     "reports/detailed/report_manifest.json": {
-      "bytes": 59733,
-      "sha256": "2bc12d82fcb7e6248d7c15771c849c7d1629e3e53a1ff0587b1ce3319505114f"
+      "bytes": 59541,
+      "sha256": "82f9be382b9ffc06bedb4b6dbd46a922b4474b8b92b7cda106d632d54f71526a"
     },
     "reports/detailed/tables/load_sweep.csv": {
       "bytes": 6876,
@@ -652,8 +648,8 @@
       "sha256": "b2399a3d5da8d3f6c40a5924cfd50671030e6a986d5a3563baf049206db3cc23"
     },
     "reports/detailed/validate_report.py": {
-      "bytes": 4661,
-      "sha256": "c4c8c5e70a48494d527621e78e22d574b374df8b73f114c73a3415342cb35f99"
+      "bytes": 3497,
+      "sha256": "81bd77ccae8be80ad97468d6e8b713b5856f18da9f9ed797045e3c88f9585642"
     },
     "results/adaptive/adaptive_runtime.json": {
       "bytes": 66612,

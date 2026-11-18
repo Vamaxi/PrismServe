@@ -1,11 +1,9 @@
-"""Local PDF/HTML/DOCX exporters for the report companion; no new packages."""
+"""Local PDF/HTML exporters for the report companion; no new packages."""
 from pathlib import Path
 import base64
 import html
 import json
 import re
-import zipfile
-from xml.etree import ElementTree as ET
 
 import markdown
 import pymupdf
@@ -99,149 +97,6 @@ def export_html(body,destination,root):
     screen='body{max-width:1060px;margin:2.5rem auto;padding:0 1.5rem}h2{border-top:1px solid #cfdee5;padding-top:1.4rem}table{font-size:.88rem}img{height:auto}.figure{margin:1.4rem 0}pre{overflow:auto}html{scroll-behavior:smooth}'
     destination.write_text('<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">'
         '<title>PrismServe Comprehensive Technical Report</title><style>'+CSS+screen+'</style></head><body>'+body+'</body></html>',encoding='utf-8')
-
-
-W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
-R='http://schemas.openxmlformats.org/officeDocument/2006/relationships'
-WP='http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing'
-A='http://schemas.openxmlformats.org/drawingml/2006/main'
-PIC='http://schemas.openxmlformats.org/drawingml/2006/picture'
-for prefix,uri in [('w',W),('r',R),('wp',WP),('a',A),('pic',PIC)]:ET.register_namespace(prefix,uri)
-
-
-def node(parent,tag,attrs=None,text=None):
-    prefix,name=tag.split(':');uri={'w':W,'r':R,'wp':WP,'a':A,'pic':PIC}[prefix]
-    converted={}
-    for k,v in (attrs or {}).items():
-        if ':' in k:
-            p,n=k.split(':');k='{'+{'w':W,'r':R,'wp':WP,'a':A,'pic':PIC}[p]+'}'+n
-        converted[k]=str(v)
-    result=ET.SubElement(parent,'{'+uri+'}'+name,converted)
-    result.text=text
-    return result
-
-
-def export_docx(body,destination,root):
-    """Generate standard editable OOXML paragraphs/tables with embedded figures."""
-    from PIL import Image
-    document=ET.Element('{'+W+'}document');content=node(document,'w:body')
-    images=[];links=[];bookmark_counter=0
-    def paragraph(parent,style='Normal',identifier=None):
-        nonlocal bookmark_counter
-        p=node(parent,'w:p');pr=node(p,'w:pPr');node(pr,'w:pStyle',{'w:val':style})
-        if identifier:
-            bookmark_counter+=1
-            node(p,'w:bookmarkStart',{'w:id':bookmark_counter,'w:name':identifier.replace('-','_')})
-            node(p,'w:bookmarkEnd',{'w:id':bookmark_counter})
-        return p
-    def run(parent,text,bold=False,italic=False,code=False):
-        if not text:return
-        r=node(parent,'w:r');pr=node(r,'w:rPr')
-        if bold:node(pr,'w:b')
-        if italic:node(pr,'w:i')
-        if code:node(pr,'w:rFonts',{'w:ascii':'Consolas','w:hAnsi':'Consolas'})
-        for index,line in enumerate(text.split('\n')):
-            if index:node(r,'w:br')
-            t=node(r,'w:t',text=line);t.set('{http://www.w3.org/XML/1998/namespace}space','preserve')
-    def inline(element,p,bold=False,italic=False,code=False):
-        run(p,element.text,bold,italic,code)
-        for child in element:
-            if child.tag=='br':node(node(p,'w:r'),'w:br')
-            elif child.tag=='a':
-                href=child.get('href','')
-                if href.startswith('#'):link=node(p,'w:hyperlink',{'w:anchor':href[1:].replace('-','_')})
-                else:
-                    rid=f'rId{1000+len(links)}';links.append((rid,href));link=node(p,'w:hyperlink',{'r:id':rid})
-                inline(child,link,bold,italic,code)
-            else:inline(child,p,bold or child.tag in ('strong','b'),italic or child.tag in ('em','i'),code or child.tag=='code')
-            run(p,child.tail,bold,italic,code)
-    def image(element,parent,identifier=None):
-        path=root/element.get('src')
-        width,height=Image.open(path).size
-        scale=min(6.65*914400/width,7.1*914400/height)
-        cx,cy=int(width*scale),int(height*scale)
-        index=len(images)+1;rid=f'rId{10+index}';images.append((rid,path))
-        p=paragraph(parent,'Figure',identifier);pr=p.find('{'+W+'}pPr');node(pr,'w:keepNext')
-        drawing=node(node(p,'w:r'),'w:drawing');frame=node(drawing,'wp:inline',{'distT':0,'distB':0,'distL':0,'distR':0})
-        node(frame,'wp:extent',{'cx':cx,'cy':cy});node(frame,'wp:docPr',{'id':index,'name':path.stem,'descr':element.get('alt','')})
-        g=node(frame,'a:graphic');gd=node(g,'a:graphicData',{'uri':PIC});pic=node(gd,'pic:pic')
-        nv=node(pic,'pic:nvPicPr');node(nv,'pic:cNvPr',{'id':index,'name':path.name});node(nv,'pic:cNvPicPr')
-        fill=node(pic,'pic:blipFill');node(fill,'a:blip',{'r:embed':rid});node(node(fill,'a:stretch'),'a:fillRect')
-        sp=node(pic,'pic:spPr');tr=node(sp,'a:xfrm');node(tr,'a:off',{'x':0,'y':0});node(tr,'a:ext',{'cx':cx,'cy':cy})
-        node(node(sp,'a:prstGeom',{'prst':'rect'}),'a:avLst')
-    def blocks(element,parent):
-        for e in element:
-            if e.tag in ('h1','h2','h3','h4'):
-                style={'h1':'Title','h2':'Heading1','h3':'Heading2','h4':'Heading3'}[e.tag]
-                p=paragraph(parent,style,e.get('id'));inline(e,p)
-            elif e.tag=='p':
-                img=e.find('img')
-                if img is not None:image(img,parent,e.get('id'));continue
-                cls=e.get('class','');style='Caption' if 'caption' in cls else 'Subtitle' if 'subtitle' in cls else 'Normal'
-                p=paragraph(parent,style,e.get('id'));inline(e,p)
-            elif e.tag=='img':image(e,parent,e.get('id'))
-            elif e.tag=='table':
-                table=node(parent,'w:tbl');pr=node(table,'w:tblPr');node(pr,'w:tblW',{'w:w':0,'w:type':'auto'})
-                borders=node(pr,'w:tblBorders')
-                for edge in ('top','left','bottom','right','insideH','insideV'):node(borders,'w:'+edge,{'w:val':'single','w:sz':4,'w:color':'BFCDD5'})
-                rows=e.findall('.//tr')
-                for row in rows:
-                    tr=node(table,'w:tr');header=row.find('th') is not None
-                    if header:node(node(tr,'w:trPr'),'w:tblHeader')
-                    for cell in row:
-                        tc=node(tr,'w:tc');props=node(tc,'w:tcPr')
-                        node(props,'w:tcW',{'w:w':int(9500/max(1,len(row))),'w:type':'dxa'})
-                        p=paragraph(tc,'TableText');inline(cell,p,bold=header)
-                paragraph(parent,'Normal')
-            elif e.tag in ('ul','ol'):
-                for i,item in enumerate(e.findall('li'),1):
-                    p=paragraph(parent,'Normal');run(p,f'{i}. ' if e.tag=='ol' else '\u2022 ');inline(item,p)
-            elif e.tag=='pre':
-                p=paragraph(parent,'Code');run(p,''.join(e.itertext()),code=True)
-            elif e.tag=='div' and 'figure' in e.get('class',''):
-                img=e.find('img')
-                if img is not None:image(img,parent,e.get('id'))
-                for caption in e.findall('p'):
-                    p=paragraph(parent,'Caption');inline(caption,p)
-            else:blocks(e,parent)
-    tree=ET.fromstring('<root>'+body+'</root>');blocks(tree,content)
-    sect=node(content,'w:sectPr');node(sect,'w:footerReference',{'w:type':'default','r:id':'rId3'})
-    node(sect,'w:pgSz',{'w:w':11906,'w:h':16838});node(sect,'w:pgMar',{'w:top':900,'w:bottom':900,'w:left':950,'w:right':950,'w:header':360,'w:footer':360})
-    styles=ET.Element('{'+W+'}styles')
-    for name,size,color in [('Normal',21,'20374A'),('Title',52,'123B50'),('Subtitle',32,'35566B'),('Heading1',32,'176B87'),('Heading2',25,'176B87'),('Heading3',22,'123B50'),('Caption',18,'456071'),('TableText',17,'20374A'),('Code',17,'20374A'),('Figure',18,'20374A')]:
-        st=node(styles,'w:style',{'w:type':'paragraph','w:styleId':name});node(st,'w:name',{'w:val':name})
-        pp=node(st,'w:pPr');node(pp,'w:spacing',{'w:after':100,'w:line':276,'w:lineRule':'auto'});node(pp,'w:widowControl')
-        if name.startswith('Heading'):
-            node(pp,'w:keepNext');node(pp,'w:outlineLvl',{'w:val':int(name[-1])-1})
-        if name=='Heading1':node(pp,'w:pageBreakBefore')
-        if name=='Figure':node(pp,'w:jc',{'w:val':'center'})
-        rp=node(st,'w:rPr');node(rp,'w:rFonts',{'w:ascii':'Calibri','w:hAnsi':'Calibri'})
-        node(rp,'w:sz',{'w:val':size});node(rp,'w:color',{'w:val':color})
-        if name.startswith('Heading') or name=='Title':node(rp,'w:b')
-    footer=ET.Element('{'+W+'}ftr');p=paragraph(footer,'Caption');run(p,'PrismServe | Detailed technical report | Page ')
-    rr=node(p,'w:r');node(rr,'w:fldChar',{'w:fldCharType':'begin'});node(node(p,'w:r'),'w:instrText',text=' PAGE ')
-    node(node(p,'w:r'),'w:fldChar',{'w:fldCharType':'end'})
-    rels=[('rId1','styles','styles.xml',None),('rId2','settings','settings.xml',None),('rId3','footer','footer1.xml',None)]
-    rels += [(rid,'image','media/'+path.name,None) for rid,path in images]
-    rels += [(rid,'hyperlink',href,'External') for rid,href in links]
-    def relationships(items):
-        rootrel=ET.Element('Relationships',{'xmlns':'http://schemas.openxmlformats.org/package/2006/relationships'})
-        for rid,kind,target,mode in items:
-            at={'Id':rid,'Type':'http://schemas.openxmlformats.org/officeDocument/2006/relationships/'+kind,'Target':target}
-            if mode:at['TargetMode']=mode
-            ET.SubElement(rootrel,'Relationship',at)
-        return ET.tostring(rootrel,encoding='utf-8',xml_declaration=True)
-    types='''<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="png" ContentType="image/png"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/><Override PartName="/word/footer1.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml"/></Types>'''
-    with zipfile.ZipFile(destination,'w',compression=zipfile.ZIP_DEFLATED) as z:
-        z.writestr('[Content_Types].xml',types)
-        z.writestr('_rels/.rels',relationships([('rId1','officeDocument','word/document.xml',None)]))
-        z.writestr('word/document.xml',ET.tostring(document,encoding='utf-8',xml_declaration=True))
-        z.writestr('word/styles.xml',ET.tostring(styles,encoding='utf-8',xml_declaration=True))
-        z.writestr('word/settings.xml',f'<w:settings xmlns:w="{W}"><w:updateFields w:val="true"/></w:settings>')
-        z.writestr('word/footer1.xml',ET.tostring(footer,encoding='utf-8',xml_declaration=True))
-        z.writestr('word/_rels/document.xml.rels',relationships(rels))
-        for path in dict.fromkeys(path for _,path in images):z.write(path,'word/media/'+path.name)
-    return {'image_placements':len(images),'tables':len(document.findall('.//{'+W+'}tbl')),'bookmarks':bookmark_counter}
 
 
 def export_atlas(figures,destination,root):

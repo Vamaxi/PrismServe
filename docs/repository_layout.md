@@ -14,7 +14,7 @@ The GitHub repository is the publication view of PrismServe. It preserves the wo
 | `results/` | Actual/analytical observations, all outcomes, separate diagnostics and exact source snapshots |
 | `results/demo/tiny_checkpoint.pt` | Small independently trained decoder artifact supporting earlier functional evidence |
 | `reports/detailed/` | Detailed report generator, Markdown, PNG/SVG schematics and full CSV result tables |
-| `deliverables/` | Detailed/concise reports, Word/HTML versions, graph atlas, editable slides and release metadata |
+| `deliverables/` | Detailed/concise reports, HTML version, graph atlas, editable slides and release metadata |
 | `artifacts/source_text/manifest.json` | Original input-document page/hash provenance without redistributing those PDFs or full extracts |
 
 ## Excluded files

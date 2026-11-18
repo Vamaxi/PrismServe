@@ -21,7 +21,7 @@ ROOT=Path(__file__).resolve().parents[2]
 HERE=Path(__file__).resolve().parent
 sys.path.insert(0,str(HERE))
 from diagrams import make_diagrams
-from renderers import prepare_html,export_pdf,export_html,export_docx,export_atlas
+from renderers import prepare_html,export_pdf,export_html,export_atlas
 
 ASSETS=HERE/'assets';TABLES=HERE/'tables';OUTPUT=ROOT/'deliverables'
 INPUTS=set()
@@ -443,7 +443,7 @@ python scripts/check_submission.py --package
     b.table('Recorded live capacity demonstration',['Policy','Prompt / quota','Completed','Rejected','Max batch','Quantized iterations','CPU-attention iterations'],[
         [r['policy'],f"{r['prompt_tokens']} / {r['quota_mib']} MiB",r['completed'],r['rejected'],r['max_batch'],r['quantized_iterations'],r['cpu_attention_iterations']] for r in demo['runs']],
         'results/final_demo/capacity_summary.json; demonstration, not a controlled benchmark')
-    b.add('''The frozen project ZIP contains code, configurations, tests, the original report/slides, raw result traces, source snapshots, the tiny checkpoint and model/data provenance. The 124M-parameter pretrained weights are deliberately prepared separately from their pinned public source. This detailed companion adds a PDF, editable DOCX, self-contained HTML, figure atlas and reproducible report sources without altering that submission freeze.
+    b.add('''The frozen project ZIP contains code, configurations, tests, the original report/slides, raw result traces, source snapshots, the tiny checkpoint and model/data provenance. The 124M-parameter pretrained weights are deliberately prepared separately from their pinned public source. This detailed companion adds a PDF, self-contained HTML, figure atlas and reproducible report sources without altering that submission freeze.
 
 For exact software setup and API calls, use the repository README. For the presentation and viva, `docs/demo_and_viva.md` includes an architecture walkthrough and answers on hardware agnosticism, transition peaks, CPU compute, quality scope and unsuccessful outcomes. Reproducing historical runs with newer code requires a new output folder; archived wheels/snapshots retain the exact implementations that generated earlier physical measurements.''')
 
@@ -522,7 +522,7 @@ Smoke/regression charts below validate that experiment pipelines, numerical path
     for title,path in [('Final unit suite','results/validation.json'),('M10 final validation','results/validation_study_final/validation.json'),('M11 final validation','results/capacity_frontier/validation.json')]:
         record=data(path)
         b.table(title,['Field','Recorded value'],[[k,json.dumps(v) if isinstance(v,(dict,list)) else str(v)] for k,v in record.items() if k!='notes'],path)
-    b.add('''The report bundle includes a figure registry, complete CSV copies, input hashes and report-generation sources. A separate high-resolution graph/diagram atlas puts each registered figure on its own portrait or landscape page for enlarged inspection. The editable DOCX embeds the same figures and tables; its pagination depends on the installed Word-compatible renderer. The standalone HTML embeds all images and supports internal navigation offline.
+    b.add('''The report bundle includes a figure registry, complete CSV copies, input hashes and report-generation sources. A separate high-resolution graph/diagram atlas puts each registered figure on its own portrait or landscape page for enlarged inspection. The Markdown report remains available as an editable source. The standalone HTML embeds all images and supports internal navigation offline.
 
 Before presenting a number, identify: (1) actual or analytical execution, (2) model/checkpoint, (3) trace and quota, (4) completed and rejected work, (5) whether setup and drain are charged, (6) quality target/exposure protocol, and (7) physical session and uncertainty scope. The preserved frozen submission and its release checks remain the authority for the original implementation; this companion is a richer presentation of those archived observations.''')
 
@@ -546,41 +546,34 @@ def main():
 <p>Companion to frozen submission <strong>v1.0.0</strong><br />18 November 2026</p>
 <p class="small">Actual pretrained GPT-2 execution, CPU/CUDA validation and a separately labeled analytical 8B-shaped study. All diagrams are original implementation schematics. This companion regenerates presentation artifacts from archived evidence and preserves the original source/release package.</p></div>'''
     body,headings=prepare_html(md,cover)
-    pdf=OUTPUT/'PrismServe_Detailed_Report.pdf';docx=OUTPUT/'PrismServe_Detailed_Report.docx';web=OUTPUT/'PrismServe_Detailed_Report.html'
+    pdf=OUTPUT/'PrismServe_Detailed_Report.pdf';web=OUTPUT/'PrismServe_Detailed_Report.html'
     pdf_info=export_pdf(body,pdf,HERE);print('PDF',json.dumps(pdf_info),flush=True)
     export_html(body,web,HERE)
-    docx_info=export_docx(body,docx,HERE);print('DOCX',json.dumps(docx_info),flush=True)
     atlas=OUTPUT/'PrismServe_Graph_and_Diagram_Atlas.pdf';atlas_pages=export_atlas(book.figures,atlas,HERE)
     for p,value in original_hashes.items():
         assert digest(p)==value,'Frozen artifact changed: '+str(p)
-    with zipfile.ZipFile(docx) as z:
-        assert z.testzip() is None
-        for name in z.namelist():
-            if name.endswith('.xml') or name.endswith('.rels'):
-                from xml.etree import ElementTree as ET
-                ET.fromstring(z.read(name))
     with pymupdf_open(pdf) as d:
         assert len(d)>25 and all(p.get_text().strip() for p in d)
         combined=''.join(p.get_text() for p in d)
         for required in ('675','312','116','768','71.88','2.752'):
             assert required in combined,required
     manifest={'title':'PrismServe Comprehensive Technical Report','companion_to_version':'1.0.0',
-        'created_utc':datetime.now(timezone.utc).isoformat(),'pdf':pdf_info,'docx':docx_info,
+        'created_utc':datetime.now(timezone.utc).isoformat(),'pdf':pdf_info,
         'figures':book.figures,'tables':book.tables,'equations':book.equations,
         'existing_result_charts_covered':len(existing),'run_level_table_rows':book.run_rows,'atlas_pages':atlas_pages,
         'input_sha256':{p.relative_to(ROOT).as_posix():digest(p) for p in sorted(INPUTS) if not p.is_relative_to(HERE)},
         'original_release_and_submission_unchanged':True,
         'protected_original_sha256':{p.relative_to(ROOT).as_posix():value for p,value in original_hashes.items()},
-        'artifact_sha256':{p.name:digest(p) for p in (pdf,docx,web,atlas)},
+        'artifact_sha256':{p.name:digest(p) for p in (pdf,web,atlas)},
         'notes':['All numbers derive from archived measurements or explicitly derived model geometry.',
                  'Architecture/flowcharts are original schematics; diagnostic and analytical charts are labeled.',
-                 'PDF was programmatically checked; DOCX OOXML/media were structurally checked.']}
+                 'PDF layout, figure coverage, HTML links and frozen submission hashes were checked.']}
     (HERE/'report_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
     from validate_report import main as validate_companion
     validate_companion()
     bundle=OUTPUT/'PrismServe_Detailed_Report_Package.zip'
     with zipfile.ZipFile(bundle,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
-        for p in (pdf,docx,web,atlas):z.write(p,p.name)
+        for p in (pdf,web,atlas):z.write(p,p.name)
         for p in sorted(HERE.rglob('*')):
             if (p.is_file() and '__pycache__' not in p.parts and p.suffix!='.pyc' and 'previews' not in p.parts
                     and not p.name.startswith(('debug','_'))):

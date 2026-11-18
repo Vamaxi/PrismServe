@@ -1335,7 +1335,7 @@ python scripts/check_submission.py --package
 
 <p class="small">Source: results/final_demo/capacity_summary.json; demonstration, not a controlled benchmark</p>
 
-The frozen project ZIP contains code, configurations, tests, the original report/slides, raw result traces, source snapshots, the tiny checkpoint and model/data provenance. The 124M-parameter pretrained weights are deliberately prepared separately from their pinned public source. This detailed companion adds a PDF, editable DOCX, self-contained HTML, figure atlas and reproducible report sources without altering that submission freeze.
+The frozen project ZIP contains code, configurations, tests, the original report/slides, raw result traces, source snapshots, the tiny checkpoint and model/data provenance. The 124M-parameter pretrained weights are deliberately prepared separately from their pinned public source. This detailed companion adds a PDF, self-contained HTML, figure atlas and reproducible report sources without altering that submission freeze.
 
 For exact software setup and API calls, use the repository README. For the presentation and viva, `docs/demo_and_viva.md` includes an architecture walkthrough and answers on hardware agnosticism, transition peaks, CPU compute, quality scope and unsuccessful outcomes. Reproducing historical runs with newer code requires a new output folder; archived wheels/snapshots retain the exact implementations that generated earlier physical measurements.
 
@@ -2135,6 +2135,6 @@ Smoke/regression charts below validate that experiment pipelines, numerical path
 
 <p class="small">Source: results/capacity_frontier/validation.json</p>
 
-The report bundle includes a figure registry, complete CSV copies, input hashes and report-generation sources. A separate high-resolution graph/diagram atlas puts each registered figure on its own portrait or landscape page for enlarged inspection. The editable DOCX embeds the same figures and tables; its pagination depends on the installed Word-compatible renderer. The standalone HTML embeds all images and supports internal navigation offline.
+The report bundle includes a figure registry, complete CSV copies, input hashes and report-generation sources. A separate high-resolution graph/diagram atlas puts each registered figure on its own portrait or landscape page for enlarged inspection. The Markdown report remains available as an editable source. The standalone HTML embeds all images and supports internal navigation offline.
 
 Before presenting a number, identify: (1) actual or analytical execution, (2) model/checkpoint, (3) trace and quota, (4) completed and rejected work, (5) whether setup and drain are charged, (6) quality target/exposure protocol, and (7) physical session and uncertainty scope. The preserved frozen submission and its release checks remain the authority for the original implementation; this companion is a richer presentation of those archived observations.

@@ -153,7 +153,6 @@ The frontier harness calibrates freshly, checks AC power at recorded samples, us
 | Document | Contents |
 |---|---|
 | [Detailed technical report — PDF](deliverables/PrismServe_Detailed_Report.pdf) | 78 pages, 47 figures, 74 tables, equations and all 454 main-suite run records |
-| [Editable detailed report — Word](deliverables/PrismServe_Detailed_Report.docx) | Editable text, diagrams and numerical tables |
 | [Graph and diagram atlas](deliverables/PrismServe_Graph_and_Diagram_Atlas.pdf) | 47 figures, one enlarged figure per page |
 | [Detailed report source](reports/detailed/PrismServe_Detailed_Report.md) | Markdown, PNG/SVG assets, CSV exports and generator scripts |
 | [Concise final report](docs/final_report.md) / [PDF](deliverables/PrismServe_Final_Report.pdf) | Research methods, results and limitations |

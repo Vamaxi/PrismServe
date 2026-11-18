@@ -60,7 +60,7 @@ The corresponding joint quality audit shows **2.752% higher perplexity on 96 hel
 - **Version 1.0.0** source freeze, provenance records and validated experiment artifacts.
 - **16-page concise report** and **22-slide presentation**.
 - **78-page detailed report** with **47 figures, 74 tables**, architecture diagrams, flowcharts and complete tables for 454 main-suite run records.
-- Editable Word report and a **47-page graph and diagram atlas**.
+- Editable Markdown report source and a **47-page graph and diagram atlas**.
 - A **one-command live demo**, architecture walkthrough and viva guide.
 
 ## Conclusion
